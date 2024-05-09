@@ -1,14 +1,14 @@
 {
-  "name": "comp-library",
+  "name": "zynkcl",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "component library",
+
 "scripts": {
-    "start": "index.html",
-    "build": "index.html"
-  },
+  "start": "./index.html",
+  "build": "parcel build index.html"
+},
   "keywords": [],
-  "author": "",
+  "author": "zynkah",
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.12.0"
