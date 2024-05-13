@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZynkCL</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <body>
-        <header>
-            <h1></h1>
-              <nav>
-            <ul>
-                <li><a href="./index.html">ZynkCL</a></li>
-                <li><a href="./index.html">Docs</a></li>
-                <li><a href="./index.html">Components</a></li>
-                <li><a href="./index.html">Themes</a></li>
-                <li><a href="./index.html">Examples</a></li>        
-            </ul>  
-        </nav> 
-        </header>
-     
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">zynkcl/ui</a>
+        <ul class="nav-links">
+          <li><a href="./docs.html">Docs</a></li>
+          <li><a href="./index.html">Components</a></li>
+          <li><a href="./index.html">Themes</a></li>
+          <li><a href="./index.html">Examples</a></li>
+        </ul>
+        <input type="search" placeholder="Search..." />
+      </nav>
+    </header>
 
-        <main>
-            <p>Welcome to the home page!</p>
-        </main>
+    <main>
+      <section class="hero">
+        <button class="basic-button">Introducing Zynkronization →</button>
+        <h1 class="hero-title">Build a component library</h1>
+        <p class="hero-description">
+          Customizable components that you can reuse in your apps.
+        </p>
+        <div class="button-container">
+          <button class="basic-button">Get Started</button>
+          <button class="hover-button">GitHub</button>
+        </div>
+      </section>
+      <ul class="component-tab-list">
+        <li>Mail</li>
+        <li>Dashboard</li>
+        <li>Cards</li>
+        <li>Tasks</li>
+        <li>Playground</li>
+        <li>From</li>
+        <li>Music</li>
+        <li>Authentication</li>
+      </ul>
+      <section class="component-display">
+        <h1>Beautiful components go here</h1>
+      </section>
+    </main>
 
-        <footer>
-            <p></p>
-        </footer>
-    </body>
+    <footer>
+      <p></p>
+    </footer>
+    <!-- Development version -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Production version -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </body>
 </html>

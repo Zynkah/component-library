@@ -13,6 +13,7 @@
     "parcel": "^2.12.0"
   },
   "dependencies": {
+    "lucide": "^0.378.0",
     "nodemon": "^3.1.0"
   }
 }
