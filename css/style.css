@@ -1,5 +1,5 @@
 body {
-    background-color: #4C454C;
+    background-color: #0A0A0A;
     color: white;
 }
 
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: #CDC1CA
+    color: #988E7D
 }
 
 h2 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 button {
-    background-color: #CDC1CA;
+    background-color: #988E7D;
     border: none;
     color: #262226;
     padding: 0.5rem 1rem;

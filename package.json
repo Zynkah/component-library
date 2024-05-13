@@ -4,7 +4,7 @@
   "description": "component library",
 
 "scripts": {
-  "start": "./index.html",
+  "start": "index.html",
   "build": "parcel build index.html"
 },
   "keywords": [],
