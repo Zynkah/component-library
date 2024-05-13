@@ -1,25 +1,144 @@
 body {
     background-color: #0A0A0A;
     color: white;
+    min-height: 100vh;
+    margin:0;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 0.1rem solid rgba(10, 10, 10, 0.6);
+    display: inline-block;
+}
+
+nav:first-child {
+       padding-left: 3rem;
+       font-weight: bold; 
 }
 
 main {
     text-align: center;
 }
 
-ul {
-    list-style: none;
-    display: inline-flex;
-    gap: 5px;
-}
 
 a {
     color: white;
+    text-decoration: none;
 }
 
-a:hover{
-    color:#988E7D
+input {
+    border: 1px solid rgba(10, 10, 10, 0.6);
+    border-radius: 0.4rem;
+    background-color: #0A0A0A;
+    padding: 0.5rem;
+
 }
+
+
+/* Nav Classes  */
+
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+    padding: 0rem 1rem;
+}
+
+ /* @media (max-width: 767px) {
+    .nav-links {
+        display: none;
+  }
+     
+ } */
+
+.nav-links li {
+    opacity: 0.6;
+}
+
+.nav-links li:hover {
+    opacity: 0.8;
+}
+
+
+/* Hero Classes */
+
+
+.hero {
+    padding:2rem;  
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-block: 1rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+}
+
+
+/* button classes */
+
+.basic-button  {
+    border: none;
+    border-radius: 0.4rem;
+    font-size: .9rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+    background-color:#202324;
+    cursor: pointer;
+}
+
+.hover-button {
+    background-color: #0A0A0A;
+    border: 1px solid rgba(10, 10, 10, 0.6);
+    border-radius: 0.4rem;
+    font-size: .9rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+    cursor: pointer;
+}
+
+.hover-button:hover {
+    background-color: #202324;;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    gap: 1rem;
+}
+
+/* Component display classes */
+
+.component-tab-list {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+    padding: 0rem 1rem;
+}
+
+.component-tab-list li{
+    color: #d2cbbe;
+    opacity: 0.8;
+}
+
+.component-tab-list li:hover {
+     color: rgb(210, 203, 190);
+     opacity: 1;
+
+}
+
+.component-display {
+    border: 1px solid rgba(10, 10, 10, 0.6);
+    border-radius: 0.4rem;
+    background-color: #0A0A0A;
+    margin-inline: 2rem;
+}
+
 
 /*Classes for the cards*/
 
