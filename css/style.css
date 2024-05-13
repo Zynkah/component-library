@@ -3,61 +3,23 @@ body {
     color: white;
 }
 
-header {
-    color: white;
-    padding: 1em;
+main {
     text-align: center;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-}
-
-nav {
-    flex: 1;
-}
-
-main {
-    flex: 2;
-    padding: 1em;
-}
-
-li {
-    list-style-type: none;
+ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 5px;
 }
 
 a {
     color: white;
-    text-decoration: none;
 }
 
-a:hover {
-    color: #988E7D
+a:hover{
+    color:#988E7D
 }
-
-h2 {
-    margin-left: 1rem;
-}
-
-button {
-    background-color: #988E7D;
-    border: none;
-    color: #262226;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    margin: 1rem;
-}
-
-button:hover {
-    transform: translateY(-1px);
-}
-
-
 
 /*Classes for the cards*/
 
