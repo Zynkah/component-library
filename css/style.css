@@ -1,5 +1,12 @@
+:root {
+    --borderRadius: 0.4rem;
+    --backgroundColor: #0A0A0A;
+    --accentColor: rgba(10, 10, 10, 0.6);
+    --buttonColor: #202324;
+}
+
 body {
-    background-color: #0A0A0A;
+    background-color: var(--backgroundColor);
     color: white;
     min-height: 100vh;
     margin:0;
@@ -7,13 +14,13 @@ body {
 
 nav {
     width: 100%;
-    border-bottom: 0.1rem solid rgba(10, 10, 10, 0.6);
+    border-bottom: 0.1rem solid var(--accentColor);
     display: inline-block;
 }
 
 nav:first-child {
-       padding-left: 3rem;
-       font-weight: bold; 
+    padding-left: 3rem;
+    font-weight: bold; 
 }
 
 main {
@@ -27,9 +34,9 @@ a {
 }
 
 input {
-    border: 1px solid rgba(10, 10, 10, 0.6);
-    border-radius: 0.4rem;
-    background-color: #0A0A0A;
+    border: 1px solid var(--accentColor);
+    border-radius: var(--borderRadius);
+    background-color: var(--backgroundColor);
     padding: 0.5rem;
 
 }
@@ -81,18 +88,35 @@ input {
 
 .basic-button  {
     border: none;
-    border-radius: 0.4rem;
+    border-radius: var(--borderRadius);
     font-size: .9rem;
     padding-block: 0.5rem;
     padding-inline: 0.8rem;
-    background-color:#202324;
+    background-color:var(--buttonColor);
     cursor: pointer;
 }
 
+.small-basic-button  {
+    border: none;
+    border-radius: var(--borderRadius);
+    font-size: .8rem;
+    padding-block: 0.3rem;
+    padding-inline: 0.7rem;
+    font-weight: bold;
+    opacity: 0.9;
+    background-color:var(--buttonColor);
+    cursor: pointer;
+    margin-inline: 0.3rem;
+}
+
+.small-basic-button:first-child {
+    margin-left: 0;
+}
+
 .hover-button {
-    background-color: #0A0A0A;
-    border: 1px solid rgba(10, 10, 10, 0.6);
-    border-radius: 0.4rem;
+    background-color: var(--backgroundColor);
+    border: 1px solid var(--accentColor);
+    border-radius: var(--borderRadius);
     font-size: .9rem;
     padding-block: 0.5rem;
     padding-inline: 0.8rem;
@@ -100,7 +124,7 @@ input {
 }
 
 .hover-button:hover {
-    background-color: #202324;;
+    background-color: var(--buttonColor);;
 }
 
 .button-container {
@@ -133,19 +157,118 @@ input {
 }
 
 .component-display {
-    border: 1px solid rgba(10, 10, 10, 0.6);
-    border-radius: 0.4rem;
-    background-color: #0A0A0A;
+    border: 1px solid var(--accentColor);
+    border-radius: var(--borderRadius);
+    background-color: var(--backgroundColor);
     margin-inline: 2rem;
 }
 
+/* mail tabs classes*/
+
+.mail-tabs {
+    list-style: none; 
+    text-align: left;
+}
+
+.mail-tabs li {
+    padding-block: .2rem;
+}
+
+.mail-tabs div {
+    border: none;
+    padding-block: 0.5rem;
+    padding-inline: 0.6rem;
+    margin-inline: 1rem;
+    border-radius: var(--borderRadius);
+    background-color: var(--backgroundColor); 
+}
+
+.mail-tabs .active {
+    background-color: var(--buttonColor);
+}
+
+.mail-tabs div:hover {
+    background-color: var(--buttonColor);
+}
+
+.mail-boxes th, td {
+    border: 1px solid white;
+    padding: .4rem;
+}
+
+.mail-toggle {
+    border-radius: var(--borderRadius);
+    background-color: var(--buttonColor);
+    padding: 0.3rem;
+    margin-left: 1rem;
+}
+
+/* [data-is-active='true'] */
+.mail-toggle .active {
+    background-color: var(--backgroundColor);
+}
+
+.mail-toggle button {
+    border: none;
+    border-radius: var(--borderRadius);
+    font-size: .9rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+    background-color:var(--buttonColor);
+    cursor: pointer;
+    
+}
 
 /*Classes for the cards*/
+
+.home-card {
+    background-color: var(--backgroundColor);
+    border-radius: var(--borderRadius);
+    margin: 1rem;
+    padding-block: 1.2rem;
+    padding-inline: 1rem;
+    height: 120px;
+    width: 300px;
+    position: relative;
+    border: 1px solid var(--accentColor);
+    text-align: left;
+}
+
+.timestamp {
+    display: flex;
+    position: absolute;
+    top: 0.1rem;
+    right: 1rem;
+    font-size: 0.8rem;
+}
+
+.home-card-title {
+    font-size: 1rem;
+    margin-block: 0.1rem;
+    font-weight: bold;
+    line-height: 0.2rem;
+}
+
+.home-card-description {
+    font-size: 0.8rem;
+      font-weight: bold;
+}
+
+.home-card-content {
+    display: flex;
+    font-size: 0.8rem;
+    color: rgb(152, 142, 125);
+}
+
+.home-card-footer {
+    font-size: 0.8rem;
+}
+
 
 .card {
     background-color: white;
     color: #262226;
-    border-radius: 5px;
+    border-radius: var(--borderRadius);
     margin: 1rem;
     padding: 1rem;
     height: 300px;
@@ -178,7 +301,7 @@ input {
 .clickable-card {
     background-color: white;
     color: #262226;
-    border-radius: 5px;
+    border-radius: var(--borderRadius);
     margin: 1rem;
     padding: 1rem;
     height: 300px;
@@ -194,3 +317,6 @@ input {
 .clickable-card:active {
     transform: translateY(0);
 }
+
+
+
