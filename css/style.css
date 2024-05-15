@@ -25,10 +25,6 @@ nav:first-child {
   font-weight: bold;
 }
 
-main {
-  text-align: center;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -54,7 +50,7 @@ input {
     .nav-links {
         display: none;
   }
-     
+
  } */
 
 .nav-links li {
@@ -69,6 +65,7 @@ input {
 
 .hero {
   padding: 2rem;
+  text-align: center;
 }
 
 .hero-title {
@@ -151,7 +148,8 @@ input {
 
 .component-tab-list {
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   gap: 1rem;
   padding: 0rem 1rem;
 }
@@ -167,6 +165,7 @@ input {
 }
 
 .component-display {
+  flex-direction: column;
   border: 1px solid var(--accentColor);
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
@@ -174,7 +173,6 @@ input {
   padding: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .table-main {
@@ -281,8 +279,10 @@ td {
   border-radius: var(--borderRadius);
   background-color: var(--buttonColor);
   padding: 0.3rem;
-  margin-left: 1rem;
+  margin: 1rem;
+  margin-top: 0;
   color: white;
+  display: inline-flex;
 }
 
 /* [data-is-active='true'] */
@@ -308,10 +308,11 @@ td {
   display: flex;
   align-items: center;
   border-bottom: 0.1rem solid var(--accentColor);
-  width: 100%;
+  padding: 0 .5rem;
 }
 
 .dashboard-nav ul {
+  flex: 1;
   list-style-type: none;
   padding-inline: 1rem;
 }
@@ -348,11 +349,11 @@ td {
 .dashboard-header {
   display: flex;
   align-items: center;
-}
+  margin: 1rem;
 
-.dashboard-buttons {
-  position: absolute;
-  right: 100px;
+  h2 {
+    flex: 1;
+  }
 }
 
 /*Classes for the cards*/
