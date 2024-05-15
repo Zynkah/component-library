@@ -1,57 +1,56 @@
 :root {
-    --borderRadius: 0.4rem;
-    --backgroundColor: #0A0A0A;
-    --accentColor: rgba(10, 10, 10, 0.6);
-    --buttonColor: #202324;
+  --borderRadius: 0.4rem;
+  --backgroundColor: #0a0a0a;
+  --accentColor: #28282b;
+  --buttonColor: #202324;
+  --buttonPaddingInline: 0.8rem;
+  --buttonPaddingBlock: 0.6rem;
 }
 
 body {
-    background-color: var(--backgroundColor);
-    color: white;
-    min-height: 100vh;
-    margin:0;
+  background-color: var(--backgroundColor);
+  color: white;
+  min-height: 100vh;
+  margin: 0;
 }
 
 nav {
-    width: 100%;
-    border-bottom: 0.1rem solid var(--accentColor);
-    display: inline-block;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--accentColor);
+  display: inline-block;
 }
 
 nav:first-child {
-    padding-left: 3rem;
-    font-weight: bold; 
+  padding-left: 3rem;
+  font-weight: bold;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
-
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 input {
-    border: 1px solid var(--accentColor);
-    border-radius: var(--borderRadius);
-    background-color: var(--backgroundColor);
-    padding: 0.5rem;
-
+  border: 1px solid var(--accentColor);
+  border-radius: var(--borderRadius);
+  background-color: var(--backgroundColor);
+  padding: 0.5rem;
 }
-
 
 /* Nav Classes  */
 
 .nav-links {
-    list-style: none;
-    display: inline-flex;
-    gap: 1rem;
-    padding: 0rem 1rem;
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+  padding: 0rem 1rem;
 }
 
- /* @media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .nav-links {
         display: none;
   }
@@ -59,264 +58,354 @@ input {
  } */
 
 .nav-links li {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .nav-links li:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-
 
 /* Hero Classes */
 
-
 .hero {
-    padding:2rem;  
+  padding: 2rem;
 }
 
 .hero-title {
-    font-size: 2rem;
-    margin-block: 1rem;
+  font-size: 2.5rem;
+  margin-block: 1rem;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
-
 
 /* button classes */
 
-.basic-button  {
-    border: none;
-    border-radius: var(--borderRadius);
-    font-size: .9rem;
-    padding-block: 0.5rem;
-    padding-inline: 0.8rem;
-    background-color:var(--buttonColor);
-    cursor: pointer;
+.basic-button {
+  border: none;
+  color: white;
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  background-color: var(--buttonColor);
+  cursor: pointer;
 }
 
-.small-basic-button  {
-    border: none;
-    border-radius: var(--borderRadius);
-    font-size: .8rem;
-    padding-block: 0.3rem;
-    padding-inline: 0.7rem;
-    font-weight: bold;
-    opacity: 0.9;
-    background-color:var(--buttonColor);
-    cursor: pointer;
-    margin-inline: 0.3rem;
+.accent-button {
+  border: none;
+  color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  background-color: white;
+  cursor: pointer;
+}
+
+.small-basic-button {
+  border: none;
+  color: white;
+  border-radius: var(--borderRadius);
+  font-size: 0.8rem;
+  padding-block: 0.3rem;
+  padding-inline: 0.7rem;
+  font-weight: bold;
+  opacity: 0.9;
+  background-color: var(--buttonColor);
+  cursor: pointer;
+  margin-inline: 0.3rem;
 }
 
 .small-basic-button:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .hover-button {
-    background-color: var(--backgroundColor);
-    border: 1px solid var(--accentColor);
-    border-radius: var(--borderRadius);
-    font-size: .9rem;
-    padding-block: 0.5rem;
-    padding-inline: 0.8rem;
-    cursor: pointer;
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--accentColor);
+  border-radius: var(--borderRadius);
+  color: white;
+  font-size: 0.9rem;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  cursor: pointer;
 }
 
 .hover-button:hover {
-    background-color: var(--buttonColor);;
+  background-color: var(--buttonColor);
 }
 
 .button-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-block: 1rem;
-    gap: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+  gap: 1rem;
+  color: white;
 }
 
 /* Component display classes */
 
 .component-tab-list {
-    list-style: none;
-    display: inline-flex;
-    gap: 1rem;
-    padding: 0rem 1rem;
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+  padding: 0rem 1rem;
 }
 
-.component-tab-list li{
-    color: #d2cbbe;
-    opacity: 0.8;
+.component-tab-list li {
+  color: #d2cbbe;
+  opacity: 0.8;
 }
 
 .component-tab-list li:hover {
-     color: rgb(210, 203, 190);
-     opacity: 1;
-
+  color: rgb(210, 203, 190);
+  opacity: 1;
 }
 
 .component-display {
-    border: 1px solid var(--accentColor);
-    border-radius: var(--borderRadius);
-    background-color: var(--backgroundColor);
-    margin-inline: 2rem;
+  border: 1px solid var(--accentColor);
+  border-radius: var(--borderRadius);
+  background-color: var(--backgroundColor);
+  margin-inline: 2rem;
+  padding: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-main {
+  border-collapse: collapse;
+  border: 1px solid var(--accentColor);
+  width: 100%;
+}
+
+.table-header {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* mail inbox classes */
+
+.inbox-section {
+  display: inline-block;
+  align-items: stretch;
+}
+
+.mail-input {
+  width: 100%;
+}
+
+.home-card {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  margin: 1rem;
+  padding-block: 1.2rem;
+  padding-inline: 1rem;
+  height: 120px;
+  width: 20rem;
+  position: relative;
+  border: 1px solid var(--accentColor);
+  text-align: left;
+}
+
+.timestamp {
+  display: flex;
+  position: absolute;
+  top: 0.1rem;
+  right: 1rem;
+  font-size: 0.8rem;
+}
+
+.home-card-title {
+  font-size: 1rem;
+  margin-block: 0.1rem;
+  font-weight: bold;
+  line-height: 0.2rem;
+}
+
+.home-card-description {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.home-card-content {
+  display: flex;
+  font-size: 0.8rem;
+  color: rgb(152, 142, 125);
+}
+
+.home-card-footer {
+  font-size: 0.8rem;
 }
 
 /* mail tabs classes*/
 
 .mail-tabs {
-    list-style: none; 
-    text-align: left;
+  list-style: none;
+  text-align: left;
 }
 
 .mail-tabs li {
-    padding-block: .2rem;
+  padding-block: 0.2rem;
 }
 
 .mail-tabs div {
-    border: none;
-    padding-block: 0.5rem;
-    padding-inline: 0.6rem;
-    margin-inline: 1rem;
-    border-radius: var(--borderRadius);
-    background-color: var(--backgroundColor); 
+  border: none;
+  padding-block: 0.5rem;
+  padding-inline: 0.6rem;
+  margin-inline: 1rem;
+  border-radius: var(--borderRadius);
+  background-color: var(--backgroundColor);
 }
 
 .mail-tabs .active {
-    background-color: var(--buttonColor);
+  background-color: var(--buttonColor);
 }
 
 .mail-tabs div:hover {
-    background-color: var(--buttonColor);
+  background-color: var(--buttonColor);
 }
 
-.mail-boxes th, td {
-    border: 1px solid white;
-    padding: .4rem;
+.mail-boxes th,
+td {
+  border: 1px solid var(--accentColor);
+  border-radius: var(--borderRadius);
+  padding: 0.4rem;
 }
 
 .mail-toggle {
-    border-radius: var(--borderRadius);
-    background-color: var(--buttonColor);
-    padding: 0.3rem;
-    margin-left: 1rem;
+  border-radius: var(--borderRadius);
+  background-color: var(--buttonColor);
+  padding: 0.3rem;
+  margin-left: 1rem;
+  color: white;
 }
 
 /* [data-is-active='true'] */
 .mail-toggle .active {
-    background-color: var(--backgroundColor);
+  background-color: var(--backgroundColor);
+  color: white;
 }
 
 .mail-toggle button {
-    border: none;
-    border-radius: var(--borderRadius);
-    font-size: .9rem;
-    padding-block: 0.5rem;
-    padding-inline: 0.8rem;
-    background-color:var(--buttonColor);
-    cursor: pointer;
-    
+  border: none;
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  background-color: var(--buttonColor);
+  cursor: pointer;
+  color: white;
+}
+
+/*  Dashboard Classes */
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1rem solid var(--accentColor);
+  width: 100%;
+}
+
+.dashboard-nav ul {
+  list-style-type: none;
+  padding-inline: 1rem;
+}
+
+.dashboard-nav li {
+  display: inline;
+  opacity: 0.8;
+  padding-inline: 0.4rem;
+}
+
+.dashboard-nav li:hover {
+  opacity: 1;
+}
+
+.dashboard-nav select {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  color: white;
+}
+
+.dashboard-nav select:hover {
+  background-color: var(--buttonColor);
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-buttons {
+  position: absolute;
+  right: 100px;
 }
 
 /*Classes for the cards*/
 
-.home-card {
-    background-color: var(--backgroundColor);
-    border-radius: var(--borderRadius);
-    margin: 1rem;
-    padding-block: 1.2rem;
-    padding-inline: 1rem;
-    height: 120px;
-    width: 300px;
-    position: relative;
-    border: 1px solid var(--accentColor);
-    text-align: left;
-}
-
-.timestamp {
-    display: flex;
-    position: absolute;
-    top: 0.1rem;
-    right: 1rem;
-    font-size: 0.8rem;
-}
-
-.home-card-title {
-    font-size: 1rem;
-    margin-block: 0.1rem;
-    font-weight: bold;
-    line-height: 0.2rem;
-}
-
-.home-card-description {
-    font-size: 0.8rem;
-      font-weight: bold;
-}
-
-.home-card-content {
-    display: flex;
-    font-size: 0.8rem;
-    color: rgb(152, 142, 125);
-}
-
-.home-card-footer {
-    font-size: 0.8rem;
-}
-
-
 .card {
-    background-color: white;
-    color: #262226;
-    border-radius: var(--borderRadius);
-    margin: 1rem;
-    padding: 1rem;
-    height: 300px;
-    width: 300px;
-    position: relative;
+  background-color: white;
+  color: #262226;
+  border-radius: var(--borderRadius);
+  margin: 1rem;
+  padding: 1rem;
+  height: 300px;
+  width: 300px;
+  position: relative;
 }
 
 .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.1rem;
 }
 
 .card-description {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .card-content {
-    display: flex;
+  display: flex;
 }
 
 .card-footer {
-    display: flex;
-    position: absolute;
-    bottom: 1rem;
-    right: 2.5rem;
-    font-size: 0.8rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  right: 2.5rem;
+  font-size: 0.8rem;
 }
 
 .clickable-card {
-    background-color: white;
-    color: #262226;
-    border-radius: var(--borderRadius);
-    margin: 1rem;
-    padding: 1rem;
-    height: 300px;
-    width: 300px;
-    position: relative;
+  background-color: white;
+  color: #262226;
+  border-radius: var(--borderRadius);
+  margin: 1rem;
+  padding: 1rem;
+  height: 300px;
+  width: 300px;
+  position: relative;
 }
 
 .clickable-card:hover {
-    transform: translateY(-1px);
-    box-shadow: 10px 10px 10px #262226;
+  transform: translateY(-1px);
+  box-shadow: 10px 10px 10px #262226;
 }
 
 .clickable-card:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
-
-
-
