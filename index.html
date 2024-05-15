@@ -33,27 +33,91 @@
         </div>
       </section>
       <ul class="component-tab-list">
-        <li>Mail</li>
-        <li>Dashboard</li>
-        <li>Cards</li>
-        <li>Tasks</li>
-        <li>Playground</li>
-        <li>From</li>
-        <li>Music</li>
-        <li>Authentication</li>
+        <!-- <a href="#" onclick="return show('Mail','Page2');">Mail</a> -->
+        <li><a onclick="showMail()">Mail</a></li>
+        <!-- <a href="#" onclick="return show('Page2','Mail');">Dashboard</a>     -->
+        <li><a onclick="showDashboard()">Dashboard</a></li>
+        <li><a onclick="showCard()">Cards</a></li>
+        <li><a onclick="showTasks()">Tasks</a></li>
+        <li><a onclick="showPlayground()">Playground</a></li>
+        <li><a onclick="showForm()">Form</a></li>
+        <li><a onclick="showMusic()">Music</a></li>
+        <li><a onclick="showAuthentication()">Authentication</a></li>
       </ul>
+
       <section class="component-display">
-        <h1>Beautiful components go here</h1>
+        <table style="border-collapse: collapse">
+          <tr class="mail-boxes">
+            <th><input /></th>
+            <th><div style="display: inline-flex; align-items: center;">Inbox 
+              <div class="mail-toggle">
+                <button class="active">All mail</button>
+                <button>Unread</button>
+              </div></div>
+            </th>
+            <th>List of icons</th>
+            
+          </tr>
+
+          <tr>
+            <td>
+              <div class="mail-tabs">
+                <div class="active">Inbox</div>
+                <div>Drafts</div>
+                <div>Sent</div>
+                <div>Junk</div>
+                <div>Trash</div>
+                <div>Archive</div>
+              </div>
+            </td>
+
+
+            <td>
+              <section>
+              <input placeholder="Search" style="width: 85%;"/>
+                      <div class="home-card">
+                    <h3 class="home-card-title">William Smith</h3>
+                   <p class="timestamp"> 7 months ago</p>
+                    <p class="home-card-description">Meeting Tomorrow</p>
+                    <p class="home-card-content">Hi, let's have a meeting tomorrow to discuss the project. I've been reviewing the project details and have some...</p> 
+                    <p class="home-card-footer"><button class="small-basic-button">meeting</button><button class="small-basic-button">work</button><button class="small-basic-button">important</button></p>
+             </div>
+            </section>
+            </td>
+
+
+            <td></td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <div class="mail-tabs">
+                <div>Social</div>
+                <div>Updates</div>
+                <div>Forums</div>
+                <div>Shopping</div>
+                <div>Shopping</div>
+                <div>Promotions</div>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <!-- <div id="Mail">
+    Content of Mail
+  </div>
+    
+  <div id="Page2" style="display:none">
+    Content of Dashboard
+  </div> -->
       </section>
     </main>
-
     <footer>
       <p></p>
     </footer>
-    <!-- Development version -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
-    <!-- Production version -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
