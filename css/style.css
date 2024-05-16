@@ -41,8 +41,6 @@ input {
   padding: 0.5rem;
 }
 
- * *::after *::before {box-sizing: border-box;}
-
 /* Nav Classes  */
 
 .nav-links {
@@ -149,6 +147,18 @@ input {
   color: white;
 }
 
+
+
+.long-button {
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--accentColor);
+  border-radius: var(--borderRadius);
+  color: white;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  width: 25rem;
+}
+
 /* Component display classes */
 
 .page {
@@ -180,138 +190,11 @@ input {
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
   margin-inline: 2rem;
-  padding: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* mail inbox classes */
-
-.table-main {
-  border-collapse: collapse;
-  border: 1px solid var(--accentColor);
-  width: 100%;
-}
-
-.table-header {
-  display: inline-flex;
-  align-items: center;
-}
-.inbox-section {
-  display: inline-block;
-  align-items: stretch;
-}
-
-.mail-input {
-  width: 86%;
-}
-
-.home-card {
-  background-color: var(--backgroundColor);
-  border-radius: var(--borderRadius);
-  margin: 1rem;
-  padding-block: 1.2rem;
-  padding-inline: 1rem;
-  height: 120px;
-  width: 20rem;
-  position: relative;
-  border: 1px solid var(--accentColor);
-  text-align: left;
-}
-
-.timestamp {
-  display: flex;
-  position: absolute;
-  top: 0.1rem;
-  right: 1rem;
-  font-size: 0.8rem;
-}
-
-.home-card-title {
-  font-size: 1rem;
-  margin-block: 0.1rem;
-  font-weight: bold;
-  line-height: 0.2rem;
-}
-
-.home-card-description {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.home-card-content {
-  display: flex;
-  font-size: 0.8rem;
-  color: rgb(152, 142, 125);
-}
-
-.home-card-footer {
-  font-size: 0.8rem;
-}
-
-/* mail tabs classes*/
-
-.mail-tabs {
-  list-style: none;
-  text-align: left;
-}
-
-.mail-tabs li {
-  padding-block: 0.2rem;
-}
-
-.mail-tabs div {
-  border: none;
-  padding-block: 0.5rem;
-  padding-inline: 0.6rem;
-  margin-inline: 1rem;
-  border-radius: var(--borderRadius);
-  background-color: var(--backgroundColor);
-}
-
-.mail-tabs .active {
-  background-color: var(--buttonColor);
-}
-
-.mail-tabs div:hover {
-  background-color: var(--buttonColor);
-}
-
-.mail-boxes th,
-td {
-  border: 1px solid var(--accentColor);
-  border-radius: var(--borderRadius);
-  padding: 0.4rem;
-}
-
-.mail-toggle {
-  border-radius: var(--borderRadius);
-  background-color: var(--buttonColor);
-  padding: 0.2rem;
-  margin-left: 1rem;
-  color: white;
-}
-
-/* [data-is-active='true'] */
-.mail-toggle .active {
-  background-color: var(--backgroundColor);
-  color: white;
-}
-
-.mail-toggle button {
-  border: none;
-  border-radius: var(--borderRadius);
-  font-size: 0.9rem;
-  padding-block: 0.5rem;
-  padding-inline: 0.8rem;
-  background-color: var(--buttonColor);
-  cursor: pointer;
-  color: white;
-}
-
-
 
 /*Classes for the cards*/
 
