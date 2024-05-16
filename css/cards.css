@@ -1,0 +1,52 @@
+.card-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-card {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  margin: 1rem;
+  padding-block: 0.4rem;
+  padding-inline: 1.6rem;
+  height: 27rem;
+  width: 45rem;
+  position: relative;
+  border: 1px solid var(--accentColor);
+  text-align: left;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+}
+
+.divider span {
+    margin-top: 1.4rem;
+    border-top: 1px solid var(--accentColor);
+    width: 40%;
+}
+
+.divider p {
+    padding-inline: .5rem;
+    opacity: 0.6;
+    font-size: .9rem;
+}
+
+.email-input  {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-card {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  margin: 1rem;
+  padding-block: 0.4rem;
+  padding-inline: 1.6rem;
+  height: 27rem;
+  width: 45rem;
+  position: relative;
+  border: 1px solid var(--accentColor);
+  text-align: left;
+}
