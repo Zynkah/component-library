@@ -1,7 +1,5 @@
 /*  Dashboard Classes */
 
- * *::after *::before {box-sizing: border-box;}
-
 .dashboard-nav {
   display: flex;
   align-items: center;
