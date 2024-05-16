@@ -23,8 +23,8 @@
     <main>
       <section class="hero">
         <button class="basic-button">Introducing Zynkronization →</button>
-        <h1 class="hero-title">Build a component library</h1>
-        <p class="hero-description">
+        <h1>Build a component library</h1>
+        <p>
           Customizable components that you can reuse in your apps.
         </p>
         <div class="button-container">
@@ -33,10 +33,10 @@
         </div>
       </section>
       <ul class="component-tab-list">
-        <!-- <a href="#" onclick="return show('Mail','Page2');">Mail</a> -->
-        <li><a onclick="showMail()">Mail</a></li>
-        <!-- <a href="#" onclick="return show('Page2','Mail');">Dashboard</a>     -->
-        <li><a onclick="showDashboard()">Dashboard</a></li>
+        <li><a href="#mail" onclick="showPage('mail')">Mail</a></li>
+        <li>
+          <a href="#dashboard" onclick="showPage('dashboard')">Dashboard</a>
+        </li>
         <li><a onclick="showCard()">Cards</a></li>
         <li><a onclick="showTasks()">Tasks</a></li>
         <li><a onclick="showPlayground()">Playground</a></li>
@@ -46,15 +46,82 @@
       </ul>
 
       <section class="component-display">
-        <!-- <h1>BEAUTIFUL COMPONENTS HERE</h1> -->
+        <!-- MAIL TAB -->
+        <div class="page" id="mail">
+          <table class="table-main">
+            <tr class="mail-boxes">
+              <th><input /></th>
+              <th>
+                <div class="table-header">
+                  Inbox
+                  <div class="mail-toggle">
+                    <button class="active">All mail</button>
+                    <button>Unread</button>
+                  </div>
+                </div>
+              </th>
+              <th>List of icons</th>
+            </tr>
 
-        <section>
+            <tr>
+              <td>
+                <div class="mail-tabs">
+                  <div class="active">Inbox</div>
+                  <div>Drafts</div>
+                  <div>Sent</div>
+                  <div>Junk</div>
+                  <div>Trash</div>
+                  <div>Archive</div>
+                </div>
+              </td>
+
+              <td>
+                <section class="inbox-section">
+                  <input placeholder="Search" class="mail-input" />
+                  <div class="home-card">
+                    <h3 class="home-card-title">William Smith</h3>
+                    <p class="timestamp">7 months ago</p>
+                    <p class="home-card-description">Meeting Tomorrow</p>
+                    <p class="home-card-content">
+                      Hi, let's have a meeting tomorrow to discuss the project.
+                      I've been reviewing the project details and have some...
+                    </p>
+                    <p class="home-card-footer">
+                      <button class="small-basic-button">meeting</button>
+                      <button class="small-basic-button">work</button>
+                      <button class="small-basic-button">important</button>
+                    </p>
+                  </div>
+                </section>
+              </td>
+
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="mail-tabs">
+                  <div>Social</div>
+                  <div>Updates</div>
+                  <div>Forums</div>
+                  <div>Shopping</div>
+                  <div>Promotions</div>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- DASHBOARD TAB -->
+        <div class="page" id="dashboard">
           <div class="dashboard-nav">
             <select>
               <option>Alicia Koch</option>
 
-               <option>ACME Inc.</option>
-                <option>Monsters Inc.</option>
+              <option>ACME Inc.</option>
+              <option>Monsters Inc.</option>
             </select>
             <ul>
               <li>Overview</li>
@@ -63,29 +130,32 @@
               <li>Settings</li>
             </ul>
             <input placeholder="Search..." />
-            <img class="avatar" src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670" />
+            <img
+              class="avatar"
+              src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+            />
           </div>
           <div class="dashboard-header">
             <h2>Dashboard</h2>
             <div class="dashboard-buttons">
-            <button class="hover-button">Jan 20, 2023 - Feb 09, 2023</button>
-            <button class="accent-button">Download</button></div>
+              <button class="hover-button">Jan 20, 2023 - Feb 09, 2023</button>
+              <button class="accent-button">Download</button>
+            </div>
           </div>
           <div>
             <div class="mail-toggle">
-                  <button class="active">Overview/button>
-                  <button>Analytics</button>
-                </div>
+              <button class="active">Overview</button>
+              <button>Analytics</button>
+            </div>
           </div>
-        </section>
+        </div>
 
-        <!-- <div id="Mail">
-    Content of Mail
-  </div>
-    
-  <div id="Page2" style="display:none">
-    Content of Dashboard
-  </div> -->
+        <!-- CARD TAB -->
+        <!--  TASK TAB -->
+        <!-- PLAYGROUND TAB -->
+        <!-- FORM TAB -->
+        <!-- MUSIC TAB -->
+        <!-- AUTHENTICATION TAB -->
       </section>
     </main>
     <footer>
