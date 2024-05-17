@@ -41,9 +41,29 @@ input {
   padding: 0.5rem;
 }
 
+footer {
+  margin-left: 4rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+select {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  color: white;
+}
+
+select:hover {
+  background-color: var(--buttonColor);
+}
+
 /* Nav Classes  */
 
-.nav-links {
+.nav__links {
   list-style: none;
   display: inline-flex;
   gap: 1rem;
@@ -51,17 +71,17 @@ input {
 }
 
 /* @media (max-width: 767px) {
-        .nav-links {
+        .nav__links {
                 display: none;
     }
          
  } */
 
-.nav-links li {
+.nav__links li {
   opacity: 0.6;
 }
 
-.nav-links li:hover {
+.nav__links li:hover {
   opacity: 0.8;
 }
 
@@ -82,7 +102,7 @@ input {
 
 /* button classes */
 
-.basic-button {
+.btn {
   border: none;
   color: white;
   border-radius: var(--borderRadius);
@@ -93,7 +113,7 @@ input {
   cursor: pointer;
 }
 
-.accent-button {
+.btn--accent {
   border: none;
   color: var(--backgroundColor);
   border-radius: var(--borderRadius);
@@ -104,7 +124,7 @@ input {
   cursor: pointer;
 }
 
-.small-basic-button {
+.btn--sm {
   border: none;
   color: white;
   border-radius: var(--borderRadius);
@@ -118,11 +138,11 @@ input {
   margin-inline: 0.3rem;
 }
 
-.small-basic-button:first-child {
+.btn--sm:first-child {
   margin-left: 0;
 }
 
-.hover-button {
+.btn--hover {
   background-color: var(--backgroundColor);
   border: 1px solid var(--accentColor);
   border-radius: var(--borderRadius);
@@ -133,23 +153,11 @@ input {
   cursor: pointer;
 }
 
-.hover-button:hover {
+.btn--hover:hover {
   background-color: var(--buttonColor);
 }
 
-.button-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding-block: 1rem;
-  gap: 1rem;
-  color: white;
-}
-
-
-
-.long-button {
+.btn--lg {
   background-color: var(--backgroundColor);
   border: 1px solid var(--accentColor);
   border-radius: var(--borderRadius);
@@ -157,6 +165,27 @@ input {
   padding-block: var(--buttonPaddingBlock);
   padding-inline: var(--buttonPaddingInline);
   width: 25rem;
+}
+
+.btn--xl {
+  border: none;
+  color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+  gap: 1rem;
+  color: white;
 }
 
 /* Component display classes */
@@ -168,24 +197,24 @@ input {
 .page.active {
   display: block;
 }
-.component-tab-list {
+.component__tabList {
   list-style: none;
   display: inline-flex;
   gap: 1rem;
   padding: 0rem 1rem;
 }
 
-.component-tab-list li {
+.component__tabList li {
   color: #d2cbbe;
   opacity: 0.8;
 }
 
-.component-tab-list li:hover {
+.component__tabList li:hover {
   color: rgb(210, 203, 190);
   opacity: 1;
 }
 
-.component-display {
+.component__display {
   border: 1px solid var(--accentColor);
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
@@ -209,21 +238,21 @@ input {
   position: relative;
 }
 
-.card-title {
+.card__title {
   font-size: 1.5rem;
   margin-bottom: 0.1rem;
 }
 
-.card-description {
+.card__description {
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
-.card-content {
+.card__content {
   display: flex;
 }
 
-.card-footer {
+.card__footer {
   display: flex;
   position: absolute;
   bottom: 1rem;
@@ -231,7 +260,7 @@ input {
   font-size: 0.8rem;
 }
 
-.clickable-card {
+.clickable__card {
   background-color: white;
   color: #262226;
   border-radius: var(--borderRadius);
@@ -242,11 +271,11 @@ input {
   position: relative;
 }
 
-.clickable-card:hover {
+.clickable__card:hover {
   transform: translateY(-1px);
   box-shadow: 10px 10px 10px #262226;
 }
 
-.clickable-card:active {
+.clickable__card:active {
   transform: translateY(0);
 }

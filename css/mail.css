@@ -1,39 +1,80 @@
-/* mail inbox classes */
-
-.table-main {
-  border-collapse: collapse;
-  border: 1px solid var(--accentColor);
-  width: 100%;
-}
-
-.table-header {
-  display: inline-flex;
+.mail__header {
+  display: flex;
   align-items: center;
-}
-.inbox-section {
-  display: inline-block;
-  align-items: stretch;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--accentColor);
+  padding-inline: 1rem;
 }
 
-.mail-input {
-  width: 86%;
+.inbox__header{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.mail__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  padding: 0.5rem;
+}
+
+.column__content {
+  padding-inline: 1rem;
+  border-right: 1px solid var(--accentColor);
+}
+
+.mail-toggle {
+  border-radius: var(--borderRadius);
+  background-color: var(--buttonColor);
+  padding: 0.2rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.mail-toggle .active {
+  background-color: var(--backgroundColor);
+  color: white;
+}
+
+.mail-toggle button {
+  border: none;
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  background-color: var(--buttonColor);
+  cursor: pointer;
+  color: white;
+}
+
+.inbox-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-block: 1rem;
+}
+
+.inbox-section input {
+  margin-bottom: 0.8rem;
 }
 
 .home-card {
   background-color: var(--backgroundColor);
   border-radius: var(--borderRadius);
-  margin: 1rem;
-  padding-block: 1.2rem;
-  padding-inline: 1rem;
+  margin: .3rem 0;
+  padding: 1.2rem 1rem;
   height: 120px;
-  width: 20rem;
   position: relative;
   border: 1px solid var(--accentColor);
   text-align: left;
 }
 
+
 .timestamp {
-  display: flex;
   position: absolute;
   top: 0.1rem;
   right: 1rem;
@@ -53,7 +94,6 @@
 }
 
 .home-card-content {
-  display: flex;
   font-size: 0.8rem;
   color: rgb(152, 142, 125);
 }
@@ -62,22 +102,21 @@
   font-size: 0.8rem;
 }
 
-/* mail tabs classes*/
-
 .mail-tabs {
+  padding-block: 1rem;
   list-style: none;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
-.mail-tabs li {
-  padding-block: 0.2rem;
+.mail-tabs:first-child {
+  border-bottom: 1px solid var(--accentColor);
 }
 
 .mail-tabs div {
   border: none;
-  padding-block: 0.5rem;
-  padding-inline: 0.6rem;
-  margin-inline: 1rem;
+  padding: 0.5rem 0.6rem;
+  margin: 0.2rem 1rem;
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
 }
@@ -90,34 +129,3 @@
   background-color: var(--buttonColor);
 }
 
-.mail-boxes th,
-td {
-  border: 1px solid var(--accentColor);
-  border-radius: var(--borderRadius);
-  padding: 0.4rem;
-}
-
-.mail-toggle {
-  border-radius: var(--borderRadius);
-  background-color: var(--buttonColor);
-  padding: 0.2rem;
-  margin-left: 1rem;
-  color: white;
-}
-
-/* [data-is-active='true'] */
-.mail-toggle .active {
-  background-color: var(--backgroundColor);
-  color: white;
-}
-
-.mail-toggle button {
-  border: none;
-  border-radius: var(--borderRadius);
-  font-size: 0.9rem;
-  padding-block: 0.5rem;
-  padding-inline: 0.8rem;
-  background-color: var(--buttonColor);
-  cursor: pointer;
-  color: white;
-}
