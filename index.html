@@ -108,7 +108,8 @@
                   <p class="timestamp">7 months ago</p>
                   <p class="home-card-description">Re: Project Update</p>
                   <p class="home-card-content">
-                    Thank you for the project update, it looks great! I've gone through the report, and the progress is imporessive. The...
+                    Thank you for the project update, it looks great! I've gone
+                    through the report, and the progress is imporessive. The...
                   </p>
                   <p class="home-card-footer">
                     <button class="btn--sm">work</button>
@@ -120,7 +121,8 @@
                   <p class="timestamp">about 1 year ago</p>
                   <p class="home-card-description">Weekend Plans</p>
                   <p class="home-card-content">
-                    Any plans for the weekend? I was thinking of going hiking in the nearby mountains. It's been a while since we had...
+                    Any plans for the weekend? I was thinking of going hiking in
+                    the nearby mountains. It's been a while since we had...
                   </p>
                   <p class="home-card-footer">
                     <button class="btn--sm">personal</button>
@@ -206,18 +208,7 @@
               <div class="sales__grid">
                 <div>
                   <img
-                    class="sales__avatar"
-                    src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                  />
-                  <span class="sales__name ">
-                    <h3>Olivia Martin</h3>
-                    <p>olivia.martin@email.com</p>
-                  </span>
-                  <span class="sale__amount">+$1,999.00</span>
-                </div>
-                <div>
-                  <img
-                    class="sales__avatar"
+                    class="avatar"
                     src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                   />
                   <span class="sales__name">
@@ -228,7 +219,7 @@
                 </div>
                 <div>
                   <img
-                    class="sales__avatar"
+                    class="avatar"
                     src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                   />
                   <span class="sales__name">
@@ -239,7 +230,7 @@
                 </div>
                 <div>
                   <img
-                    class="sales__avatar"
+                    class="avatar"
                     src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                   />
                   <span class="sales__name">
@@ -250,7 +241,18 @@
                 </div>
                 <div>
                   <img
-                    class="sales__avatar"
+                    class="avatar"
+                    src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                  />
+                  <span class="sales__name">
+                    <h3>Olivia Martin</h3>
+                    <p>olivia.martin@email.com</p>
+                  </span>
+                  <span class="sale__amount">+$1,999.00</span>
+                </div>
+                <div>
+                  <img
+                    class="avatar"
                     src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                   />
                   <span class="sales__name">
@@ -268,8 +270,11 @@
         <div class="page" id="cards">
           <div class="card__grid">
             <div class="account__card">
-              <h3>Create an accout</h3>
-              <p>Enter your email below create your account</p>
+              <span class="title">
+                <h3>Create an account</h3>
+                <p>Enter your email below create your account</p></span
+              >
+
               <div class="btn__container">
                 <button class="btn--lg">GitHub</button
                 ><button class="btn--lg">Google</button>
@@ -290,14 +295,16 @@
             </div>
 
             <div class="payment__card">
-              <h3>Payment Method</h3>
-              <p>Add a new payment method to your account.</p>
+              <span class="title">
+                <h3>Payment Method</h3>
+                <p>Add a new payment method to your account.</p>
+              </span>
               <div class="payment__options">
                 <div class="payment__optionsCard"><h3>Card</h3></div>
                 <div class="payment__optionsCard"><h3>Paypal</h3></div>
                 <div class="payment__optionsCard"><h3>Apple</h3></div>
               </div>
-               <div class="payment__input">
+              <div class="payment__input">
                 <label>Name</label>
                 <input placeholder="First Last" />
                 <label>Card number</label>
@@ -305,31 +312,76 @@
 
                 <div class="card__info">
                   <div class="expires">
-                  <label>Expires</label>
-                  <select><option>Month</option></select>
-                </div>
-                <div class="year">
-                  <label>Year</label>
-                  <select><option>Year</option></select>
-                </div>
-                <div class="cvc">
-                  <label>CVC</label>
-                  <input />
-                </div>
+                    <label>Expires</label>
+                    <select>
+                      <option>Month</option>
+                    </select>
+                  </div>
+                  <div class="year">
+                    <label>Year</label>
+                    <select>
+                      <option>Year</option>
+                    </select>
+                  </div>
+                  <div class="cvc">
+                    <label>CVC</label>
+                    <input />
+                  </div>
                 </div>
 
                 <button class="btn--xl">Create account</button>
               </div>
             </div>
+            <div class="team-card">
+              <span class="title">
+                <h3>Team Members</h3>
+                <p>Invite your team emebers to collaborate</p></span
+              >
+              <div class="team__grid">
+                <div>
+                  <img
+                    class="avatar"
+                    src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                  />
+                  <span class="team__name">
+                    <h3>Olivia Martin</h3>
+                    <p>olivia.martin@email.com</p>
+                  </span>
+                  <span class="team__role"
+                    ><select>
+                      <option>Viewer</option>
+                      <option>Devloper</option>
+                      <option>Billing</option>
+                      <option>Owner</option>
+                    </select></span
+                  >
+                </div>
+                <div>
+                  <img
+                    class="avatar"
+                    src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                  />
+                  <span class="team__name">
+                    <h3>Olivia Martin</h3>
+                    <p>olivia.martin@email.com</p>
+                  </span>
+                  <span class="team__role"
+                    ><select>
+                      <option>Viewer</option>
+                      <option>Devloper</option>
+                      <option>Billing</option>
+                      <option>Owner</option>
+                    </select></span
+                  >
+                </div>
+              </div>
+            </div>
 
-            
-              <!-- <div class="card-card">
+            <!-- <div class="card-card">
              
-              <h3>Overview</h3>
-            </div>
-            <div class="card-card">
-              <h3>Overview</h3>
-            </div>
+            
+           
+           
             <div class="card-card">
               <h3>Overview</h3>
             </div>
@@ -345,8 +397,8 @@
             <div class="card-card">
               <h3>Overview</h3>
             </div> -->
-            </div>
           </div>
+        </div>
         <!-- </div> -->
 
         <!--  TASK TAB -->

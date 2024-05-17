@@ -56,12 +56,14 @@
   text-align: left;
 }
 
-.payment__card h3 {
-  margin-block: 0.4rem;
+.title h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
 }
 
-.payment__card p {
-  margin-block: 0.4rem;
+.title p {
+  margin-block: 0.1rem;
   opacity: 0.6;
 }
 
@@ -128,7 +130,7 @@
 }
 
 .cvc label {
-  margin-top:1rem;
+  margin-top: 1rem;
   margin-bottom: 0.4rem;
 }
 
@@ -142,6 +144,53 @@
 .cvc {
   display: flex;
   flex-direction: column;
+}
+
+.team-card {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  margin: 1rem;
+  padding-block: 0.4rem;
+  padding-inline: 1.6rem;
+  height: 15rem;
+  width: 45rem;
+  position: relative;
+  border: 1px solid var(--accentColor);
+  text-align: left;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.team__grid div {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.team__name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-block: 0.1rem;
+  line-height: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.team__name h3 {
+  margin-block: 0.2rem;
+}
+
+.team__name p {
+  margin-block: 0.2rem;
+}
+
+.team__role {
+  margin-left: auto;
+  font-size: 1.2rem;
 }
 
 .card-card {

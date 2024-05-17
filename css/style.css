@@ -61,6 +61,12 @@ select:hover {
   background-color: var(--buttonColor);
 }
 
+.avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
 /* Nav Classes  */
 
 .nav__links {

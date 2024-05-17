@@ -20,11 +20,8 @@
   opacity: 1;
 }
 
-.avatar {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin-left: 1rem;
+.dashboard__nav input {
+  margin-inline: 1rem;
 }
 
 .dashboard__header {
@@ -62,28 +59,22 @@
 }
 
 .sales__grid {
-    display: grid;
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .sales__grid div {
-    display: flex;
-    align-items: center;
-}
-
-.sales__avatar {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .sales__name {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-block: .1rem;
-    line-height: 0.9rem;
-    font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-block: 0.1rem;
+  line-height: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .sale__amount {
@@ -92,11 +83,11 @@
 }
 
 .detail__card h3 {
-    margin-bottom: 0.1rem;
+  margin-bottom: 0.1rem;
 }
 .detail__card p {
-    opacity: 0.6;
-    margin-top: 0.4rem;
+  opacity: 0.6;
+  margin-top: 0.4rem;
 }
 
 .dashboard__card {
