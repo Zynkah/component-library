@@ -7,12 +7,20 @@
   --buttonPaddingBlock: 0.6rem;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  justify-content: center;
+  align-items: center;
   background-color: var(--backgroundColor);
   color: white;
   min-height: 100vh;
   margin: 0;
 }
+
 
 nav {
   width: 100%;
@@ -59,6 +67,13 @@ select {
 
 select:hover {
   background-color: var(--buttonColor);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .avatar {
@@ -229,6 +244,7 @@ select:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: fit-content;
 }
 
 /*Classes for the cards*/

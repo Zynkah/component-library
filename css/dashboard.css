@@ -31,8 +31,7 @@
 }
 
 .dashboard__buttons {
-  position: absolute;
-  right: 90px;
+  margin-left: auto;
 }
 
 .dashboard__tabs {

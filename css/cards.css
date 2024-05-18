@@ -69,7 +69,6 @@
 
 .payment__options {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
   padding-block: 1rem;
@@ -90,6 +89,7 @@
 
 .payment__optionsCard h3 {
   text-align: center;
+  margin-top: 0.8rem;
 }
 
 .payment__optionsCard:first-child {
