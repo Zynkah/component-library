@@ -1,0 +1,90 @@
+.form__layout {
+  text-align: left;
+  margin-block: 2.3rem;
+  margin-inline: 2rem;
+}
+
+.form__display {
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+}
+.form__tabs {
+  border-top: 1px solid var(--accentColor);
+  margin-top: 2rem;
+}
+
+.form__tabs div {
+  display: inline-flex;
+  margin-top: 2rem;
+  padding: 0.8rem;
+}
+
+.form__tabs div:first-child {
+  padding-left: 0;
+}
+
+.form__tabs div:hover {
+  text-decoration: underline;
+}
+
+/* fix */
+.form__tabs div:active {
+  background-color: var(--buttonColor);
+  border: none;
+  color: white;
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  cursor: pointer;
+}
+
+.form__details {
+  border-top: 1px solid var(--accentColor);
+  margin-block: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.form__details label {
+    margin-top: 1.5rem;
+}
+
+.bio {
+    padding-bottom: 2rem;
+}
+
+.datePicker {
+    max-width: 40%;
+    color-scheme: dark;
+}
+
+.language {
+    max-width: 30%;
+}
+
+.mode__container {
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.light__mode__card {
+    background-color: antiquewhite;
+    width: 12rem;
+    height: 8rem;
+    border-radius: var(--borderRadius);
+}
+
+.light__mode__card:hover {
+    border: 2px solid var(--accentColor);
+}
+
+.dark__mode__card {
+    background-color: var(--accentColor);
+    width: 12rem;
+    height: 8rem;
+    border-radius: var(--borderRadius);
+}
