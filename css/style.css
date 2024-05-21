@@ -1,5 +1,6 @@
 :root {
   --borderRadius: 0.4rem;
+  --border: 1px solid var(--accentColor);
   --backgroundColor: #0a0a0a;
   --accentColor: #28282b;
   --buttonColor: #202324;
@@ -7,7 +8,28 @@
   --buttonPaddingBlock: 0.6rem;
 }
 
+:root.light {
+  --dark-mode: 0;
+  color-scheme: light;
+}
+
+:root.dark {
+  --dark-mode: 1;
+  color-scheme: dark;
+}
+
+/* for debugging */
+/* * { outline: 1px solid #ff0000; } */
+
+html,
 body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
   background-color: var(--backgroundColor);
   color: white;
   min-height: 100vh;
@@ -35,15 +57,74 @@ a {
 }
 
 input {
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
   padding: 0.5rem;
 }
 
+footer {
+  margin-left: 4rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+select {
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  color: white;
+}
+
+select:hover {
+  background-color: var(--buttonColor);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.title h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.title h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.title h5 {
+    margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.title p {
+  margin-block: 0.1rem;
+  opacity: 0.6;
+}
+
+.description {
+  font-size: 0.9rem;
+}
+
 /* Nav Classes  */
 
-.nav-links {
+.nav__links {
   list-style: none;
   display: inline-flex;
   gap: 1rem;
@@ -51,17 +132,17 @@ input {
 }
 
 /* @media (max-width: 767px) {
-        .nav-links {
+        .nav__links {
                 display: none;
     }
          
  } */
 
-.nav-links li {
+.nav__links li {
   opacity: 0.6;
 }
 
-.nav-links li:hover {
+.nav__links li:hover {
   opacity: 0.8;
 }
 
@@ -82,7 +163,7 @@ input {
 
 /* button classes */
 
-.basic-button {
+.btn {
   border: none;
   color: white;
   border-radius: var(--borderRadius);
@@ -93,7 +174,7 @@ input {
   cursor: pointer;
 }
 
-.accent-button {
+.btn--accent {
   border: none;
   color: var(--backgroundColor);
   border-radius: var(--borderRadius);
@@ -104,7 +185,7 @@ input {
   cursor: pointer;
 }
 
-.small-basic-button {
+.btn--sm {
   border: none;
   color: white;
   border-radius: var(--borderRadius);
@@ -118,13 +199,13 @@ input {
   margin-inline: 0.3rem;
 }
 
-.small-basic-button:first-child {
+.btn--sm:first-child {
   margin-left: 0;
 }
 
-.hover-button {
+.btn--hover {
   background-color: var(--backgroundColor);
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   border-radius: var(--borderRadius);
   color: white;
   font-size: 0.9rem;
@@ -133,11 +214,32 @@ input {
   cursor: pointer;
 }
 
-.hover-button:hover {
+.btn--hover:hover {
   background-color: var(--buttonColor);
 }
 
-.button-container {
+.btn--lg {
+  background-color: var(--backgroundColor);
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  color: white;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  width: 25rem;
+}
+
+.btn--xl {
+  border: none;
+  color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  font-size: 0.9rem;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn__container {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -145,18 +247,6 @@ input {
   padding-block: 1rem;
   gap: 1rem;
   color: white;
-}
-
-
-
-.long-button {
-  background-color: var(--backgroundColor);
-  border: 1px solid var(--accentColor);
-  border-radius: var(--borderRadius);
-  color: white;
-  padding-block: var(--buttonPaddingBlock);
-  padding-inline: var(--buttonPaddingInline);
-  width: 25rem;
 }
 
 /* Component display classes */
@@ -168,25 +258,34 @@ input {
 .page.active {
   display: block;
 }
-.component-tab-list {
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.component__tabList {
   list-style: none;
   display: inline-flex;
   gap: 1rem;
   padding: 0rem 1rem;
 }
 
-.component-tab-list li {
+.component__tabList li {
   color: #d2cbbe;
   opacity: 0.8;
 }
 
-.component-tab-list li:hover {
+.component__tabList li:hover {
   color: rgb(210, 203, 190);
   opacity: 1;
 }
 
-.component-display {
-  border: 1px solid var(--accentColor);
+.component__display {
+  border: var(--border);
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
   margin-inline: 2rem;
@@ -194,6 +293,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: fit-content;
 }
 
 /*Classes for the cards*/
@@ -209,21 +309,21 @@ input {
   position: relative;
 }
 
-.card-title {
+.card__title {
   font-size: 1.5rem;
   margin-bottom: 0.1rem;
 }
 
-.card-description {
+.card__description {
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
-.card-content {
+.card__content {
   display: flex;
 }
 
-.card-footer {
+.card__footer {
   display: flex;
   position: absolute;
   bottom: 1rem;
@@ -231,7 +331,7 @@ input {
   font-size: 0.8rem;
 }
 
-.clickable-card {
+.clickable__card {
   background-color: white;
   color: #262226;
   border-radius: var(--borderRadius);
@@ -242,11 +342,11 @@ input {
   position: relative;
 }
 
-.clickable-card:hover {
+.clickable__card:hover {
   transform: translateY(-1px);
   box-shadow: 10px 10px 10px #262226;
 }
 
-.clickable-card:active {
+.clickable__card:active {
   transform: translateY(0);
 }

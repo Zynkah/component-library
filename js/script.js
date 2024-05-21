@@ -9,3 +9,16 @@ function showPage(pageId) {
   const selectedPage = document.getElementById(pageId);
   selectedPage.classList.add("active");
 }
+
+
+
+
+function showFormTab(tabId) {
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach((tab) => {
+    tab.classList.remove("active");
+  });
+
+  const selectedTab = document.getElementById(tabId);
+  selectedTab.classList.add("active");
+}
