@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/dashboard.css" />
     <link rel="stylesheet" href="./css/cards.css" />
     <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/notification.css" />
   </head>
   <body>
     <header>
@@ -117,7 +118,7 @@
                     <p class="home-card-description">Re: Project Update</p>
                     <p class="home-card-content">
                       Thank you for the project update, it looks great! I've
-                      gone through the report, and the progress is imporessive.
+                      gone through the report, and the progress is impressive.
                       The...
                     </p>
                     <p class="home-card-footer">
@@ -344,7 +345,7 @@
               <div class="team-card">
                 <span class="title">
                   <h3>Team Members</h3>
-                  <p>Invite your team emebers to collaborate</p></span
+                  <p>Invite your team remebers to collaborate</p></span
                 >
                 <div class="team__grid">
                   <div>
@@ -464,7 +465,7 @@
                     <input placeholder="zynkcl" />
                     <span class="description"
                       ><p>
-                        This is your public diplay name. It can be your real
+                        This is your public display name. It can be your real
                         name or a pseudonym.You can only change this once every
                         30 days.
                       </p></span
@@ -562,7 +563,7 @@
                 </div>
                 <div class="tab" id="appearance">
                   <div class="title">
-                    <h4>Setting</h4>
+                    <h4>Appearance</h4>
                     <p>
                       Customize the appearance of the app. Automatically switch
                       between day and night themes.
@@ -583,14 +584,186 @@
                       Select the theme for the dashboard.
                     </p>
                     <div class="mode__container">
-                      <div class="light__mode__card"></div>
-                      <div class="dark__mode__card"></div>
+                      <div class="card__container">
+                        <div class="light__mode__card">
+                          <div class="light__mode__column">
+                            <div class="first__row">
+                              <div class="sm--row">
+                                <div class="lower__rows">
+                                  <div class="circle"></div>
+                                  <div class="sm--row"></div>
+                                </div>
+                              </div>
+                              <div class="md--row"></div>
+                            </div>
+                          </div>
+                          <div class="light__mode__column">
+                            <div class="lower__rows">
+                              <div class="circle"></div>
+                              <div class="md--row"></div>
+                            </div>
+                          </div>
+                          <div class="light__mode__column">
+                            <div class="lower__rows">
+                              <div class="circle"></div>
+                              <div class="md--row"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <p
+                          class="description"
+                          style="text-align: center; margin-top: 6px"
+                        >
+                          Light
+                        </p>
+                      </div>
+                      <div class="card__container">
+                        <div class="dark__mode__card">
+                          <div class="dark__mode__column">
+                            <div class="first__row">
+                              <div class="sm--row--dark"></div>
+                              <div class="md--row--dark"></div>
+                            </div>
+                          </div>
+                          <div class="dark__mode__column">
+                            <div class="lower__rows">
+                              <div class="circle--dark"></div>
+                              <div class="md--row--dark"></div>
+                            </div>
+                          </div>
+                          <div class="dark__mode__column">
+                            <div class="lower__rows">
+                              <div class="circle--dark"></div>
+                              <div class="md--row--dark"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <p
+                          class="description"
+                          style="text-align: center; margin-top: 6px"
+                        >
+                          Dark
+                        </p>
+                      </div>
                     </div>
+                    <button
+                      class="btn--accent"
+                      style="width: fit-content; margin-top: 1.2rem"
+                    >
+                      Update preferences
+                    </button>
                   </div>
                 </div>
-                <div class="tab" id="notifications"></div>
-                <div class="tab" id="display"></div>
               </div>
+              <div class="tab" id="notifications">
+                <span class="title"
+                  ><h4>Notifications</h4>
+                  <p>Configure how you receive notifications.</p></span
+                >
+                <div class="form__details">
+                  <div class="radio__section">
+                    <div class="title">
+                      <h5>Notify me about...</h5>
+                      <div class="radio__container">
+                        <input
+                          type="radio"
+                          id="newMessage"
+                          name="notifications"
+                          value="newMessage"
+                        />
+                        <label>All new messages</label><br />
+                        <input
+                          type="radio"
+                          id="DM"
+                          name="notifications"
+                          value="DM"
+                        /><label> Direct messages and mentions</label><br />
+                        <input
+                          type="radio"
+                          id="nothing"
+                          name="notifications"
+                          value="nothing"
+                        /><label> Nothing</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="email__notification">
+                    <div class="title"><h3>Email Notifications</h3></div>
+
+                    <div class="toggle__cards__container">
+                      <div class="toggle__cards">
+                        <span class="title">
+                          <h5>Communication emails</h5>
+                          <p class="description">
+                            Receive emails about your account activity.
+                          </p>
+                        </span>
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+
+                      <div class="toggle__cards">
+                        <span class="title">
+                          <h5>Marketing emails</h5>
+                          <p class="description">
+                            Receive emails about new products, features, and
+                            more.
+                          </p>
+                        </span>
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+
+                      <div class="toggle__cards">
+                        <span class="title">
+                          <h5>Social emails</h5>
+                          <p class="description">
+                            Receive emails for friend requests, follows, and
+                            more.
+                          </p>
+                        </span>
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+
+                      <div class="toggle__cards">
+                        <span class="title">
+                          <h5>Security emails</h5>
+                          <p class="description">
+                            Receive emails about your account activity and
+                            security.
+                          </p>
+                        </span>
+                        <label class="switch">
+                          <input type="checkbox" checked disabled />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="check__box__section">
+                    <input type="checkbox" />
+                    <span class="title"><h5>Use different settings for my mobile device</h5><p class="description">You can manage your mobile notifications in the mobile setting page.</p></span>
+
+                  </div>
+
+                  <button
+                    class="btn--accent"
+                    style="width: fit-content; margin-top: 1.2rem"
+                  >
+                    Update notifications
+                  </button>
+                </div>
+              </div>
+              <div class="tab" id="display"></div>
             </div>
           </div>
 

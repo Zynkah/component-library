@@ -1,5 +1,6 @@
 :root {
   --borderRadius: 0.4rem;
+  --border: 1px solid var(--accentColor);
   --backgroundColor: #0a0a0a;
   --accentColor: #28282b;
   --buttonColor: #202324;
@@ -56,7 +57,7 @@ a {
 }
 
 input {
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
   padding: 0.5rem;
@@ -104,6 +105,12 @@ select:hover {
   margin-top: 1rem;
   margin-bottom: 0.3rem;
   font-size: 1.2rem;
+}
+
+.title h5 {
+    margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
 }
 
 .title p {
@@ -198,7 +205,7 @@ select:hover {
 
 .btn--hover {
   background-color: var(--backgroundColor);
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   border-radius: var(--borderRadius);
   color: white;
   font-size: 0.9rem;
@@ -213,7 +220,7 @@ select:hover {
 
 .btn--lg {
   background-color: var(--backgroundColor);
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   border-radius: var(--borderRadius);
   color: white;
   padding-block: var(--buttonPaddingBlock);
@@ -278,7 +285,7 @@ select:hover {
 }
 
 .component__display {
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   border-radius: var(--borderRadius);
   background-color: var(--backgroundColor);
   margin-inline: 2rem;

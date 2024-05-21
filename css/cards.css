@@ -12,7 +12,7 @@
   height: 27rem;
   width: 45rem;
   position: relative;
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   text-align: left;
 }
 
@@ -23,7 +23,7 @@
 
 .divider span {
   margin-top: 1.4rem;
-  border-top: 1px solid var(--accentColor);
+  border: var(--border);
   width: 40%;
 }
 
@@ -52,7 +52,7 @@
   height: 33rem;
   width: 45rem;
   position: relative;
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   text-align: left;
 }
 
@@ -144,7 +144,7 @@
   height: 15rem;
   width: 45rem;
   position: relative;
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   text-align: left;
 }
 
@@ -191,6 +191,6 @@
   height: 27rem;
   width: 45rem;
   position: relative;
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   text-align: left;
 }

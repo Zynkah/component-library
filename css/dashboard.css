@@ -53,7 +53,7 @@
   height: 27rem;
   width: 45rem;
   position: relative;
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   text-align: left;
 }
 
@@ -98,7 +98,7 @@
   height: 60px;
   width: 20rem;
   position: relative;
-  border: 1px solid var(--accentColor);
+  border: var(--border);
   text-align: left;
 }
 
