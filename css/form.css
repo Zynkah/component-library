@@ -272,3 +272,21 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* radio classes */
+
+.radio__container {
+display: flex;
+flex-direction: column;
+
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: var(--backgroundColor);
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    background-color: var(--accentColor);
+}
