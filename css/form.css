@@ -279,13 +279,6 @@ input:checked + .slider:before {
     display: flex;
 }
 
-/* .radio__container {
-  display: flex;
-  flex-direction: column;
-  gap: .1rem;
-} */
-
-
 .label_class {
     display: flex;
     gap: 0.5rem;
@@ -308,4 +301,32 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
     background-color:white;
+}
+
+.check__box__section {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    aspect-ratio: 1/1;
+}
+
+input[type="checkbox"]:checked {
+    background-color: white;
+}
+/* add checkmark svg later */
+
+
+.check__box__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
