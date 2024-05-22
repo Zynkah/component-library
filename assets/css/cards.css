@@ -1,0 +1,218 @@
+.card__grid {
+	display: grid;
+	gap: 1.5rem;
+	padding: 2rem;
+}
+
+.account__card > .title > p,
+.payment__card > .title > p,
+.team-card > .title > p {
+	color: #ffffff80;
+	font-size: 0.875rem;
+}
+
+.expires select,
+.year select,
+.team__grid select {
+	border: var(--border);
+}
+
+@media (min-width: 1024px) {
+	.card__grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+/*==================================================
+	Card 1
+==================================================*/
+.account__card {
+	background-color: var(--backgroundColor);
+	border: var(--border);
+	border-radius: var(--borderRadius);
+	padding-block: 2rem;
+	padding-inline: 1.5rem;
+}
+
+/*=========================
+	Socials buttons
+=========================*/
+.btn--lg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn--lg svg {
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.5rem;
+}
+
+/*=========================
+	Divider
+=========================*/
+.divider {
+	display: grid;
+	place-items: center;
+	position: relative;
+	width: 100%;
+}
+
+.divider::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	border-bottom: var(--border);
+}
+
+.divider > p {
+	background-color: var(--backgroundColor);
+	color: #ffffff80;
+	font-size: 0.75rem;
+	text-align: center;
+	padding-inline: 0.5rem;
+	z-index: 1;
+}
+
+/*=========================
+	Email input
+=========================*/
+.email__input {
+	display: grid;
+	gap: 1rem;
+	margin-block: 1rem;
+}
+.email__input > div {
+	display: grid;
+}
+
+/*==================================================
+	Card 2
+==================================================*/
+.payment__card {
+	background-color: var(--backgroundColor);
+	border-radius: var(--borderRadius);
+	padding-block: 2rem;
+	padding-inline: 1.5rem;
+	border: var(--border);
+	text-align: left;
+}
+
+/*=========================
+	Payment options
+=========================*/
+.payment__options {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 1rem;
+	gap: 1rem;
+	color: white;
+}
+
+.payment__optionsCard {
+	display: grid;
+	place-items: center;
+	background-color: var(--backgroundColor);
+	color: white;
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid var(--accentColor);
+	border-radius: var(--borderRadius);
+}
+
+.payment__optionsCard:first-child {
+	border: 1px solid white;
+}
+
+.payment__optionsCard:hover {
+	background-color: var(--accentColor);
+}
+
+.payment__optionsCard svg {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-bottom: 0.75rem;
+}
+
+/*=========================
+	Input
+=========================*/
+.payment__input {
+	display: grid;
+	gap: 1rem;
+}
+
+.payment__input > div {
+	display: grid;
+}
+
+.card__info {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+	color: white;
+}
+
+.expires,
+.year,
+.cvc {
+	display: grid;
+}
+.cvc input {
+	width: 100%;
+}
+
+/*==================================================
+	Card 3
+==================================================*/
+.team-card {
+	display: grid;
+	place-content: start;
+	gap: 1rem;
+	background-color: var(--backgroundColor);
+	border: var(--border);
+	border-radius: var(--borderRadius);
+	padding-block: 2rem;
+	padding-inline: 1.5rem;
+}
+
+.team__grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.team__grid div {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.team__name {
+	flex-grow: 1;
+	line-height: 0.9rem;
+	font-size: 0.8rem;
+}
+
+.team__role {
+	font-size: 1.2rem;
+}
+
+/*==================================================
+	Card 4
+==================================================*/
+/*==================================================
+	Card 5
+==================================================*/
+/*==================================================
+	Card 6
+==================================================*/
+/*==================================================
+	Card 7
+==================================================*/
+/*==================================================
+	Card 8
+==================================================*/
+/*==================================================
+	Card 9
+==================================================*/

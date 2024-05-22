@@ -1,786 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZynkCL</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mail.css" />
-    <link rel="stylesheet" href="./css/dashboard.css" />
-    <link rel="stylesheet" href="./css/cards.css" />
-    <link rel="stylesheet" href="./css/form.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html">zynkcl/ui</a>
-        <ul class="nav__links">
-          <li><a href="./docs.html">Docs</a></li>
-          <li><a href="./index.html">Components</a></li>
-          <li><a href="./index.html">Themes</a></li>
-          <li><a href="./index.html">Examples</a></li>
-        </ul>
-        <input type="search" placeholder="Search..." />
-      </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ZynkCL</title>
+		<link rel="stylesheet" href="./assets/css/cards.css" />
+		<link rel="stylesheet" href="./assets/css/dashboard.css" />
+		<link rel="stylesheet" href="./assets/css/form.css" />
+		<link rel="stylesheet" href="./assets/css/mail.css" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="./">zynkcl/ui</a>
+				<ul class="nav__links">
+					<li><a href="./docs">Docs</a></li>
+					<li><a href="./">Components</a></li>
+					<li><a href="./">Themes</a></li>
+					<li><a href="./">Examples</a></li>
+				</ul>
+				<input type="search" placeholder="Search..." />
+			</nav>
+			<hr />
+		</header>
 
-    <main>
-      <section class="hero">
-        <button class="btn">Introducing Zynkronization →</button>
-        <h1>Build a component library</h1>
-        <p>Customizable components that you can reuse in your apps.</p>
-        <div class="btn__container">
-          <button class="btn--accent">Get Started</button>
-          <button class="btn--hover">GitHub</button>
-        </div>
-      </section>
-      <ul class="component__tabList">
-        <li><a href="#mail" onclick="showPage('mail')">Mail</a></li>
-        <li>
-          <a href="#dashboard" onclick="showPage('dashboard')">Dashboard</a>
-        </li>
-        <li><a href="#cards" onclick="showPage('cards')">Cards</a></li>
-        <li><a href="#tasks" onclick="showPage('tasks')">Tasks</a></li>
-        <li>
-          <a href="#playground" onclick="showPage('playground')">Playground</a>
-        </li>
-        <li><a href="#form" onclick="showPage('form')">Form</a></li>
-        <li><a href="#music" onclick="showPage('music')">Music</a></li>
-        <li>
-          <a href="#authentication" onclick="showPage('authentication')"
-            >Authentication</a
-          >
-        </li>
-      </ul>
+		<main>
+			<section class="hero">
+				<button class="btn">Introducing Zynkronization →</button>
+				<h1>Build a component library</h1>
+				<p>Customizable components that you can reuse in your apps.</p>
+				<div class="btn__container">
+					<button class="btn--accent">Get Started</button>
+					<button class="btn--hover">GitHub</button>
+				</div>
+			</section>
+			<ul class="component__tabList">
+				<li>
+					<a class="active" href="./#mail">Mail</a>
+				</li>
+				<li>
+					<a href="./#dashboard">Dashboard</a>
+				</li>
+				<li>
+					<a href="./#cards">Cards</a>
+				</li>
+				<li>
+					<a href="./#tasks">Tasks</a>
+				</li>
+				<li>
+					<a href="./#playground">Playground</a>
+				</li>
+				<li>
+					<a href="./#form">Form</a>
+				</li>
+				<li>
+					<a href="./#music">Music</a>
+				</li>
+				<li>
+					<a href="./#authentication">Authentication</a>
+				</li>
+			</ul>
 
-      <div class="container">
-        <div class="component__display">
-          <!-- MAIL TAB -->
-          <div class="page" id="mail">
-            <div class="mail__header">
-              <div class="column">
-                <select>
-                  <option>Alicia Koch</option>
-                  <option>ACME Inc.</option>
-                  <option>Monsters Inc.</option>
-                </select>
-              </div>
-              <div class="column">
-                <div class="inbox__header">
-                  Inbox
-                  <div class="mail-toggle">
-                    <button class="active">All mail</button>
-                    <button>Unread</button>
-                  </div>
-                </div>
-              </div>
-              <div class="column">List of icons</div>
-            </div>
-            <div class="mail__content">
-              <div class="column__content">
-                <div class="mail-tabs">
-                  <div class="active">Inbox</div>
-                  <div>Drafts</div>
-                  <div>Sent</div>
-                  <div>Junk</div>
-                  <div>Trash</div>
-                  <div>Archive</div>
-                </div>
-                <div class="mail-tabs">
-                  <div>Social</div>
-                  <div>Updates</div>
-                  <div>Forums</div>
-                  <div>Shopping</div>
-                  <div>Promotions</div>
-                </div>
-              </div>
-              <div class="column__content">
-                <section class="inbox-section">
-                  <input placeholder="Search" />
-                  <div class="home-card">
-                    <h3 class="home-card-title">William Smith</h3>
-                    <p class="timestamp">7 months ago</p>
-                    <p class="home-card-description">Meeting Tomorrow</p>
-                    <p class="home-card-content">
-                      Hi, let's have a meeting tomorrow to discuss the project.
-                      I've been reviewing the project details and have some...
-                    </p>
-                    <p class="home-card-footer">
-                      <button class="btn--sm">meeting</button>
-                      <button class="btn--sm">work</button>
-                      <button class="btn--sm">important</button>
-                    </p>
-                  </div>
-                  <div class="home-card">
-                    <h3 class="home-card-title">Alice Smith</h3>
-                    <p class="timestamp">7 months ago</p>
-                    <p class="home-card-description">Re: Project Update</p>
-                    <p class="home-card-content">
-                      Thank you for the project update, it looks great! I've
-                      gone through the report, and the progress is impressive.
-                      The...
-                    </p>
-                    <p class="home-card-footer">
-                      <button class="btn--sm">work</button>
-                      <button class="btn--sm">important</button>
-                    </p>
-                  </div>
-                  <div class="home-card">
-                    <h3 class="home-card-title">Bob Johnson</h3>
-                    <p class="timestamp">about 1 year ago</p>
-                    <p class="home-card-description">Weekend Plans</p>
-                    <p class="home-card-content">
-                      Any plans for the weekend? I was thinking of going hiking
-                      in the nearby mountains. It's been a while since we had...
-                    </p>
-                    <p class="home-card-footer">
-                      <button class="btn--sm">personal</button>
-                    </p>
-                  </div>
-                </section>
-              </div>
-              <div class="column__content">
-                <div class="home-card">
-                  <h3>William Smith</h3>
-                </div>
-              </div>
-            </div>
-          </div>
+			<div class="container">
+				<div class="component__display">
+					<!--==================================================
+						MAIL TAB
+					==================================================-->
+					<div class="page active" id="mail">
+						<div class="mail">
+							<!--column 1-->
+							<div class="mail__content">
+								<div class="mail__header">
+									<select>
+										<option>Alicia Koch</option>
+										<option>ACME Inc.</option>
+										<option>Monsters Inc.</option>
+									</select>
+								</div>
+								<nav class="mail-tabs">
+									<button class="active">Inbox</button>
+									<button>Drafts</button>
+									<button>Sent</button>
+									<button>Junk</button>
+									<button>Trash</button>
+									<button>Archive</button>
+								</nav>
+								<hr />
+								<nav class="mail-tabs">
+									<button>Social</button>
+									<button>Updates</button>
+									<button>Forums</button>
+									<button>Shopping</button>
+									<button>Promotions</button>
+								</nav>
+							</div>
+							<!--column 2-->
+							<div class="mail__content">
+								<div class="mail__header">
+									<h2>Inbox</h2>
+									<div class="mail-toggle">
+										<button class="active">All mail</button>
+										<button>Unread</button>
+									</div>
+								</div>
+								<section>
+									<input placeholder="Search" />
+									<div class="home-card active">
+										<h3 class="home-card-title">William Smith</h3>
+										<p class="timestamp">7 months ago</p>
+										<p class="home-card-description">Meeting Tomorrow</p>
+										<p class="home-card-content">
+											Hi, let's have a meeting tomorrow to discuss the
+											project. I've been reviewing the project details and
+											have some...
+										</p>
+										<p class="home-card-footer">
+											<button class="btn--sm">meeting</button>
+											<button class="btn--sm">work</button>
+											<button class="btn--sm">important</button>
+										</p>
+									</div>
+									<div class="home-card">
+										<h3 class="home-card-title">Alice Smith</h3>
+										<p class="timestamp">7 months ago</p>
+										<p class="home-card-description">Re: Project Update</p>
+										<p class="home-card-content">
+											Thank you for the project update, it looks great! I've
+											gone through the report, and the progress is impressive.
+											The...
+										</p>
+										<p class="home-card-footer">
+											<button class="btn--sm">work</button>
+											<button class="btn--sm">important</button>
+										</p>
+									</div>
+									<div class="home-card">
+										<h3 class="home-card-title">Bob Johnson</h3>
+										<p class="timestamp">about 1 year ago</p>
+										<p class="home-card-description">Weekend Plans</p>
+										<p class="home-card-content">
+											Any plans for the weekend? I was thinking of going
+											hiking in the nearby mountains. It's been a while since
+											we had...
+										</p>
+										<p class="home-card-footer">
+											<button class="btn--sm">personal</button>
+										</p>
+									</div>
+								</section>
+							</div>
+							<!--column 3-->
+							<div class="mail__content">
+								<div class="mail__header">List of icons</div>
+								<section>
+									<h3>William Smith</h3>
+								</section>
+							</div>
+						</div>
+					</div>
+					<!--==================================================
+						DASHBOARD TAB
+					==================================================-->
+					<div class="page" id="dashboard">
+						<div class="dashboard__nav">
+							<div>
+								<select>
+									<option>Alicia Koch</option>
+									<option>ACME Inc.</option>
+									<option>Monsters Inc.</option>
+								</select>
+								<ul>
+									<li>Overview</li>
+									<li>Customers</li>
+									<li>Products</li>
+									<li>Settings</li>
+								</ul>
+							</div>
+							<div>
+								<input placeholder="Search..." />
+								<img
+									class="avatar"
+									src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+								/>
+							</div>
+						</div>
+						<hr />
+						<div class="dashboard">
+							<div class="dashboard__header">
+								<h2>Dashboard</h2>
+								<div class="dashboard__buttons">
+									<button class="btn--hover">Jan 20, 2023 - Feb 09, 2023</button>
+									<button class="btn--accent">Download</button>
+								</div>
+							</div>
+							<div class="mail-toggle">
+								<button class="active">Overview</button>
+								<button>Analytics</button>
+								<button>Reports</button>
+								<button>Notifications</button>
+							</div>
+							<div class="dashboard__small__grid">
+								<div class="dashboard__card">
+									<h3>Total Revenue</h3>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+									>
+										<path
+											d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+										/>
+									</svg>
+									<p class="description">$45,231.89</p>
+									<p class="content">+20.1% from last month</p>
+								</div>
+								<div class="dashboard__card">
+									<h3>Total Revenue</h3>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+									>
+										<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+										<circle cx="9" cy="7" r="4" />
+										<path
+											d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+										/>
+									</svg>
+									<p class="description">$45,231.89</p>
+									<p class="content">+20.1% from last month</p>
+								</div>
+								<div class="dashboard__card">
+									<h3>Total Revenue</h3>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+									>
+										<rect width="20" height="14" x="2" y="5" rx="2" />
+										<path d="M2 10h20" />
+									</svg>
+									<p class="description">$45,231.89</p>
+									<p class="content">+20.1% from last month</p>
+								</div>
+								<div class="dashboard__card">
+									<h3>Total Revenue</h3>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+									>
+										<path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+									</svg>
+									<p class="description">$45,231.89</p>
+									<p class="content">+20.1% from last month</p>
+								</div>
+							</div>
+							<div class="dashboard__big__grid">
+								<div class="dashboard__card overview">
+									<h3>Overview</h3>
+								</div>
+								<div class="dashboard__card sales">
+									<h3>Recent Sales</h3>
+									<p>You made 265 sales this month.</p>
+									<div>
+										<div>
+											<img
+												class="avatar"
+												src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+											/>
+											<span class="sales__name">
+												<h3>Olivia Martin</h3>
+												<p>olivia.martin@email.com</p>
+											</span>
+											<span class="sale__amount">+$1,999.00</span>
+										</div>
+										<div>
+											<img
+												class="avatar"
+												src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+											/>
+											<span class="sales__name">
+												<h3>Olivia Martin</h3>
+												<p>olivia.martin@email.com</p>
+											</span>
+											<span class="sale__amount">+$1,999.00</span>
+										</div>
+										<div>
+											<img
+												class="avatar"
+												src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+											/>
+											<span class="sales__name">
+												<h3>Olivia Martin</h3>
+												<p>olivia.martin@email.com</p>
+											</span>
+											<span class="sale__amount">+$1,999.00</span>
+										</div>
+										<div>
+											<img
+												class="avatar"
+												src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+											/>
+											<span class="sales__name">
+												<h3>Olivia Martin</h3>
+												<p>olivia.martin@email.com</p>
+											</span>
+											<span class="sale__amount">+$1,999.00</span>
+										</div>
+										<div>
+											<img
+												class="avatar"
+												src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+											/>
+											<span class="sales__name">
+												<h3>Olivia Martin</h3>
+												<p>olivia.martin@email.com</p>
+											</span>
+											<span class="sale__amount">+$1,999.00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--==================================================
+						CARD TAB
+					==================================================-->
+					<div class="page" id="cards">
+						<div class="card__grid">
+							<div class="account__card">
+								<span class="title">
+									<h3>Create an account</h3>
+									<p>Enter your email below create your account</p></span
+								>
+								<div class="btn__container">
+									<button class="btn--lg">
+										<svg viewBox="0 0 438.549 438.549">
+											<path
+												fill="currentColor"
+												d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+											/>
+										</svg>
+										GitHub
+									</button>
+									<button class="btn--lg">
+										<svg viewBox="0 0 24 24">
+											<path
+												fill="currentColor"
+												d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"
+											></path>
+										</svg>
+										Google
+									</button>
+								</div>
+								<div class="divider">
+									<p>OR CONTINUE WITH</p>
+								</div>
+								<div class="email__input">
+									<div>
+										<label>Email</label>
+										<input type="email" placeholder="m@example.com" />
+									</div>
+									<div>
+										<label>Password</label>
+										<input type="password" />
+									</div>
+									<button class="btn--xl">Create account</button>
+								</div>
+							</div>
+							<div class="payment__card">
+								<span class="title">
+									<h3>Payment Method</h3>
+									<p>Add a new payment method to your account.</p>
+								</span>
+								<div class="payment__options">
+									<div class="payment__optionsCard">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+										>
+											<rect width="20" height="14" x="2" y="5" rx="2" />
+											<path d="M2 10h20" />
+										</svg>
+										Card
+									</div>
+									<div class="payment__optionsCard">
+										<svg viewBox="0 0 24 24">
+											<path
+												d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"
+												fill="currentColor"
+											/>
+										</svg>
+										Paypal
+									</div>
+									<div class="payment__optionsCard">
+										<svg viewBox="0 0 24 24">
+											<path
+												d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+												fill="currentColor"
+											/>
+										</svg>
+										Apple
+									</div>
+								</div>
+								<div class="payment__input">
+									<div>
+										<label>Name</label>
+										<input placeholder="First Last" />
+									</div>
+									<div>
+										<label>Card number</label>
+										<input />
+									</div>
+									<div class="card__info">
+										<div class="expires">
+											<label>Expires</label>
+											<select>
+												<option>Month</option>
+											</select>
+										</div>
+										<div class="year">
+											<label>Year</label>
+											<select>
+												<option>Year</option>
+											</select>
+										</div>
+										<div class="cvc">
+											<label>CVC</label>
+											<input />
+										</div>
+									</div>
+									<button class="btn--xl">Create account</button>
+								</div>
+							</div>
+							<div class="team-card">
+								<span class="title">
+									<h3>Team Members</h3>
+									<p>Invite your team remebers to collaborate</p></span
+								>
+								<div class="team__grid">
+									<div>
+										<img
+											class="avatar"
+											src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+										/>
+										<span class="team__name">
+											<h3>Olivia Martin</h3>
+											<p>olivia.martin@email.com</p>
+										</span>
+										<span class="team__role">
+											<select>
+												<option>Viewer</option>
+												<option>Devloper</option>
+												<option>Billing</option>
+												<option>Owner</option>
+											</select>
+										</span>
+									</div>
+									<div>
+										<img
+											class="avatar"
+											src="./assets/img/GettyImages-988013222-scaled-e1618857975729.jpg"
+										/>
+										<span class="team__name">
+											<h3>Olivia Martin</h3>
+											<p>olivia.martin@email.com</p>
+										</span>
+										<span class="team__role">
+											<select>
+												<option>Viewer</option>
+												<option>Devloper</option>
+												<option>Billing</option>
+												<option>Owner</option>
+											</select>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!--
+							<div class="card-card">
+								<div class="card-card">
+									<h3>Overview</h3>
+								</div>
+								<div class="card-card">
+									<h3>Overview</h3>
+								</div>
+								<div class="card-card">
+									<h3>Overview</h3>
+								</div>
+								<div class="card-card">
+									<h3>Overview</h3>
+								</div>
+								<div class="card-card">
+									<h3>Overview</h3>
+								</div>
+							</div>-->
+						</div>
+					</div>
+					<!--==================================================
+						TASK TAB
+					==================================================-->
+					<div class="page" id="tasks"></div>
+					<!--==================================================
+						PLAYGROUND TAB
+					==================================================-->
+					<div class="page" id="playground"></div>
+					<!--==================================================
+						FORM TAB
+					==================================================-->
+					<div class="page" id="form">
+						<div class="form__layout">
+							<span class="title">
+								<h3>Settings</h3>
+								<p>Manage your account settings and set e-mail prefences</p></span
+							>
+							<div class="form__tabs">
+								<div>
+									<a href="./#profile" onclick="showFormTab('profile')"
+										>Profile</a
+									>
+								</div>
+								<div>
+									<a href="./#account" onclick="showFormTab('account')"
+										>Account</a
+									>
+								</div>
+								<div>
+									<a href="./#appearance" onclick="showFormTab('appearance')"
+										>Appearance</a
+									>
+								</div>
+								<div>
+									<a
+										href="./#notifications"
+										onclick="showFormTab('notifications')"
+										>Notifications</a
+									>
+								</div>
+								<div>
+									<a href="./#display" onclick="showFormTab('display')"
+										>Display</a
+									>
+								</div>
+							</div>
+							<div class="form__display">
+								<div class="tab" id="profile">
+									<span class="title"
+										><h4>Profile</h4>
+										<p>This is how others will see you on the site.</p></span
+									>
+									<div class="form__details">
+										<label>Username</label>
+										<input placeholder="zynkcl" />
+										<span class="description"
+											><p>
+												This is your public display name. It can be your
+												real name or a pseudonym.You can only change this
+												once every 30 days.
+											</p></span
+										>
+										<label>Email</label>
+										<select>
+											<option>Select a verified email to display</option>
+											<option>m@example.com</option>
+											<option>n@example.com</option>
+											<option>o@example.com</option>
+										</select>
+										<span class="description"
+											><p>
+												You can manage verified email addresses in your
+												email settings.
+											</p></span
+										>
+										<label>Bio</label>
+										<input placeholder="I own a computer." class="bio" />
+										<span class="description"
+											><p>
+												You can @mention other users and organizations to
+												link to them.
+											</p></span
+										>
+										<label>URLs</label>
+										<span class="description"
+											><p>
+												Add links to your website, blog, or social media
+												profiles.
+											</p></span
+										>
+										<input placeholder="https://zynkcl.com" />
+										<input placeholder="https://twitch.tv/zynkah" />
+										<button class="btn--hover" style="width: fit-content">
+											Add URL
+										</button>
+										<button
+											class="btn--accent"
+											style="width: fit-content; margin-top: 1.2rem"
+										>
+											Update profile
+										</button>
+									</div>
+								</div>
+								<div class="tab" id="account">
+									<div class="title">
+										<h4>Account</h4>
+										<p>
+											Update your account settings. Set your preferred
+											language and timezone.
+										</p>
+									</div>
+									<div class="form__details">
+										<label>Name</label>
+										<input placeholder="Your name" />
+										<span class="title"
+											><p>
+												This is the name that will be displayed on your
+												profile and in emails.
+											</p></span
+										>
+										<label>Date of birth</label>
+										<input type="date" class="datePicker" />
+										<span class="description"
+											><p>
+												Your date of birth is used to calculate your age.
+											</p></span
+										>
+										<label>Language</label>
+										<select class="language">
+											<option>Select language:</option>
+											<option>English</option>
+											<option>French</option>
+											<option>German</option>
+											<option>Spanish</option>
+											<option>Portuguese</option>
+											<option>Russian</option>
+											<option>Japanese</option>
+											<option>Korean</option>
+											<option>Chinese</option>
+										</select>
+										<span class="description"
+											><p>
+												This is the language that will be used in the
+												dashboard.
+											</p></span
+										>
+										<button
+											class="btn--accent"
+											style="width: fit-content; margin-top: 1.2rem"
+										>
+											Update account
+										</button>
+									</div>
+								</div>
+								<div class="tab" id="appearance">
+									<div class="title">
+										<h4>Appearance</h4>
+										<p>
+											Customize the appearance of the app. Automatically
+											switch between day and night themes.
+										</p>
+									</div>
+									<div class="form__details">
+										<label>Font</label>
+										<select style="width: 30%">
+											<option>Inter</option>
+											<option>Manrope</option>
+											<option>System</option>
+										</select>
+										<p class="description">
+											Set the font you want to use in the dashboard.
+										</p>
+										<label>Theme</label>
+										<p class="description">
+											Select the theme for the dashboard.
+										</p>
+										<div class="mode__container">
+											<div class="card__container">
+												<div class="light__mode__card">
+													<div class="light__mode__column">
+														<div class="first__row">
+															<div class="sm--row">
+																<div class="lower__rows">
+																	<div class="circle"></div>
+																	<div class="sm--row"></div>
+																</div>
+															</div>
+															<div class="md--row"></div>
+														</div>
+													</div>
+													<div class="light__mode__column">
+														<div class="lower__rows">
+															<div class="circle"></div>
+															<div class="md--row"></div>
+														</div>
+													</div>
+													<div class="light__mode__column">
+														<div class="lower__rows">
+															<div class="circle"></div>
+															<div class="md--row"></div>
+														</div>
+													</div>
+												</div>
+												<p
+													class="description"
+													style="text-align: center; margin-top: 6px"
+												>
+													Light
+												</p>
+											</div>
+											<div class="card__container">
+												<div class="dark__mode__card">
+													<div class="dark__mode__column">
+														<div class="first__row">
+															<div class="sm--row--dark"></div>
+															<div class="md--row--dark"></div>
+														</div>
+													</div>
+													<div class="dark__mode__column">
+														<div class="lower__rows">
+															<div class="circle--dark"></div>
+															<div class="md--row--dark"></div>
+														</div>
+													</div>
+													<div class="dark__mode__column">
+														<div class="lower__rows">
+															<div class="circle--dark"></div>
+															<div class="md--row--dark"></div>
+														</div>
+													</div>
+												</div>
+												<p
+													class="description"
+													style="text-align: center; margin-top: 6px"
+												>
+													Dark
+												</p>
+											</div>
+										</div>
+										<button
+											class="btn--accent"
+											style="width: fit-content; margin-top: 1.2rem"
+										>
+											Update preferences
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="tab" id="notifications">
+								<span class="title"
+									><h4>Notifications</h4>
+									<p>Configure how you receive notifications.</p></span
+								>
+								<div class="form__details">
+									<div class="radio__section">
+										<div class="title">
+											<h5>Notify me about...</h5>
+											<div class="radio__container">
+												<input
+													type="radio"
+													id="newMessage"
+													name="notifications"
+													value="newMessage"
+												/>
+												<label>All new messages</label><br />
+												<input
+													type="radio"
+													id="DM"
+													name="notifications"
+													value="DM"
+												/><label> Direct messages and mentions</label><br />
+												<input
+													type="radio"
+													id="nothing"
+													name="notifications"
+													value="nothing"
+												/><label> Nothing</label>
+											</div>
+										</div>
+									</div>
 
-          <!-- DASHBOARD TAB -->
-          <div class="page" id="dashboard">
-            <div class="dashboard__nav">
-              <select>
-                <option>Alicia Koch</option>
+									<div class="email__notification">
+										<div class="title"><h3>Email Notifications</h3></div>
 
-                <option>ACME Inc.</option>
-                <option>Monsters Inc.</option>
-              </select>
-              <ul>
-                <li>Overview</li>
-                <li>Customers</li>
-                <li>Products</li>
-                <li>Settings</li>
-              </ul>
-              <input placeholder="Search..." />
-              <img
-                class="avatar"
-                src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-              />
-            </div>
-            <div class="dashboard__header">
-              <h2>Dashboard</h2>
-              <div class="dashboard__buttons">
-                <button class="btn--hover">Jan 20, 2023 - Feb 09, 2023</button>
-                <button class="btn--accent">Download</button>
-              </div>
-            </div>
-            <div class="dashboard__tabs">
-              <div class="mail-toggle">
-                <button class="active">Overview</button>
-                <button>Analytics</button>
-                <button>Reports</button>
-                <button>Notifications</button>
-              </div>
-              <div class="dashboard__grid">
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-              </div>
-              <div class="detail__card">
-                <h3>Overview</h3>
-              </div>
-              <div class="detail__card">
-                <h3>Recent Sales</h3>
-                <p>You made 265 sales this month.</p>
-                <div class="sales__grid">
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+										<div class="toggle__cards__container">
+											<div class="toggle__cards">
+												<span class="title">
+													<h5>Communication emails</h5>
+													<p class="description">
+														Receive emails about your account activity.
+													</p>
+												</span>
+												<label class="switch">
+													<input type="checkbox" checked />
+													<span class="slider round"></span>
+												</label>
+											</div>
 
-          <!-- CARD TAB -->
-          <div class="page" id="cards">
-            <div class="card__grid">
-              <div class="account__card">
-                <span class="title">
-                  <h3>Create an account</h3>
-                  <p>Enter your email below create your account</p></span
-                >
+											<div class="toggle__cards">
+												<span class="title">
+													<h5>Marketing emails</h5>
+													<p class="description">
+														Receive emails about new products, features,
+														and more.
+													</p>
+												</span>
+												<label class="switch">
+													<input type="checkbox" checked />
+													<span class="slider round"></span>
+												</label>
+											</div>
 
-                <div class="btn__container">
-                  <button class="btn--lg">GitHub</button
-                  ><button class="btn--lg">Google</button>
-                </div>
-                <div class="divider">
-                  <span></span>
-                  <p>OR CONTINUE WITH</p>
-                  <span></span>
-                </div>
+											<div class="toggle__cards">
+												<span class="title">
+													<h5>Social emails</h5>
+													<p class="description">
+														Receive emails for friend requests, follows,
+														and more.
+													</p>
+												</span>
+												<label class="switch">
+													<input type="checkbox" checked />
+													<span class="slider round"></span>
+												</label>
+											</div>
 
-                <div class="email__input">
-                  <label>Email</label>
-                  <input placeholder="m@example.com" />
-                  <label>Password</label>
-                  <input />
-                  <button class="btn--xl">Create account</button>
-                </div>
-              </div>
+											<div class="toggle__cards">
+												<span class="title">
+													<h5>Security emails</h5>
+													<p class="description">
+														Receive emails about your account activity
+														and security.
+													</p>
+												</span>
+												<label class="switch">
+													<input type="checkbox" checked disabled />
+													<span class="slider round"></span>
+												</label>
+											</div>
+										</div>
+									</div>
 
-              <div class="payment__card">
-                <span class="title">
-                  <h3>Payment Method</h3>
-                  <p>Add a new payment method to your account.</p>
-                </span>
-                <div class="payment__options">
-                  <div class="payment__optionsCard"><h3>Card</h3></div>
-                  <div class="payment__optionsCard"><h3>Paypal</h3></div>
-                  <div class="payment__optionsCard"><h3>Apple</h3></div>
-                </div>
-                <div class="payment__input">
-                  <label>Name</label>
-                  <input placeholder="First Last" />
-                  <label>Card number</label>
-                  <input />
+									<div class="check__box__section">
+										<input type="checkbox" />
+										<span class="title"
+											><h5>Use different settings for my mobile device</h5>
+											<p class="description">
+												You can manage your mobile notifications in the
+												mobile setting page.
+											</p></span
+										>
+									</div>
 
-                  <div class="card__info">
-                    <div class="expires">
-                      <label>Expires</label>
-                      <select>
-                        <option>Month</option>
-                      </select>
-                    </div>
-                    <div class="year">
-                      <label>Year</label>
-                      <select>
-                        <option>Year</option>
-                      </select>
-                    </div>
-                    <div class="cvc">
-                      <label>CVC</label>
-                      <input />
-                    </div>
-                  </div>
-
-                  <button class="btn--xl">Create account</button>
-                </div>
-              </div>
-              <div class="team-card">
-                <span class="title">
-                  <h3>Team Members</h3>
-                  <p>Invite your team remebers to collaborate</p></span
-                >
-                <div class="team__grid">
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="team__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="team__role"
-                      ><select>
-                        <option>Viewer</option>
-                        <option>Devloper</option>
-                        <option>Billing</option>
-                        <option>Owner</option>
-                      </select></span
-                    >
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="team__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="team__role"
-                      ><select>
-                        <option>Viewer</option>
-                        <option>Devloper</option>
-                        <option>Billing</option>
-                        <option>Owner</option>
-                      </select></span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="card-card">
-             
-            
-           
-           
-            <div class="card-card">
-              <h3>Overview</h3>
-            </div>
-            <div class="card-card">
-              <h3>Overview</h3>
-            </div>
-            <div class="card-card">
-              <h3>Overview</h3>
-            </div>
-            <div class="card-card">
-              <h3>Overview</h3>
-            </div>
-            <div class="card-card">
-              <h3>Overview</h3>
-            </div> -->
-            </div>
-          </div>
-
-          <!--  TASK TAB -->
-          <div class="page" id="tasks"></div>
-
-          <!-- PLAYGROUND TAB -->
-          <div class="page" id="playground"></div>
-
-          <!-- FORM TAB -->
-          <div class="page" id="form">
-            <div class="form__layout">
-              <span class="title">
-                <h3>Settings</h3>
-                <p>
-                  Manage your account settings and set e-mail prefences
-                </p></span
-              >
-              <div class="form__tabs">
-                <div>
-                  <a href="#profile" onclick="showFormTab('profile')"
-                    >Profile</a
-                  >
-                </div>
-                <div>
-                  <a href="#account" onclick="showFormTab('account')"
-                    >Account</a
-                  >
-                </div>
-                <div>
-                  <a href="#appearance" onclick="showFormTab('appearance')"
-                    >Appearance</a
-                  >
-                </div>
-                <div>
-                  <a
-                    href="#notifications"
-                    onclick="showFormTab('notifications')"
-                    >Notifications</a
-                  >
-                </div>
-                <div>
-                  <a href="#display" onclick="showFormTab('display')"
-                    >Display</a
-                  >
-                </div>
-              </div>
-              <div class="form__display">
-                <div class="tab" id="profile">
-                  <span class="title"
-                    ><h4>Profile</h4>
-                    <p>This is how others will see you on the site.</p></span
-                  >
-                  <div class="form__details">
-                    <label>Username</label>
-                    <input placeholder="zynkcl" />
-                    <span class="description"
-                      ><p>
-                        This is your public display name. It can be your real
-                        name or a pseudonym.You can only change this once every
-                        30 days.
-                      </p></span
-                    >
-                    <label>Email</label>
-                    <select>
-                      <option>Select a verified email to display</option>
-                      <option>m@example.com</option>
-                      <option>n@example.com</option>
-                      <option>o@example.com</option>
-                    </select>
-                    <span class="description"
-                      ><p>
-                        You can manage verified email addresses in your email
-                        settings.
-                      </p></span
-                    >
-                    <label>Bio</label>
-                    <input placeholder="I own a computer." class="bio" />
-                    <span class="description"
-                      ><p>
-                        You can @mention other users and organizations to link
-                        to them.
-                      </p></span
-                    >
-                    <label>URLs</label>
-                    <span class="description"
-                      ><p>
-                        Add links to your website, blog, or social media
-                        profiles.
-                      </p></span
-                    >
-                    <input placeholder="https://zynkcl.com" />
-                    <input placeholder="https://twitch.tv/zynkah" />
-                    <button class="btn--hover" style="width: fit-content">
-                      Add URL
-                    </button>
-                    <button
-                      class="btn--accent"
-                      style="width: fit-content; margin-top: 1.2rem"
-                    >
-                      Update profile
-                    </button>
-                  </div>
-                </div>
-                <div class="tab" id="account">
-                  <div class="title">
-                    <h4>Account</h4>
-                    <p>
-                      Update your account settings. Set your preferred language
-                      and timezone.
-                    </p>
-                  </div>
-                  <div class="form__details">
-                    <label>Name</label>
-                    <input placeholder="Your name" />
-                    <span class="title"
-                      ><p>
-                        This is the name that will be displayed on your profile
-                        and in emails.
-                      </p></span
-                    >
-                    <label>Date of birth</label>
-                    <input type="date" class="datePicker" />
-                    <span class="description"
-                      ><p>
-                        Your date of birth is used to calculate your age.
-                      </p></span
-                    >
-                    <label>Language</label>
-                    <select class="language">
-                      <option>Select language:</option>
-                      <option>English</option>
-                      <option>French</option>
-                      <option>German</option>
-                      <option>Spanish</option>
-                      <option>Portuguese</option>
-                      <option>Russian</option>
-                      <option>Japanese</option>
-                      <option>Korean</option>
-                      <option>Chinese</option>
-                    </select>
-                    <span class="description"
-                      ><p>
-                        This is the language that will be used in the dashboard.
-                      </p></span
-                    >
-                    <button
-                      class="btn--accent"
-                      style="width: fit-content; margin-top: 1.2rem"
-                    >
-                      Update account
-                    </button>
-                  </div>
-                </div>
-                <div class="tab" id="appearance">
-                  <div class="title">
-                    <h4>Appearance</h4>
-                    <p>
-                      Customize the appearance of the app. Automatically switch
-                      between day and night themes.
-                    </p>
-                  </div>
-                  <div class="form__details">
-                    <label>Font</label>
-                    <select style="width: 30%">
-                      <option>Inter</option>
-                      <option>Manrope</option>
-                      <option>System</option>
-                    </select>
-                    <p class="description">
-                      Set the font you want to use in the dashboard.
-                    </p>
-                    <label>Theme</label>
-                    <p class="description">
-                      Select the theme for the dashboard.
-                    </p>
-                    <div class="mode__container">
-                      <div class="card__container">
-                        <div class="light__mode__card">
-                          <div class="light__mode__column">
-                            <div class="first__row">
-                              <div class="sm--row">
-                                <div class="lower__rows">
-                                  <div class="circle"></div>
-                                  <div class="sm--row"></div>
-                                </div>
-                              </div>
-                              <div class="md--row"></div>
-                            </div>
-                          </div>
-                          <div class="light__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle"></div>
-                              <div class="md--row"></div>
-                            </div>
-                          </div>
-                          <div class="light__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle"></div>
-                              <div class="md--row"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <p
-                          class="description"
-                          style="text-align: center; margin-top: 6px"
-                        >
-                          Light
-                        </p>
-                      </div>
-                      <div class="card__container">
-                        <div class="dark__mode__card">
-                          <div class="dark__mode__column">
-                            <div class="first__row">
-                              <div class="sm--row--dark"></div>
-                              <div class="md--row--dark"></div>
-                            </div>
-                          </div>
-                          <div class="dark__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle--dark"></div>
-                              <div class="md--row--dark"></div>
-                            </div>
-                          </div>
-                          <div class="dark__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle--dark"></div>
-                              <div class="md--row--dark"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <p
-                          class="description"
-                          style="text-align: center; margin-top: 6px"
-                        >
-                          Dark
-                        </p>
-                      </div>
-                    </div>
-                    <button
-                      class="btn--accent"
-                      style="width: fit-content; margin-top: 1.2rem"
-                    >
-                      Update preferences
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="tab" id="notifications">
-                <span class="title"
-                  ><h4>Notifications</h4>
-                  <p>Configure how you receive notifications.</p></span
-                >
-                <div class="form__details">
-                  <div class="radio__section">
-                    <div class="title">
-                      <h5>Notify me about...</h5>
-                      <div class="radio__container">
-                        <input
-                          type="radio"
-                          id="newMessage"
-                          name="notifications"
-                          value="newMessage"
-                        />
-                        <label>All new messages</label><br />
-                        <input
-                          type="radio"
-                          id="DM"
-                          name="notifications"
-                          value="DM"
-                        /><label> Direct messages and mentions</label><br />
-                        <input
-                          type="radio"
-                          id="nothing"
-                          name="notifications"
-                          value="nothing"
-                        /><label> Nothing</label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="email__notification">
-                    <div class="title"><h3>Email Notifications</h3></div>
-
-                    <div class="toggle__cards__container">
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Communication emails</h5>
-                          <p class="description">
-                            Receive emails about your account activity.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Marketing emails</h5>
-                          <p class="description">
-                            Receive emails about new products, features, and
-                            more.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Social emails</h5>
-                          <p class="description">
-                            Receive emails for friend requests, follows, and
-                            more.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Security emails</h5>
-                          <p class="description">
-                            Receive emails about your account activity and
-                            security.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked disabled />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="check__box__section">
-                    <input type="checkbox" />
-                    <span class="title"><h5>Use different settings for my mobile device</h5><p class="description">You can manage your mobile notifications in the mobile setting page.</p></span>
-
-                  </div>
-
-                  <button
-                    class="btn--accent"
-                    style="width: fit-content; margin-top: 1.2rem"
-                  >
-                    Update notifications
-                  </button>
-                </div>
-              </div>
-              <div class="tab" id="display"></div>
-            </div>
-          </div>
-
-          <!-- MUSIC TAB -->
-          <div class="page" id="music"></div>
-
-          <!-- AUTHENTICATION TAB -->
-          <div class="page" id="authentication"></div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>
-        Built by <a href="https://www.twitch.tv/zynkah">zynkcl</a>. The source
-        code is available on
-        <a href="https://github.com/Zynkah/component-library">GitHub</a>.
-      </p>
-    </footer>
-    <script src="./js/script.js"></script>
-  </body>
+									<button
+										class="btn--accent"
+										style="width: fit-content; margin-top: 1.2rem"
+									>
+										Update notifications
+									</button>
+								</div>
+							</div>
+							<div class="tab" id="display"></div>
+						</div>
+					</div>
+					<!--==================================================
+						MUSIC TAB
+					==================================================-->
+					<div class="page" id="music"></div>
+					<!--==================================================
+						AUTHENTICATION TAB
+					==================================================-->
+					<div class="page" id="authentication"></div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>
+				Built by
+				<a href="https://www.twitch.tv/zynkah" target="_blank" rel="noopener">zynkcl</a> and
+				<a href="https://www.github.com/Etsi0" target="_blank" rel="noopener">Etsi0</a>. The
+				source code is available on
+				<a href="https://github.com/Zynkah/component-library" target="_blank" rel="noopener"
+					>GitHub</a
+				>.
+			</p>
+		</footer>
+		<script src="./assets/js/script.js"></script>
+	</body>
 </html>

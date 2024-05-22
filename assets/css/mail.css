@@ -1,0 +1,156 @@
+.mail {
+	display: flex;
+}
+
+.mail__content {
+	border-right: 1px solid var(--accentColor);
+	flex: 40 1 0px;
+}
+
+.mail__header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 3.3125rem;
+	border-bottom: 1px solid var(--accentColor);
+	padding-inline: 1rem;
+}
+
+/*==================================================
+	Column 1
+==================================================*/
+/*=========================
+	Header
+=========================*/
+.mail__content:nth-child(1) {
+	flex: 20 1 0px;
+
+	.mail__header {
+		padding: 0.5rem;
+	}
+}
+
+.mail__content:nth-child(1) select {
+	font-size: 0.875rem;
+	width: 100%;
+	border: var(--border);
+	cursor: pointer;
+}
+
+/*=========================
+	Content
+=========================*/
+.mail-tabs {
+	display: grid;
+	gap: 0.25rem;
+	padding: 0.5rem;
+}
+
+.mail-tabs button {
+	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	padding: 0.5rem 0.6rem;
+	border: none;
+	border-radius: var(--borderRadius);
+	cursor: pointer;
+}
+
+.mail-tabs .active {
+	background-color: var(--buttonColor);
+}
+
+.mail-tabs button:hover {
+	background-color: var(--buttonColor);
+}
+
+/*==================================================
+	Column 2
+==================================================*/
+/*=========================
+	Header
+=========================*/
+.mail__content:nth-child(2) .mail__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.mail__content:nth-child(2) .mail__header h2 {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+.mail-toggle {
+	border-radius: var(--borderRadius);
+	background-color: var(--buttonColor);
+	padding: 0.25rem;
+	margin-block: auto;
+	color: white;
+}
+
+.mail-toggle button {
+	background-color: transparent;
+	color: white;
+	font-size: 0.9rem;
+	padding-block: 0.35rem;
+	padding-inline: 0.8rem;
+	border: none;
+	border-radius: var(--borderRadius);
+	cursor: pointer;
+}
+
+.mail-toggle button.active {
+	background-color: var(--backgroundColor);
+}
+/*=========================
+	Content
+=========================*/
+.mail__content:nth-child(2) section {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1rem;
+	padding: 1rem;
+}
+.inbox-section input {
+	margin-bottom: 0.8rem;
+}
+.mail__content:nth-child(2) section div {
+	font-size: 0.8rem;
+	position: relative;
+	padding: 0.75rem;
+	border: var(--border);
+	border-radius: var(--borderRadius);
+	cursor: pointer;
+}
+.mail__content:nth-child(2) section div.active {
+	background-color: var(--accentColor);
+}
+.mail__content:nth-child(2) section div .timestamp {
+	position: absolute;
+	top: 0.9rem; /* compensated for the margin that got removed */
+	right: 1rem;
+}
+.mail__content:nth-child(2) section div .home-card-title {
+	font-size: 1rem;
+	margin-block: 0.1rem;
+	font-weight: bold;
+}
+.mail__content:nth-child(2) section div .home-card-description {
+	font-weight: bold;
+}
+.mail__content:nth-child(2) section div .home-card-content {
+	color: #ffffff80;
+	margin-block: 0.75rem;
+}
+
+/*==================================================
+	Column 3
+==================================================*/
+/*=========================
+	Header
+=========================*/
+.mail__content:nth-child(3) section {
+	padding-inline: 1rem;
+}

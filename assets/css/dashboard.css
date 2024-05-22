@@ -1,0 +1,170 @@
+.dashboard__nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.875rem 1rem;
+}
+
+.dashboard__nav > div {
+	display: flex;
+	align-items: center;
+}
+
+.dashboard__nav > div > select {
+	font-weight: 500;
+	font-size: 0.875rem;
+	width: 100%;
+	border: var(--border);
+	padding-inline: 1rem;
+	cursor: pointer;
+}
+
+.dashboard__nav > div > ul {
+	display: flex;
+	gap: 1rem;
+	margin: 1rem;
+	list-style-type: none;
+}
+.dashboard__nav > div > ul > li {
+	display: inline;
+	color: #ffffff80;
+	padding-inline: 0.4rem;
+	cursor: pointer;
+	transition: color 150ms ease-in-out;
+}
+
+.dashboard__nav > div > ul > li:hover {
+	color: #fff;
+}
+
+.dashboard__nav input {
+	margin-right: 1rem;
+}
+
+.dashboard {
+	display: grid;
+	gap: 1rem;
+	padding: 2.5rem;
+}
+
+/*==================================================
+	Row 1
+==================================================*/
+.dashboard > .dashboard__header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.25rem;
+}
+
+/*==================================================
+	Row 2
+==================================================*/
+.dashboard > .mail-toggle {
+	justify-self: flex-start;
+}
+
+.dashboard > .mail-toggle > button:not(.active) {
+	color: #ffffff40;
+	cursor: default;
+}
+
+/*==================================================
+	Row 3 & Row 4
+==================================================*/
+.dashboard > .dashboard__small__grid,
+.dashboard > .dashboard__big__grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.dashboard > .dashboard__small__grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 1024px) {
+	.dashboard > .dashboard__small__grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.dashboard > .dashboard__big__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.dashboard > .dashboard__big__grid > .overview {
+		grid-column: 1 / 4;
+	}
+
+	.dashboard > .dashboard__big__grid > .sales {
+		grid-column: 4 / 6;
+	}
+}
+
+.dashboard__card {
+	position: relative;
+	background-color: var(--backgroundColor);
+	border: var(--border);
+	border-radius: var(--borderRadius);
+	padding-block: 2rem;
+	padding-inline: 1.5rem;
+}
+
+/*=========================
+	Row 3
+=========================*/
+.dashboard .dashboard__card svg {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	color: #ffffff80;
+	top: 1.5rem;
+	right: 1.5rem;
+}
+
+.dashboard__card > h3 {
+	font-size: 1rem;
+	margin-block: 0.1rem;
+	font-weight: bold;
+	line-height: 0.2rem;
+}
+
+.dashboard__card > .description {
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 0.1rem;
+	margin-top: 1rem;
+}
+
+.dashboard__card > .content {
+	display: flex;
+	font-size: 0.8rem;
+	color: rgb(152, 142, 125);
+	margin-top: 0.1rem;
+}
+
+/*=========================
+	Row 4
+=========================*/
+.dashboard__big__grid > .sales > p {
+	margin-block: 1rem;
+}
+.dashboard__big__grid > .sales > p,
+.dashboard__big__grid > .sales > div > div > .sales__name > p {
+	color: #ffffff80;
+	font-size: 0.875rem;
+}
+.dashboard__big__grid > .sales > div {
+	display: grid;
+	gap: 1.5rem;
+}
+.dashboard__big__grid > .sales > div > div {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.dashboard__big__grid > .sales > div > div > .sales__name {
+	flex-grow: 1;
+}
+.dashboard__big__grid > .sales > div > div > .sales__name h3 {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
