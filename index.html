@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/dashboard.css" />
     <link rel="stylesheet" href="./css/cards.css" />
     <link rel="stylesheet" href="./css/form.css" />
+       <link rel="stylesheet" href="./css/music.css" />
+    <link rel="stylesheet" href="./css/authentication.css" />
   </head>
   <body>
     <header>
@@ -59,7 +61,7 @@
           <div class="page" id="mail">
             <div class="mail__header">
               <div class="column">
-                <select>
+                <select class="select">
                   <option>Alicia Koch</option>
                   <option>ACME Inc.</option>
                   <option>Monsters Inc.</option>
@@ -150,7 +152,7 @@
           <!-- DASHBOARD TAB -->
           <div class="page" id="dashboard">
             <div class="dashboard__nav">
-              <select>
+              <select class="select">
                 <option>Alicia Koch</option>
 
                 <option>ACME Inc.</option>
@@ -322,13 +324,13 @@
                   <div class="card__info">
                     <div class="expires">
                       <label>Expires</label>
-                      <select>
+                      <select class="select">
                         <option>Month</option>
                       </select>
                     </div>
                     <div class="year">
                       <label>Year</label>
-                      <select>
+                      <select class="select">
                         <option>Year</option>
                       </select>
                     </div>
@@ -352,12 +354,12 @@
                       class="avatar"
                       src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                     />
-                    <span class="team__name">
+                    <span class="team-name">
                       <h3>Olivia Martin</h3>
                       <p>olivia.martin@email.com</p>
                     </span>
                     <span class="team__role"
-                      ><select>
+                      ><select class="select">
                         <option>Viewer</option>
                         <option>Developer</option>
                         <option>Billing</option>
@@ -370,12 +372,12 @@
                       class="avatar"
                       src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                     />
-                    <span class="team__name">
+                    <span class="team-name">
                       <h3>Olivia Martin</h3>
                       <p>olivia.martin@email.com</p>
                     </span>
                     <span class="team__role"
-                      ><select>
+                      ><select class="select">
                         <option>Viewer</option>
                         <option>Developer</option>
                         <option>Billing</option>
@@ -470,7 +472,7 @@
                       </p></span
                     >
                     <label>Email</label>
-                    <select>
+                    <select class="select">
                       <option>Select a verified email to display</option>
                       <option>m@example.com</option>
                       <option>n@example.com</option>
@@ -535,7 +537,7 @@
                       </p></span
                     >
                     <label>Language</label>
-                    <select class="language">
+                    <select class="max-width--30 select">
                       <option>Select language:</option>
                       <option>English</option>
                       <option>French</option>
@@ -570,7 +572,7 @@
                   </div>
                   <div class="form__details">
                     <label>Font</label>
-                    <select style="width: 30%">
+                    <select class="max-width--30 select">
                       <option>Inter</option>
                       <option>Manrope</option>
                       <option>System</option>
@@ -798,34 +800,78 @@
                   <div>
                     <div class="check__box__group">
                       <div class="checkbox__item">
-                        <input type="checkbox" />
-                        <span class="title"> <h5>Recent</h5></span>
+                        <label for="recent">
+                          <input
+                            type="checkbox"
+                            id="recent"
+                            value="recent"
+                            name="recent"
+                          />Recent</label
+                        >
                       </div>
 
                       <div class="checkbox__item">
-                        <input type="checkbox" />
-                        <span class="title"> <h5>Home</h5> </span>
+                        <label for="home"
+                          ><input
+                            type="checkbox"
+                            id="home"
+                            name="home"
+                            value="home"
+                          />
+                          Home
+                        </label>
                       </div>
 
                       <div class="checkbox__item">
-                        <input type="checkbox" />
-                        <span class="title"><h5>Applications</h5> </span>
+                        <label for="applications"
+                          ><input
+                            type="checkbox"
+                            id="applications"
+                            name="applications"
+                            value="applications"
+                          />
+                          Applications</label
+                        >
                       </div>
 
                       <div class="checkbox__item">
-                        <input type="checkbox" />
-                        <span class="title"><h5>Desktop</h5> </span>
+                        <label for="desktop"
+                          ><input
+                            type="checkbox"
+                            id="desktop"
+                            name="desktop"
+                            value="desktop"
+                          />Desktop</label
+                        >
                       </div>
 
                       <div class="checkbox__item">
-                        <input type="checkbox" />
-                        <span class="title"><h5>Downloads</h5> </span>
+                        <label for="download"
+                          ><input
+                            type="checkbox"
+                            id="download"
+                            name="download"
+                            value="download"
+                          />Downloads</label
+                        >
                       </div>
 
                       <div class="checkbox__item">
-                        <input type="checkbox" />
-                        <span class="title"><h5>Documents</h5> </span>
+                        <label for="document"
+                          ><input
+                            type="checkbox"
+                            id="document"
+                            name="document"
+                            value="document"
+                          />Documents</label
+                        >
                       </div>
+                      <button
+                        class="btn--accent"
+                        style="width: fit-content; margin-top: 1.2rem"
+                      >
+                        Update display
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -837,15 +883,36 @@
           <div class="page" id="music"></div>
 
           <!-- AUTHENTICATION TAB -->
-          <div class="page" id="authentication"></div>
+          <div class="page" id="authentication">
+            <div class="form__layout">
+              <button class="btn--ghost login-btn">Login</button>
+              <div class="account__section">
+                <div class="title">
+                  <h4>Create an account</h4>
+                  <p>Enter your email below to create your account</p>
+                </div>
+                <div class="signin__section">
+                  <input placeholder="name@example.com" />
+                  <button class="btn--accent">Sign in with Email</button>
+                   <div class="divider">
+                  <span></span>
+                  <p>OR CONTINUE WITH</p>
+                  <span></span>
+                </div>
+                <button class="btn--hover">GitHub</button>
+                <p class="text--accent-color">By clicking continue, you agree to our <a href="" class="link--underlined text--accent-color">Terms of Service</a> and <a href="" class="link--underlined text--accent-color">Privacy Policy.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <p>
-        Built by <a href="https://www.twitch.tv/zynkah">zynkcl</a>. The source
+        Built by <a href="https://www.twitch.tv/zynkah" class="link--underlined text--accent-color">zynkcl</a>. The source
         code is available on
-        <a href="https://github.com/Zynkah/component-library">GitHub</a>.
+        <a href="https://github.com/Zynkah/component-library" class="link--underlined text--accent-color">GitHub</a>.
       </p>
     </footer>
     <script src="./js/script.js"></script>

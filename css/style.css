@@ -7,6 +7,7 @@
   --buttonPaddingInline: 0.8rem;
   --buttonPaddingBlock: 0.6rem;
 }
+/* add font sizes to root */
 
 :root.light {
   --dark-mode: 0;
@@ -25,6 +26,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  font-size: 16px;
 }
 
 body {
@@ -67,11 +69,11 @@ footer {
   margin-left: 4rem;
 }
 
-footer a {
+.link--underlined {
   text-decoration: underline;
 }
 
-select {
+.select {
   background-color: var(--backgroundColor);
   border-radius: var(--borderRadius);
   padding-block: 0.5rem;
@@ -79,7 +81,11 @@ select {
   color: white;
 }
 
-select:hover {
+.max-width--30 {
+  max-width: 30%;
+}
+
+.select:hover {
   background-color: var(--buttonColor);
 }
 
@@ -108,7 +114,7 @@ select:hover {
 }
 
 .title h5 {
-    margin-top: 1rem;
+  margin-top: 1rem;
   margin-bottom: 0.3rem;
   font-size: 1rem;
 }
@@ -116,6 +122,14 @@ select:hover {
 .title p {
   margin-block: 0.1rem;
   opacity: 0.6;
+}
+
+.text--accent-color {
+    color: #A1A1AA;
+}
+
+a.text--accent-color:hover {
+  color: white
 }
 
 .description {
@@ -129,6 +143,14 @@ select:hover {
   display: inline-flex;
   gap: 1rem;
   padding: 0rem 1rem;
+
+  & li {
+    opacity: 0.6;
+  }
+
+  & li:hover {
+    opacity: 0.8;
+  }
 }
 
 /* @media (max-width: 767px) {
@@ -137,14 +159,6 @@ select:hover {
     }
          
  } */
-
-.nav__links li {
-  opacity: 0.6;
-}
-
-.nav__links li:hover {
-  opacity: 0.8;
-}
 
 /* Hero Classes */
 
@@ -239,6 +253,20 @@ select:hover {
   cursor: pointer;
 }
 
+.btn--ghost {
+  border: none;
+  border-radius: var(--borderRadius);
+  background-color: inherit;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  cursor: pointer;
+  color: white;
+}
+
+.btn--ghost:hover {
+  background-color: var(--accentColor);
+}
+
 .btn__container {
   display: flex;
   width: 100%;
@@ -272,16 +300,16 @@ select:hover {
   display: inline-flex;
   gap: 1rem;
   padding: 0rem 1rem;
-}
 
-.component__tabList li {
-  color: #d2cbbe;
-  opacity: 0.8;
-}
+  & li {
+    color: #d2cbbe;
+    opacity: 0.8;
+  }
 
-.component__tabList li:hover {
-  color: rgb(210, 203, 190);
-  opacity: 1;
+  & li:hover {
+    color: rgb(210, 203, 190);
+    opacity: 1;
+  }
 }
 
 .component__display {
@@ -293,7 +321,7 @@ select:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: fit-content;
+  position: relative;
 }
 
 /*Classes for the cards*/
