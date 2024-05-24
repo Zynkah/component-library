@@ -1,0 +1,56 @@
+.music__nav {
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  text-align: left;
+  margin-block: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.music__nav__item {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  border-radius: var(--borderRadius);
+}
+
+.music__nav__item:hover {
+  background-color: var(--accentColor);
+}
+
+.music__content {
+  border-top: 1px solid var(--accentColor);
+  padding: 1rem;
+  text-align: left;
+}
+
+.music__section {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carousel {
+  border-top: 1px solid var(--accentColor);
+  overflow-x: auto;
+  padding-block: 1rem;
+  margin-block: 1.5rem;
+  display: flex;
+  flex-flow: row;
+  gap: 1rem;
+  width: 700px;
+  flex-wrap: nowrap;
+}
+
+.carousel__item {
+  text-align: center;
+}
+
+.image__container {
+    overflow: hidden;
+    border-radius:10px;
+}
+
+img:hover{
+    scale:1.1
+}

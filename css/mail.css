@@ -27,29 +27,6 @@
   border-right: 1px solid var(--accentColor);
 }
 
-.mail-toggle {
-  border-radius: var(--borderRadius);
-  background-color: var(--buttonColor);
-  padding: 0.2rem;
-  margin-left: 1rem;
-  color: white;
-
-  & .active {
-    background-color: var(--backgroundColor);
-    color: white;
-  }
-
-  & button {
-    border: none;
-    border-radius: var(--borderRadius);
-    font-size: 0.9rem;
-    padding-block: 0.5rem;
-    padding-inline: 0.8rem;
-    background-color: var(--buttonColor);
-    cursor: pointer;
-    color: white;
-  }
-}
 
 .inbox-section {
   display: flex;

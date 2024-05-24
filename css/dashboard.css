@@ -28,6 +28,7 @@
   display: flex;
   align-items: center;
   margin: 1rem;
+  gap: 1rem;
 }
 
 .dashboard__buttons {
@@ -35,19 +36,18 @@
 }
 
 .dashboard__tabs {
-  width: 400px;
+  margin-left: 1rem;
 }
 
 .dashboard__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
 }
 
 .detail__card {
   background-color: var(--backgroundColor);
   border-radius: var(--borderRadius);
-  margin: 1rem;
+  margin-block: 1rem;
   padding-block: 0.4rem;
   padding-inline: 1.6rem;
   height: 27rem;
@@ -92,7 +92,7 @@
 .dashboard__card {
   background-color: var(--backgroundColor);
   border-radius: var(--borderRadius);
-  margin: 1rem;
+  margin-block: 1rem;
   padding-block: 2rem;
   padding-inline: 1.6rem;
   height: 60px;

@@ -7,35 +7,56 @@
   --buttonPaddingInline: 0.8rem;
   --buttonPaddingBlock: 0.6rem;
 }
-/* add font sizes to root */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
 
 :root.light {
-  --dark-mode: 0;
   color-scheme: light;
 }
 
 :root.dark {
-  --dark-mode: 1;
   color-scheme: dark;
+}
+
+@font-face {
+  font-family: "GeistMonoVF";
+  src: url("../font/GeistMonoVF.ttf") format("truetype");
+}
+code {
+  font-family: "GeistMonoVF", monospace;
+}
+
+@font-face {
+  font-family: "GeistVF";
+  src: url("../font/GeistVF.ttf") format("truetype");
+}
+body {
+  font-family: "GeistVF", sans-serif;
+}
+
+hr {
+  border: none;
+  border-bottom: var(--border);
 }
 
 /* for debugging */
 /* * { outline: 1px solid #ff0000; } */
 
-html,
 body {
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-}
-
-body {
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-flow: column;
   background-color: var(--backgroundColor);
   color: white;
   min-height: 100vh;
-  margin: 0;
 }
 
 nav {
@@ -51,6 +72,7 @@ nav:first-child {
 
 main {
   text-align: center;
+  flex-grow: 1;
 }
 
 a {
@@ -101,6 +123,25 @@ footer {
   border-radius: 50%;
 }
 
+.image--lg {
+  height: 350px;
+  width: auto;
+  border-radius: var(--borderRadius)
+}
+
+.image--sm {
+  height: 150px;
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: var(--borderRadius);
+}
+
+.title h2 {
+    margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+}
+
 .title h3 {
   margin-top: 1rem;
   margin-bottom: 0.3rem;
@@ -125,11 +166,11 @@ footer {
 }
 
 .text--accent-color {
-    color: #A1A1AA;
+  color: #a1a1aa;
 }
 
 a.text--accent-color:hover {
-  color: white
+  color: white;
 }
 
 .description {
@@ -275,6 +316,35 @@ a.text--accent-color:hover {
   padding-block: 1rem;
   gap: 1rem;
   color: white;
+}
+
+.btn__nav {
+  border-radius: var(--borderRadius);
+  background-color: var(--buttonColor);
+  padding: 0.2rem;
+  color: white;
+  max-width: fit-content;
+
+  & .active {
+    background-color: var(--backgroundColor);
+    color: white;
+  }
+
+  & .disabled {
+    opacity: 0.6;
+  }
+
+  & button {
+    border: none;
+    border-radius: var(--borderRadius);
+    font-size: 0.9rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+    background-color: var(--buttonColor);
+    cursor: pointer;
+    color: #a1a1aa;
+    font-weight: bold;
+  }
 }
 
 /* Component display classes */

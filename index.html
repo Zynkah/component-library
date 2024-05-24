@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/dashboard.css" />
     <link rel="stylesheet" href="./css/cards.css" />
     <link rel="stylesheet" href="./css/form.css" />
-       <link rel="stylesheet" href="./css/music.css" />
+    <link rel="stylesheet" href="./css/music.css" />
     <link rel="stylesheet" href="./css/authentication.css" />
   </head>
   <body>
@@ -70,7 +70,7 @@
               <div class="column">
                 <div class="inbox__header">
                   Inbox
-                  <div class="mail-toggle">
+                  <div class="btn__nav">
                     <button class="active">All mail</button>
                     <button>Unread</button>
                   </div>
@@ -172,13 +172,11 @@
             </div>
             <div class="dashboard__header">
               <h2>Dashboard</h2>
-              <div class="dashboard__buttons">
-                <button class="btn--hover">Jan 20, 2023 - Feb 09, 2023</button>
-                <button class="btn--accent">Download</button>
-              </div>
+              <button class="btn--hover">Jan 20, 2023 - Feb 09, 2023</button>
+              <button class="btn--accent">Download</button>
             </div>
             <div class="dashboard__tabs">
-              <div class="mail-toggle">
+              <div class="btn__nav">
                 <button class="active">Overview</button>
                 <button>Analytics</button>
                 <button>Reports</button>
@@ -880,27 +878,197 @@
           </div>
 
           <!-- MUSIC TAB -->
-          <div class="page" id="music"></div>
+          <div class="page" id="music">
+            <div class="music__nav">
+              <div class="music__nav__item">Music</div>
+              <div class="music__nav__item">File</div>
+              <div class="music__nav__item">Edit</div>
+              <div class="music__nav__item">View</div>
+              <div class="music__nav__item">Account</div>
+            </div>
 
-          <!-- AUTHENTICATION TAB -->
-          <div class="page" id="authentication">
-            <div class="form__layout">
-              <button class="btn--ghost login-btn">Login</button>
-              <div class="account__section">
+            <div class="music__content">
+              <div class="btn__nav">
+                <button class="active">Music</button>
+                <button>Podcasts</button>
+                <button class="disabled">Live</button>
+              </div>
+              <div class="music__section">
                 <div class="title">
-                  <h4>Create an account</h4>
-                  <p>Enter your email below to create your account</p>
+                  <h2>Listen Now</h2>
+                  <p>Top picks for you. Updated daily.</p>
+                  <div class="carousel">
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--lg"
+                          src="https://fastly.picsum.photos/id/992/200/300.jpg?hmac=TOD4LGE2HuM8Q68o5uzIoFvhlsBAiTJGRGHNMqeJTtI"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>React Rendeznous</h4>
+                        <p class="desciption">Ethan Byte</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--lg"
+                          src="https://fastly.picsum.photos/id/1060/200/300.jpg?hmac=xYtFmeYcfydIF3-Qybnra-tMwklX69T52EtGd-bacBI"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>Async Awakenings</h4>
+                        <p class="desciption">Nina Netcode</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--lg"
+                          src="https://fastly.picsum.photos/id/941/200/300.jpg?hmac=tSztWslp5Hm2jEg1UjAvvVNsaDT3dsPAEZ5lQ_yhNKA"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>The Art of Reusability</h4>
+                        <p class="desciption">Lena Logic</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--lg"
+                          src="https://fastly.picsum.photos/id/477/200/300.jpg?hmac=Y-uy4_ZZZ6HOZCxdiN04OOypBZ3y2dY2gAfu9MvZMSE"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>Stateful Symphony</h4>
+                        <p class="desciption">Beth Binary</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="signin__section">
-                  <input placeholder="name@example.com" />
-                  <button class="btn--accent">Sign in with Email</button>
-                   <div class="divider">
-                  <span></span>
-                  <p>OR CONTINUE WITH</p>
-                  <span></span>
+              </div>
+              <div class="music__section">
+                <div class="title">
+                  <h2>Made for You</h2>
+                  <p>Top picks for you. Updated daily.</p>
+
+                  <div class="carousel">
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--sm"
+                          src="https://fastly.picsum.photos/id/456/200/300.jpg?hmac=p9jAgKWZ8BmAcmdpyO2siEEUZaIzEUHYN64WS2rJNtM"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>Thinking Components</h4>
+                        <p class="desciption">Lena Logic</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--sm"
+                          src="https://fastly.picsum.photos/id/641/200/300.jpg?hmac=TpiMIigzR3rlnmP84Df902LYzuV4pApn7Tq6lCYic0A"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>Functional Fury</h4>
+                        <p class="desciption">Beth Binary</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <div class="image__container">
+                          <img
+                            class="image--sm"
+                            src="https://fastly.picsum.photos/id/992/200/300.jpg?hmac=TOD4LGE2HuM8Q68o5uzIoFvhlsBAiTJGRGHNMqeJTtI"
+                          />
+                        </div>
+                      </div>
+                      <div class="title">
+                        <h4>React Rendeznous</h4>
+                        <p class="desciption">Ethan Byte</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--sm"
+                          src="https://fastly.picsum.photos/id/1060/200/300.jpg?hmac=xYtFmeYcfydIF3-Qybnra-tMwklX69T52EtGd-bacBI"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>Async Awakenings</h4>
+                        <p class="desciption">Nina Netcode</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--sm"
+                          src="https://fastly.picsum.photos/id/941/200/300.jpg?hmac=tSztWslp5Hm2jEg1UjAvvVNsaDT3dsPAEZ5lQ_yhNKA"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>The Art of Reusability</h4>
+                        <p class="desciption">Lena Logic</p>
+                      </div>
+                    </div>
+                    <div class="carousel__item">
+                      <div class="image__container">
+                        <img
+                          class="image--sm"
+                          src="https://fastly.picsum.photos/id/477/200/300.jpg?hmac=Y-uy4_ZZZ6HOZCxdiN04OOypBZ3y2dY2gAfu9MvZMSE"
+                        />
+                      </div>
+                      <div class="title">
+                        <h4>Stateful Symphony</h4>
+                        <p class="desciption">Beth Binary</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <button class="btn--hover">GitHub</button>
-                <p class="text--accent-color">By clicking continue, you agree to our <a href="" class="link--underlined text--accent-color">Terms of Service</a> and <a href="" class="link--underlined text--accent-color">Privacy Policy.</a></p>
+              </div>
+            </div>
+            <!-- AUTHENTICATION TAB -->
+            <div class="page" id="authentication">
+              <div class="form__layout">
+                <button class="btn--ghost login-btn">Login</button>
+                <div class="account__section">
+                  <div class="title">
+                    <h4>Create an account</h4>
+                    <p>Enter your email below to create your account</p>
+                  </div>
+                  <div class="signin__section">
+                    <input placeholder="name@example.com" />
+                    <button class="btn--accent">Sign in with Email</button>
+                    <div class="divider">
+                      <span></span>
+                      <p>OR CONTINUE WITH</p>
+                      <span></span>
+                    </div>
+                    <button class="btn--hover">GitHub</button>
+                    <p class="text--accent-color">
+                      By clicking continue, you agree to our
+                      <a href="" class="link--underlined text--accent-color"
+                        >Terms of Service</a
+                      >
+                      and
+                      <a href="" class="link--underlined text--accent-color"
+                        >Privacy Policy.</a
+                      >
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -910,9 +1078,17 @@
     </main>
     <footer>
       <p>
-        Built by <a href="https://www.twitch.tv/zynkah" class="link--underlined text--accent-color">zynkcl</a>. The source
-        code is available on
-        <a href="https://github.com/Zynkah/component-library" class="link--underlined text--accent-color">GitHub</a>.
+        Built by
+        <a
+          href="https://www.twitch.tv/zynkah"
+          class="link--underlined text--accent-color"
+          >zynkcl</a
+        >. The source code is available on
+        <a
+          href="https://github.com/Zynkah/component-library"
+          class="link--underlined text--accent-color"
+          >GitHub</a
+        >.
       </p>
     </footer>
     <script src="./js/script.js"></script>
