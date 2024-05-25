@@ -27,21 +27,6 @@
   color-scheme: dark;
 }
 
-@font-face {
-  font-family: "GeistMonoVF";
-  src: url("../font/GeistMonoVF.ttf") format("truetype");
-}
-code {
-  font-family: "GeistMonoVF", monospace;
-}
-
-@font-face {
-  font-family: "GeistVF";
-  src: url("../font/GeistVF.ttf") format("truetype");
-}
-body {
-  font-family: "GeistVF", sans-serif;
-}
 
 hr {
   border: none;
