@@ -1,6 +1,6 @@
 .form__layout {
   text-align: left;
-  margin-block: 2.3rem;
+  margin-block: 2rem;
   margin-inline: 2rem;
 }
 
@@ -12,20 +12,19 @@
 .form__tabs {
   border-top: 1px solid var(--accentColor);
   margin-top: 2rem;
-}
 
-.form__tabs div {
-  display: inline-flex;
-  margin-top: 2rem;
-  padding: 0.8rem;
-}
+  & div {
+    display: inline-flex;
+    margin-top: 2rem;
+    padding: 0.8rem;
+  }
+  & div:first-child {
+    padding-left: 0;
+  }
 
-.form__tabs div:first-child {
-  padding-left: 0;
-}
-
-.form__tabs div:hover {
-  text-decoration: underline;
+  & div:hover {
+    text-decoration: underline;
+  }
 }
 
 /* fix */
@@ -47,10 +46,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-}
 
-.form__details label {
-  margin-top: 1.5rem;
+  & label {
+    margin-top: 1.5rem;
+  }
 }
 
 .bio {
@@ -60,10 +59,6 @@
 .datePicker {
   max-width: 40%;
   color-scheme: dark;
-}
-
-.language {
-  max-width: 30%;
 }
 
 .mode__container {
@@ -153,7 +148,7 @@
 }
 
 .circle {
- width: 15px;
+  width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #ecedef;
@@ -181,31 +176,30 @@
 }
 
 .card__container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .check__box__section {
-    display:flex;
-    gap: .6rem;
+  display: flex;
+  gap: 0.6rem;
 }
-
 
 /* toggle classes */
 
 .toggle__cards__container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .toggle__cards {
-   display: flex;
-   border: var(--border);
-   border-radius: var(--borderRadius);
-   width: 95%;
-   padding-bottom: 1rem;
-   padding-inline: 1rem;
+  display: flex;
+  border: var(--border);
+  border-radius: var(--borderRadius);
+  width: 95%;
+  padding-bottom: 1rem;
+  padding-inline: 1rem;
 }
 
 .switch {
@@ -214,12 +208,12 @@
   width: 42px;
   height: 24px;
   margin-left: auto;
-}
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+  &input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
 .slider {
@@ -230,8 +224,8 @@
   right: 0;
   bottom: 0;
   background-color: var(--accentColor);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -242,20 +236,20 @@
   left: 4px;
   bottom: 3px;
   background-color: VAR(--backgroundColor);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 input:focus-visible + .slider {
-  box-shadow: 0 0 1px #FAFAFA;
+  box-shadow: 0 0 1px #fafafa;
 }
 
 input:disabled + .slider {
-    opacity: .5;
+  opacity: 0.5;
 }
 
 input:checked + .slider:before {
@@ -271,4 +265,70 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* radio classes */
+
+.radio__section {
+  display: flex;
+}
+
+.label_class {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.radio__group {
+  margin-top: 1rem;
+
+  & label {
+    margin-top: 0.5rem;
+  }
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--backgroundColor);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: white;
+}
+
+.check__box__section {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  aspect-ratio: 1/1;
+}
+
+input[type="checkbox"]:checked {
+  background-color: white;
+}
+/* add check mark svg later */
+
+.check__box__group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* re-arrange input and label for flexibility */
+.checkbox__item {
+  display: flex;
+  align-items: center;
+
+  & label {
+    display: flex;
+    gap: 0.5rem;
+    margin-block: 0.3rem;
+  }
+
+  & input {
+    margin: 0;
+  }
 }

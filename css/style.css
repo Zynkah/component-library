@@ -8,32 +8,40 @@
   --buttonPaddingBlock: 0.6rem;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
 :root.light {
-  --dark-mode: 0;
   color-scheme: light;
 }
 
 :root.dark {
-  --dark-mode: 1;
   color-scheme: dark;
+}
+
+
+hr {
+  border: none;
+  border-bottom: var(--border);
 }
 
 /* for debugging */
 /* * { outline: 1px solid #ff0000; } */
 
-html,
 body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-flow: column;
   background-color: var(--backgroundColor);
   color: white;
   min-height: 100vh;
-  margin: 0;
 }
 
 nav {
@@ -49,6 +57,7 @@ nav:first-child {
 
 main {
   text-align: center;
+  flex-grow: 1;
 }
 
 a {
@@ -67,11 +76,11 @@ footer {
   margin-left: 4rem;
 }
 
-footer a {
+.link--underlined {
   text-decoration: underline;
 }
 
-select {
+.select {
   background-color: var(--backgroundColor);
   border-radius: var(--borderRadius);
   padding-block: 0.5rem;
@@ -79,7 +88,11 @@ select {
   color: white;
 }
 
-select:hover {
+.max-width--30 {
+  max-width: 30%;
+}
+
+.select:hover {
   background-color: var(--buttonColor);
 }
 
@@ -95,6 +108,25 @@ select:hover {
   border-radius: 50%;
 }
 
+.image--lg {
+  height: 350px;
+  width: auto;
+  border-radius: var(--borderRadius)
+}
+
+.image--sm {
+  height: 150px;
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: var(--borderRadius);
+}
+
+.title h2 {
+    margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+}
+
 .title h3 {
   margin-top: 1rem;
   margin-bottom: 0.3rem;
@@ -108,7 +140,7 @@ select:hover {
 }
 
 .title h5 {
-    margin-top: 1rem;
+  margin-top: 1rem;
   margin-bottom: 0.3rem;
   font-size: 1rem;
 }
@@ -116,6 +148,14 @@ select:hover {
 .title p {
   margin-block: 0.1rem;
   opacity: 0.6;
+}
+
+.text--accent-color {
+  color: #a1a1aa;
+}
+
+a.text--accent-color:hover {
+  color: white;
 }
 
 .description {
@@ -129,6 +169,14 @@ select:hover {
   display: inline-flex;
   gap: 1rem;
   padding: 0rem 1rem;
+
+  & li {
+    opacity: 0.6;
+  }
+
+  & li:hover {
+    opacity: 0.8;
+  }
 }
 
 /* @media (max-width: 767px) {
@@ -137,14 +185,6 @@ select:hover {
     }
          
  } */
-
-.nav__links li {
-  opacity: 0.6;
-}
-
-.nav__links li:hover {
-  opacity: 0.8;
-}
 
 /* Hero Classes */
 
@@ -239,6 +279,20 @@ select:hover {
   cursor: pointer;
 }
 
+.btn--ghost {
+  border: none;
+  border-radius: var(--borderRadius);
+  background-color: inherit;
+  padding-block: var(--buttonPaddingBlock);
+  padding-inline: var(--buttonPaddingInline);
+  cursor: pointer;
+  color: white;
+}
+
+.btn--ghost:hover {
+  background-color: var(--accentColor);
+}
+
 .btn__container {
   display: flex;
   width: 100%;
@@ -247,6 +301,35 @@ select:hover {
   padding-block: 1rem;
   gap: 1rem;
   color: white;
+}
+
+.btn__nav {
+  border-radius: var(--borderRadius);
+  background-color: var(--buttonColor);
+  padding: 0.2rem;
+  color: white;
+  max-width: fit-content;
+
+  & .active {
+    background-color: var(--backgroundColor);
+    color: white;
+  }
+
+  & .disabled {
+    opacity: 0.6;
+  }
+
+  & button {
+    border: none;
+    border-radius: var(--borderRadius);
+    font-size: 0.9rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+    background-color: var(--buttonColor);
+    cursor: pointer;
+    color: #a1a1aa;
+    font-weight: bold;
+  }
 }
 
 /* Component display classes */
@@ -272,16 +355,16 @@ select:hover {
   display: inline-flex;
   gap: 1rem;
   padding: 0rem 1rem;
-}
 
-.component__tabList li {
-  color: #d2cbbe;
-  opacity: 0.8;
-}
+  & li {
+    color: #d2cbbe;
+    opacity: 0.8;
+  }
 
-.component__tabList li:hover {
-  color: rgb(210, 203, 190);
-  opacity: 1;
+  & li:hover {
+    color: rgb(210, 203, 190);
+    opacity: 1;
+  }
 }
 
 .component__display {
@@ -293,7 +376,7 @@ select:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: fit-content;
+  position: relative;
 }
 
 /*Classes for the cards*/
