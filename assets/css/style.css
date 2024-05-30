@@ -55,6 +55,7 @@ nav:first-child {
 }
 
 main {
+    text-align: center;
   flex-grow: 1;
 }
 
