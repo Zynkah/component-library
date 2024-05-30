@@ -27,6 +27,7 @@
     </header>
 
     <main>
+      <!-- Hero section -->
       <section class="hero">
         <button class="btn">Introducing Zynkronization →</button>
         <h1>Build a component library</h1>
@@ -36,20 +37,24 @@
           <button class="btn--hover">GitHub</button>
         </div>
       </section>
+
+      <!-- Examples Nav Tabs  -->
       <ul class="component__tabList">
-        <li><a href="#mail" onclick="showPage('mail')">Mail</a></li>
+        <li><a href="./#mail" onclick="showPage('mail')">Mail</a></li>
         <li>
-          <a href="#dashboard" onclick="showPage('dashboard')">Dashboard</a>
+          <a href="./#dashboard" onclick="showPage('dashboard')">Dashboard</a>
         </li>
-        <li><a href="#cards" onclick="showPage('cards')">Cards</a></li>
-        <li><a href="#tasks" onclick="showPage('tasks')">Tasks</a></li>
+        <li><a href="./#cards" onclick="showPage('cards')">Cards</a></li>
+        <li><a href="./#tasks" onclick="showPage('tasks')">Tasks</a></li>
         <li>
-          <a href="#playground" onclick="showPage('playground')">Playground</a>
+          <a href="./#playground" onclick="showPage('playground')"
+            >Playground</a
+          >
         </li>
-        <li><a href="#form" onclick="showPage('form')">Form</a></li>
-        <li><a href="#music" onclick="showPage('music')">Music</a></li>
+        <li><a href="./#form" onclick="showPage('form')">Form</a></li>
+        <li><a href="./#music" onclick="showPage('music')">Music</a></li>
         <li>
-          <a href="#authentication" onclick="showPage('authentication')"
+          <a href="./#authentication" onclick="showPage('authentication')"
             >Authentication</a
           >
         </li>
@@ -59,27 +64,15 @@
         <div class="component__display">
           <!-- MAIL TAB -->
           <div class="page" id="mail">
-            <div class="mail__header">
-              <div class="column">
-                <select class="select">
-                  <option>Alicia Koch</option>
-                  <option>ACME Inc.</option>
-                  <option>Monsters Inc.</option>
-                </select>
-              </div>
-              <div class="column">
-                <div class="inbox__header">
-                  Inbox
-                  <div class="btn__nav">
-                    <button class="active">All mail</button>
-                    <button>Unread</button>
-                  </div>
-                </div>
-              </div>
-              <div class="column">List of icons</div>
-            </div>
             <div class="mail__content">
               <div class="column__content">
+                <div class="column">
+                  <select class="select">
+                    <option>Alicia Koch</option>
+                    <option>ACME Inc.</option>
+                    <option>Monsters Inc.</option>
+                  </select>
+                </div>
                 <div class="mail-tabs">
                   <div class="active">Inbox</div>
                   <div>Drafts</div>
@@ -87,8 +80,7 @@
                   <div>Junk</div>
                   <div>Trash</div>
                   <div>Archive</div>
-                </div>
-                <div class="mail-tabs">
+                  <hr />
                   <div>Social</div>
                   <div>Updates</div>
                   <div>Forums</div>
@@ -96,8 +88,18 @@
                   <div>Promotions</div>
                 </div>
               </div>
+
               <div class="column__content">
-                <section class="inbox-section">
+                <div class="column">
+                  <div class="inbox__header">
+                    Inbox
+                    <div class="btn__nav">
+                      <button class="active">All mail</button>
+                      <button>Unread</button>
+                    </div>
+                  </div>
+                </div>
+                <section class="inbox-section" id="inbox-section">
                   <input placeholder="Search" />
                   <div class="home-card">
                     <h3 class="home-card-title">William Smith</h3>
@@ -141,9 +143,26 @@
                   </div>
                 </section>
               </div>
+
               <div class="column__content">
-                <div class="home-card">
-                  <h3>William Smith</h3>
+                <div class="column">List of icons</div>
+
+                <div class="email__details__header">
+                  <img
+                    class="avatar"
+                    src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                  />
+                  <h3>{name}</h3>
+                </div>
+                <div class="email__details">
+                  <p>
+                    Hi, let's have a meeting tomorrow to discuss the project.
+                    I've been reviewing the project details and have some ideas
+                    I'd like to share. It's crucial that we align on our next
+                    steps to ensure the project's success. Please come prepared
+                    with any questions or insights you may have. Looking forward
+                    to our meeting! Best regards, William
+                  </p>
                 </div>
               </div>
             </div>
@@ -387,10 +406,6 @@
               </div>
 
               <!-- <div class="card-card">
-             
-            
-           
-           
             <div class="card-card">
               <h3>Overview</h3>
             </div>
@@ -426,29 +441,29 @@
               >
               <div class="form__tabs">
                 <div>
-                  <a href="#profile" onclick="showFormTab('profile')"
+                  <a href="./#profile" onclick="showFormTab('profile')"
                     >Profile</a
                   >
                 </div>
                 <div>
-                  <a href="#account" onclick="showFormTab('account')"
+                  <a href="./#account" onclick="showFormTab('account')"
                     >Account</a
                   >
                 </div>
                 <div>
-                  <a href="#appearance" onclick="showFormTab('appearance')"
+                  <a href="./#appearance" onclick="showFormTab('appearance')"
                     >Appearance</a
                   >
                 </div>
                 <div>
                   <a
-                    href="#notifications"
+                    href="./#notifications"
                     onclick="showFormTab('notifications')"
                     >Notifications</a
                   >
                 </div>
                 <div>
-                  <a href="#display" onclick="showFormTab('display')"
+                  <a href="./#display" onclick="showFormTab('display')"
                     >Display</a
                   >
                 </div>

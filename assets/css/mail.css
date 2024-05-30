@@ -1,11 +1,3 @@
-.mail__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--accentColor);
-  padding-inline: 1rem;
-}
-
 .inbox__header {
   display: flex;
   justify-content: space-between;
@@ -19,20 +11,22 @@
 }
 
 .column {
-  padding: 0.5rem;
+  border-bottom: 1px solid var(--accentColor);
+  padding: 1rem;
+  height: 2rem;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .column__content {
-  padding-inline: 1rem;
   border-right: 1px solid var(--accentColor);
 }
-
 
 .inbox-section {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding-block: 1rem;
+  padding: 1rem;
 
   & input {
     margin-bottom: 0.8rem;
@@ -71,7 +65,7 @@
 
 .home-card-content {
   font-size: 0.8rem;
-  color: rgb(152, 142, 125);
+  color:  #737373;
 }
 
 .home-card-footer {
@@ -80,16 +74,12 @@
 
 .mail-tabs {
   padding-block: 1rem;
-  list-style: none;
-  text-align: left;
-  margin-bottom: 1rem;
 
   & div {
     border: none;
     padding: 0.5rem 0.6rem;
-    margin: 0.2rem 1rem;
+    margin: 0.2rem 0.5rem;
     border-radius: var(--borderRadius);
-    background-color: var(--backgroundColor);
   }
 
   & div:hover {
@@ -101,6 +91,17 @@
   }
 }
 
-.mail-tabs:first-child {
+.email__details__header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   border-bottom: 1px solid var(--accentColor);
+}
+
+.email__details {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
 }
