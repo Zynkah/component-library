@@ -42,6 +42,8 @@
   position: relative;
   border: var(--border);
   text-align: left;
+  max-width: 600px;
+  height: auto;
 }
 
 .timestamp {

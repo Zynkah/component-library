@@ -21,7 +21,6 @@ function showPage(pageId) {
   selectedPage.classList.add("active");
 }
 
-
 function showFormTab(tabId) {
   const tabs = document.querySelectorAll(".tab");
   tabs.forEach((tab) => {
@@ -32,30 +31,37 @@ function showFormTab(tabId) {
   selectedTab.classList.add("active");
 }
 
-
-fetch('./data/emails.json')
-  .then(response => response.json())
+fetch("./data/emails.json")
+  .then((response) => response.json())
   .then((data) => {
     console.log(data);
     const emailList = data.map((item, index) => {
+      const tagList = item.tags.map((tag, index) => {
+        const tagClass = tag == "work" ? "accent--sm btn--sm" : "btn--sm";
+        return `<span class="${tagClass}">${tag}</span>`;
+      });
+      const joined = tagList.join("");
+
       const emailCard = document.createElement("div");
       emailCard.innerHTML = `
+      <div class="home-card">
         <h3 class="home-card-title">${item.name}</h3>
         <p class="timestamp">${item.age}</p>
         <p class="home-card-description">${item.subject}</p>
-        <p class="home-card-content">
-          ${item.content}
-        </p>
+        <p class="home-card-content">${item.content}</p>
+        <p class="home-card-footer">${joined}</p>
+        </div>
       `;
-      return emailCard; 
+      return emailCard;
     });
-    document.getElementById("inbox-section").appendChild(emailList);
+    for (let i = 0; i < emailList.length; i++) {
+      document.getElementById("inbox-section").appendChild(emailList[i]);
+    }
   })
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));
 
-
-        //   <p class="home-card-footer">
-        //   <button class="btn--sm">meeting</button>
-        //   <button class="btn--sm">work</button>
-        //   <button class="btn--sm">important</button>
-        // </p>
+//   <p class="home-card-footer">
+//   <button class="btn--sm">meeting</button>
+//   <button class="btn--sm">work</button>
+//   <button class="btn--sm">important</button>
+// </p>

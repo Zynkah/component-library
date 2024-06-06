@@ -218,6 +218,7 @@ a.text--accent-color:hover {
   cursor: pointer;
 }
 
+
 .btn--sm {
   border: none;
   color: white;
@@ -230,6 +231,10 @@ a.text--accent-color:hover {
   background-color: var(--buttonColor);
   cursor: pointer;
   margin-inline: 0.3rem;
+}
+.accent--sm {
+   background-color: white;
+   color: black;
 }
 
 .btn--sm:first-child {
@@ -303,6 +308,7 @@ a.text--accent-color:hover {
   color: white;
   max-width: fit-content;
   display: flex;
+  text-wrap:nowrap;
 
   & .active {
     background-color: var(--backgroundColor);
