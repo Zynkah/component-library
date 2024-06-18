@@ -104,268 +104,256 @@
                 </section>
               </div>
 
-              <div class="column__content">
-                <div class="column">List of icons</div>
+              <div class="column__content" id="rendered-email"></div>
 
-                <div class="email__details__header">
+              <!-- DASHBOARD TAB -->
+              <div class="page" id="dashboard">
+                <div class="dashboard__nav">
+                  <select class="select">
+                    <option>Alicia Koch</option>
+
+                    <option>ACME Inc.</option>
+                    <option>Monsters Inc.</option>
+                  </select>
+                  <ul>
+                    <li>Overview</li>
+                    <li>Customers</li>
+                    <li>Products</li>
+                    <li>Settings</li>
+                  </ul>
+                  <input placeholder="Search..." />
                   <img
                     class="avatar"
                     src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
                   />
-                  <h3>{name}</h3>
                 </div>
-                <div class="email__details">
-                  <p>
-                    Hi, let's have a meeting tomorrow to discuss the project.
-                    I've been reviewing the project details and have some ideas
-                    I'd like to share. It's crucial that we align on our next
-                    steps to ensure the project's success. Please come prepared
-                    with any questions or insights you may have. Looking forward
-                    to our meeting! Best regards, William
-                  </p>
+                <div class="dashboard__header">
+                  <h2>Dashboard</h2>
+                  <button class="btn--hover">
+                    Jan 20, 2023 - Feb 09, 2023
+                  </button>
+                  <button class="btn--accent">Download</button>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- DASHBOARD TAB -->
-          <div class="page" id="dashboard">
-            <div class="dashboard__nav">
-              <select class="select">
-                <option>Alicia Koch</option>
-
-                <option>ACME Inc.</option>
-                <option>Monsters Inc.</option>
-              </select>
-              <ul>
-                <li>Overview</li>
-                <li>Customers</li>
-                <li>Products</li>
-                <li>Settings</li>
-              </ul>
-              <input placeholder="Search..." />
-              <img
-                class="avatar"
-                src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-              />
-            </div>
-            <div class="dashboard__header">
-              <h2>Dashboard</h2>
-              <button class="btn--hover">Jan 20, 2023 - Feb 09, 2023</button>
-              <button class="btn--accent">Download</button>
-            </div>
-            <div class="dashboard__tabs">
-              <div class="btn__nav">
-                <button class="active">Overview</button>
-                <button>Analytics</button>
-                <button>Reports</button>
-                <button>Notifications</button>
-              </div>
-              <div class="dashboard__grid">
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-                <div class="dashboard__card">
-                  <h3>Total Revenue</h3>
-                  <p class="card__icon">icon</p>
-                  <p class="dashboard__card-description">$45,231.89</p>
-                  <p class="dashboard__card-content">+20.1% from last month</p>
-                </div>
-              </div>
-              <div class="detail__card">
-                <h3>Overview</h3>
-              </div>
-              <div class="detail__card">
-                <h3>Recent Sales</h3>
-                <p>You made 265 sales this month.</p>
-                <div class="sales__grid">
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
+                <div class="dashboard__tabs">
+                  <div class="btn__nav">
+                    <button class="active">Overview</button>
+                    <button>Analytics</button>
+                    <button>Reports</button>
+                    <button>Notifications</button>
                   </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="sales__name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="sale__amount">+$1,999.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD TAB -->
-          <div class="page" id="cards">
-            <div class="card__grid">
-              <div class="account__card">
-                <span class="title">
-                  <h3>Create an account</h3>
-                  <p>Enter your email below create your account</p></span
-                >
-
-                <div class="btn__container">
-                  <button class="btn--lg">GitHub</button
-                  ><button class="btn--lg">Google</button>
-                </div>
-                <div class="divider">
-                  <span></span>
-                  <p>OR CONTINUE WITH</p>
-                  <span></span>
-                </div>
-
-                <div class="email__input">
-                  <label>Email</label>
-                  <input placeholder="m@example.com" />
-                  <label>Password</label>
-                  <input />
-                  <button class="btn--xl">Create account</button>
-                </div>
-              </div>
-
-              <div class="payment__card">
-                <span class="title">
-                  <h3>Payment Method</h3>
-                  <p>Add a new payment method to your account.</p>
-                </span>
-                <div class="payment__options">
-                  <div class="payment__optionsCard"><h3>Card</h3></div>
-                  <div class="payment__optionsCard"><h3>Paypal</h3></div>
-                  <div class="payment__optionsCard"><h3>Apple</h3></div>
-                </div>
-                <div class="payment__input">
-                  <label>Name</label>
-                  <input placeholder="First Last" />
-                  <label>Card number</label>
-                  <input />
-
-                  <div class="card__info">
-                    <div class="expires">
-                      <label>Expires</label>
-                      <select class="select">
-                        <option>Month</option>
-                      </select>
+                  <div class="dashboard__grid">
+                    <div class="dashboard__card">
+                      <h3>Total Revenue</h3>
+                      <p class="card__icon">icon</p>
+                      <p class="dashboard__card-description">$45,231.89</p>
+                      <p class="dashboard__card-content">
+                        +20.1% from last month
+                      </p>
                     </div>
-                    <div class="year">
-                      <label>Year</label>
-                      <select class="select">
-                        <option>Year</option>
-                      </select>
+                    <div class="dashboard__card">
+                      <h3>Total Revenue</h3>
+                      <p class="card__icon">icon</p>
+                      <p class="dashboard__card-description">$45,231.89</p>
+                      <p class="dashboard__card-content">
+                        +20.1% from last month
+                      </p>
                     </div>
-                    <div class="cvc">
-                      <label>CVC</label>
+                    <div class="dashboard__card">
+                      <h3>Total Revenue</h3>
+                      <p class="card__icon">icon</p>
+                      <p class="dashboard__card-description">$45,231.89</p>
+                      <p class="dashboard__card-content">
+                        +20.1% from last month
+                      </p>
+                    </div>
+                    <div class="dashboard__card">
+                      <h3>Total Revenue</h3>
+                      <p class="card__icon">icon</p>
+                      <p class="dashboard__card-description">$45,231.89</p>
+                      <p class="dashboard__card-content">
+                        +20.1% from last month
+                      </p>
+                    </div>
+                  </div>
+                  <div class="detail__card">
+                    <h3>Overview</h3>
+                  </div>
+                  <div class="detail__card">
+                    <h3>Recent Sales</h3>
+                    <p>You made 265 sales this month.</p>
+                    <div class="sales__grid">
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="sales__name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="sale__amount">+$1,999.00</span>
+                      </div>
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="sales__name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="sale__amount">+$1,999.00</span>
+                      </div>
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="sales__name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="sale__amount">+$1,999.00</span>
+                      </div>
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="sales__name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="sale__amount">+$1,999.00</span>
+                      </div>
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="sales__name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="sale__amount">+$1,999.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD TAB -->
+              <div class="page" id="cards">
+                <div class="card__grid">
+                  <div class="account__card">
+                    <span class="title">
+                      <h3>Create an account</h3>
+                      <p>Enter your email below create your account</p></span
+                    >
+
+                    <div class="btn__container">
+                      <button class="btn--lg">GitHub</button
+                      ><button class="btn--lg">Google</button>
+                    </div>
+                    <div class="divider">
+                      <span></span>
+                      <p>OR CONTINUE WITH</p>
+                      <span></span>
+                    </div>
+
+                    <div class="email__input">
+                      <label>Email</label>
+                      <input placeholder="m@example.com" />
+                      <label>Password</label>
                       <input />
+                      <button class="btn--xl">Create account</button>
                     </div>
                   </div>
 
-                  <button class="btn--xl">Create account</button>
-                </div>
-              </div>
-              <div class="team-card">
-                <span class="title">
-                  <h3>Team Members</h3>
-                  <p>Invite your team remembers to collaborate</p></span
-                >
-                <div class="team__grid">
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="team-name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
+                  <div class="payment__card">
+                    <span class="title">
+                      <h3>Payment Method</h3>
+                      <p>Add a new payment method to your account.</p>
                     </span>
-                    <span class="team__role"
-                      ><select class="select">
-                        <option>Viewer</option>
-                        <option>Developer</option>
-                        <option>Billing</option>
-                        <option>Owner</option>
-                      </select></span
-                    >
-                  </div>
-                  <div>
-                    <img
-                      class="avatar"
-                      src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
-                    />
-                    <span class="team-name">
-                      <h3>Olivia Martin</h3>
-                      <p>olivia.martin@email.com</p>
-                    </span>
-                    <span class="team__role"
-                      ><select class="select">
-                        <option>Viewer</option>
-                        <option>Developer</option>
-                        <option>Billing</option>
-                        <option>Owner</option>
-                      </select></span
-                    >
-                  </div>
-                </div>
-              </div>
+                    <div class="payment__options">
+                      <div class="payment__optionsCard"><h3>Card</h3></div>
+                      <div class="payment__optionsCard"><h3>Paypal</h3></div>
+                      <div class="payment__optionsCard"><h3>Apple</h3></div>
+                    </div>
+                    <div class="payment__input">
+                      <label>Name</label>
+                      <input placeholder="First Last" />
+                      <label>Card number</label>
+                      <input />
 
-              <!-- <div class="card-card">
+                      <div class="card__info">
+                        <div class="expires">
+                          <label>Expires</label>
+                          <select class="select">
+                            <option>Month</option>
+                          </select>
+                        </div>
+                        <div class="year">
+                          <label>Year</label>
+                          <select class="select">
+                            <option>Year</option>
+                          </select>
+                        </div>
+                        <div class="cvc">
+                          <label>CVC</label>
+                          <input />
+                        </div>
+                      </div>
+
+                      <button class="btn--xl">Create account</button>
+                    </div>
+                  </div>
+                  <div class="team-card">
+                    <span class="title">
+                      <h3>Team Members</h3>
+                      <p>Invite your team remembers to collaborate</p></span
+                    >
+                    <div class="team__grid">
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="team-name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="team__role"
+                          ><select class="select">
+                            <option>Viewer</option>
+                            <option>Developer</option>
+                            <option>Billing</option>
+                            <option>Owner</option>
+                          </select></span
+                        >
+                      </div>
+                      <div>
+                        <img
+                          class="avatar"
+                          src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+                        />
+                        <span class="team-name">
+                          <h3>Olivia Martin</h3>
+                          <p>olivia.martin@email.com</p>
+                        </span>
+                        <span class="team__role"
+                          ><select class="select">
+                            <option>Viewer</option>
+                            <option>Developer</option>
+                            <option>Billing</option>
+                            <option>Owner</option>
+                          </select></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="card-card">
             <div class="card-card">
               <h3>Overview</h3>
             </div>
@@ -381,668 +369,676 @@
             <div class="card-card">
               <h3>Overview</h3>
             </div> -->
-            </div>
-          </div>
-
-          <!--  TASK TAB -->
-          <div class="page" id="tasks"></div>
-
-          <!-- PLAYGROUND TAB -->
-          <div class="page" id="playground"></div>
-
-          <!-- FORM TAB -->
-          <div class="page" id="form">
-            <div class="form__layout">
-              <span class="title">
-                <h3>Settings</h3>
-                <p>
-                  Manage your account settings and set e-mail preferences
-                </p></span
-              >
-              <div class="form__tabs">
-                <div>
-                  <a href="./#profile" onclick="showFormTab('profile')"
-                    >Profile</a
-                  >
-                </div>
-                <div>
-                  <a href="./#account" onclick="showFormTab('account')"
-                    >Account</a
-                  >
-                </div>
-                <div>
-                  <a href="./#appearance" onclick="showFormTab('appearance')"
-                    >Appearance</a
-                  >
-                </div>
-                <div>
-                  <a
-                    href="./#notifications"
-                    onclick="showFormTab('notifications')"
-                    >Notifications</a
-                  >
-                </div>
-                <div>
-                  <a href="./#display" onclick="showFormTab('display')"
-                    >Display</a
-                  >
                 </div>
               </div>
-              <div class="form__display">
-                <div class="tab" id="profile">
-                  <span class="title"
-                    ><h4>Profile</h4>
-                    <p>This is how others will see you on the site.</p></span
+
+              <!--  TASK TAB -->
+              <div class="page" id="tasks"></div>
+
+              <!-- PLAYGROUND TAB -->
+              <div class="page" id="playground"></div>
+
+              <!-- FORM TAB -->
+              <div class="page" id="form">
+                <div class="form__layout">
+                  <span class="title">
+                    <h3>Settings</h3>
+                    <p>
+                      Manage your account settings and set e-mail preferences
+                    </p></span
                   >
-                  <div class="form__details">
-                    <label>Username</label>
-                    <input placeholder="zynkcl" />
-                    <span class="description"
-                      ><p>
-                        This is your public display name. It can be your real
-                        name or a pseudonym.You can only change this once every
-                        30 days.
-                      </p></span
-                    >
-                    <label>Email</label>
-                    <select class="select">
-                      <option>Select a verified email to display</option>
-                      <option>m@example.com</option>
-                      <option>n@example.com</option>
-                      <option>o@example.com</option>
-                    </select>
-                    <span class="description"
-                      ><p>
-                        You can manage verified email addresses in your email
-                        settings.
-                      </p></span
-                    >
-                    <label>Bio</label>
-                    <input placeholder="I own a computer." class="bio" />
-                    <span class="description"
-                      ><p>
-                        You can @mention other users and organizations to link
-                        to them.
-                      </p></span
-                    >
-                    <label>URLs</label>
-                    <span class="description"
-                      ><p>
-                        Add links to your website, blog, or social media
-                        profiles.
-                      </p></span
-                    >
-                    <input placeholder="https://zynkcl.com" />
-                    <input placeholder="https://twitch.tv/zynkah" />
-                    <button class="btn--hover" style="width: fit-content">
-                      Add URL
-                    </button>
-                    <button
-                      class="btn--accent"
-                      style="width: fit-content; margin-top: 1.2rem"
-                    >
-                      Update profile
-                    </button>
+                  <div class="form__tabs">
+                    <div>
+                      <a href="./#profile" onclick="showFormTab('profile')"
+                        >Profile</a
+                      >
+                    </div>
+                    <div>
+                      <a href="./#account" onclick="showFormTab('account')"
+                        >Account</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="./#appearance"
+                        onclick="showFormTab('appearance')"
+                        >Appearance</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="./#notifications"
+                        onclick="showFormTab('notifications')"
+                        >Notifications</a
+                      >
+                    </div>
+                    <div>
+                      <a href="./#display" onclick="showFormTab('display')"
+                        >Display</a
+                      >
+                    </div>
                   </div>
-                </div>
-                <div class="tab" id="account">
-                  <div class="title">
-                    <h4>Account</h4>
-                    <p>
-                      Update your account settings. Set your preferred language
-                      and timezone.
-                    </p>
-                  </div>
-                  <div class="form__details">
-                    <label>Name</label>
-                    <input placeholder="Your name" />
-                    <span class="title"
-                      ><p>
-                        This is the name that will be displayed on your profile
-                        and in emails.
-                      </p></span
-                    >
-                    <label>Date of birth</label>
-                    <input type="date" class="datePicker" />
-                    <span class="description"
-                      ><p>
-                        Your date of birth is used to calculate your age.
-                      </p></span
-                    >
-                    <label>Language</label>
-                    <select class="max-width--30 select">
-                      <option>Select language:</option>
-                      <option>English</option>
-                      <option>French</option>
-                      <option>German</option>
-                      <option>Spanish</option>
-                      <option>Portuguese</option>
-                      <option>Russian</option>
-                      <option>Japanese</option>
-                      <option>Korean</option>
-                      <option>Chinese</option>
-                    </select>
-                    <span class="description"
-                      ><p>
-                        This is the language that will be used in the dashboard.
-                      </p></span
-                    >
-                    <button
-                      class="btn--accent"
-                      style="width: fit-content; margin-top: 1.2rem"
-                    >
-                      Update account
-                    </button>
-                  </div>
-                </div>
-                <div class="tab" id="appearance">
-                  <div class="title">
-                    <h4>Appearance</h4>
-                    <p>
-                      Customize the appearance of the app. Automatically switch
-                      between day and night themes.
-                    </p>
-                  </div>
-                  <div class="form__details">
-                    <label>Font</label>
-                    <select class="max-width--30 select">
-                      <option>Inter</option>
-                      <option>Manrope</option>
-                      <option>System</option>
-                    </select>
-                    <p class="description">
-                      Set the font you want to use in the dashboard.
-                    </p>
-                    <label>Theme</label>
-                    <p class="description">
-                      Select the theme for the dashboard.
-                    </p>
-                    <div class="mode__container">
-                      <div class="card__container">
-                        <div class="light__mode__card">
-                          <div class="light__mode__column">
-                            <div class="first__row">
-                              <div class="sm--row">
-                                <div class="lower__rows">
-                                  <div class="circle"></div>
-                                  <div class="sm--row"></div>
+                  <div class="form__display">
+                    <div class="tab" id="profile">
+                      <span class="title"
+                        ><h4>Profile</h4>
+                        <p>
+                          This is how others will see you on the site.
+                        </p></span
+                      >
+                      <div class="form__details">
+                        <label>Username</label>
+                        <input placeholder="zynkcl" />
+                        <span class="description"
+                          ><p>
+                            This is your public display name. It can be your
+                            real name or a pseudonym.You can only change this
+                            once every 30 days.
+                          </p></span
+                        >
+                        <label>Email</label>
+                        <select class="select">
+                          <option>Select a verified email to display</option>
+                          <option>m@example.com</option>
+                          <option>n@example.com</option>
+                          <option>o@example.com</option>
+                        </select>
+                        <span class="description"
+                          ><p>
+                            You can manage verified email addresses in your
+                            email settings.
+                          </p></span
+                        >
+                        <label>Bio</label>
+                        <input placeholder="I own a computer." class="bio" />
+                        <span class="description"
+                          ><p>
+                            You can @mention other users and organizations to
+                            link to them.
+                          </p></span
+                        >
+                        <label>URLs</label>
+                        <span class="description"
+                          ><p>
+                            Add links to your website, blog, or social media
+                            profiles.
+                          </p></span
+                        >
+                        <input placeholder="https://zynkcl.com" />
+                        <input placeholder="https://twitch.tv/zynkah" />
+                        <button class="btn--hover" style="width: fit-content">
+                          Add URL
+                        </button>
+                        <button
+                          class="btn--accent"
+                          style="width: fit-content; margin-top: 1.2rem"
+                        >
+                          Update profile
+                        </button>
+                      </div>
+                    </div>
+                    <div class="tab" id="account">
+                      <div class="title">
+                        <h4>Account</h4>
+                        <p>
+                          Update your account settings. Set your preferred
+                          language and timezone.
+                        </p>
+                      </div>
+                      <div class="form__details">
+                        <label>Name</label>
+                        <input placeholder="Your name" />
+                        <span class="title"
+                          ><p>
+                            This is the name that will be displayed on your
+                            profile and in emails.
+                          </p></span
+                        >
+                        <label>Date of birth</label>
+                        <input type="date" class="datePicker" />
+                        <span class="description"
+                          ><p>
+                            Your date of birth is used to calculate your age.
+                          </p></span
+                        >
+                        <label>Language</label>
+                        <select class="max-width--30 select">
+                          <option>Select language:</option>
+                          <option>English</option>
+                          <option>French</option>
+                          <option>German</option>
+                          <option>Spanish</option>
+                          <option>Portuguese</option>
+                          <option>Russian</option>
+                          <option>Japanese</option>
+                          <option>Korean</option>
+                          <option>Chinese</option>
+                        </select>
+                        <span class="description"
+                          ><p>
+                            This is the language that will be used in the
+                            dashboard.
+                          </p></span
+                        >
+                        <button
+                          class="btn--accent"
+                          style="width: fit-content; margin-top: 1.2rem"
+                        >
+                          Update account
+                        </button>
+                      </div>
+                    </div>
+                    <div class="tab" id="appearance">
+                      <div class="title">
+                        <h4>Appearance</h4>
+                        <p>
+                          Customize the appearance of the app. Automatically
+                          switch between day and night themes.
+                        </p>
+                      </div>
+                      <div class="form__details">
+                        <label>Font</label>
+                        <select class="max-width--30 select">
+                          <option>Inter</option>
+                          <option>Manrope</option>
+                          <option>System</option>
+                        </select>
+                        <p class="description">
+                          Set the font you want to use in the dashboard.
+                        </p>
+                        <label>Theme</label>
+                        <p class="description">
+                          Select the theme for the dashboard.
+                        </p>
+                        <div class="mode__container">
+                          <div class="card__container">
+                            <div class="light__mode__card">
+                              <div class="light__mode__column">
+                                <div class="first__row">
+                                  <div class="sm--row">
+                                    <div class="lower__rows">
+                                      <div class="circle"></div>
+                                      <div class="sm--row"></div>
+                                    </div>
+                                  </div>
+                                  <div class="md--row"></div>
                                 </div>
                               </div>
-                              <div class="md--row"></div>
+                              <div class="light__mode__column">
+                                <div class="lower__rows">
+                                  <div class="circle"></div>
+                                  <div class="md--row"></div>
+                                </div>
+                              </div>
+                              <div class="light__mode__column">
+                                <div class="lower__rows">
+                                  <div class="circle"></div>
+                                  <div class="md--row"></div>
+                                </div>
+                              </div>
                             </div>
+                            <p
+                              class="description"
+                              style="text-align: center; margin-top: 6px"
+                            >
+                              Light
+                            </p>
                           </div>
-                          <div class="light__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle"></div>
-                              <div class="md--row"></div>
+                          <div class="card__container">
+                            <div class="dark__mode__card">
+                              <div class="dark__mode__column">
+                                <div class="first__row">
+                                  <div class="sm--row--dark"></div>
+                                  <div class="md--row--dark"></div>
+                                </div>
+                              </div>
+                              <div class="dark__mode__column">
+                                <div class="lower__rows">
+                                  <div class="circle--dark"></div>
+                                  <div class="md--row--dark"></div>
+                                </div>
+                              </div>
+                              <div class="dark__mode__column">
+                                <div class="lower__rows">
+                                  <div class="circle--dark"></div>
+                                  <div class="md--row--dark"></div>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="light__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle"></div>
-                              <div class="md--row"></div>
-                            </div>
+                            <p
+                              class="description"
+                              style="text-align: center; margin-top: 6px"
+                            >
+                              Dark
+                            </p>
                           </div>
                         </div>
-                        <p
-                          class="description"
-                          style="text-align: center; margin-top: 6px"
+                        <button
+                          class="btn--accent"
+                          style="width: fit-content; margin-top: 1.2rem"
                         >
-                          Light
-                        </p>
-                      </div>
-                      <div class="card__container">
-                        <div class="dark__mode__card">
-                          <div class="dark__mode__column">
-                            <div class="first__row">
-                              <div class="sm--row--dark"></div>
-                              <div class="md--row--dark"></div>
-                            </div>
-                          </div>
-                          <div class="dark__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle--dark"></div>
-                              <div class="md--row--dark"></div>
-                            </div>
-                          </div>
-                          <div class="dark__mode__column">
-                            <div class="lower__rows">
-                              <div class="circle--dark"></div>
-                              <div class="md--row--dark"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <p
-                          class="description"
-                          style="text-align: center; margin-top: 6px"
-                        >
-                          Dark
-                        </p>
-                      </div>
-                    </div>
-                    <button
-                      class="btn--accent"
-                      style="width: fit-content; margin-top: 1.2rem"
-                    >
-                      Update preferences
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="tab" id="notifications">
-                <span class="title"
-                  ><h4>Notifications</h4>
-                  <p>Configure how you receive notifications.</p></span
-                >
-                <div class="form__details">
-                  <div class="radio__section">
-                    <div class="title">
-                      <h5>Notify me about...</h5>
-                      <div class="radio__group">
-                        <div class="radio__container">
-                          <label class="label_class">
-                            <input
-                              type="radio"
-                              id="newMessage"
-                              name="notifications"
-                              value="newMessage"
-                            />
-                            All new messages</label
-                          >
-                        </div>
-                        <div class="radio__container">
-                          <label class="label_class">
-                            <input
-                              type="radio"
-                              id="DM"
-                              name="notifications"
-                              value="DM"
-                            />
-                            Direct messages and mentions</label
-                          >
-                        </div>
-                        <div class="radio__container">
-                          <label class="label_class">
-                            <input
-                              type="radio"
-                              id="nothing"
-                              name="notifications"
-                              value="nothing"
-                            />
-                            Nothing</label
-                          >
-                        </div>
+                          Update preferences
+                        </button>
                       </div>
                     </div>
                   </div>
-
-                  <div class="email__notification">
-                    <div class="title"><h3>Email Notifications</h3></div>
-
-                    <div class="toggle__cards__container">
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Communication emails</h5>
-                          <p class="description">
-                            Receive emails about your account activity.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Marketing emails</h5>
-                          <p class="description">
-                            Receive emails about new products, features, and
-                            more.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Social emails</h5>
-                          <p class="description">
-                            Receive emails for friend requests, follows, and
-                            more.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-
-                      <div class="toggle__cards">
-                        <span class="title">
-                          <h5>Security emails</h5>
-                          <p class="description">
-                            Receive emails about your account activity and
-                            security.
-                          </p>
-                        </span>
-                        <label class="switch">
-                          <input type="checkbox" checked disabled />
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="check__box__section">
-                    <input type="checkbox" />
+                  <div class="tab" id="notifications">
                     <span class="title"
-                      ><h5>Use different settings for my mobile device</h5>
-                      <p class="description">
-                        You can manage your mobile notifications in the mobile
-                        setting page.
-                      </p></span
+                      ><h4>Notifications</h4>
+                      <p>Configure how you receive notifications.</p></span
                     >
-                  </div>
+                    <div class="form__details">
+                      <div class="radio__section">
+                        <div class="title">
+                          <h5>Notify me about...</h5>
+                          <div class="radio__group">
+                            <div class="radio__container">
+                              <label class="label_class">
+                                <input
+                                  type="radio"
+                                  id="newMessage"
+                                  name="notifications"
+                                  value="newMessage"
+                                />
+                                All new messages</label
+                              >
+                            </div>
+                            <div class="radio__container">
+                              <label class="label_class">
+                                <input
+                                  type="radio"
+                                  id="DM"
+                                  name="notifications"
+                                  value="DM"
+                                />
+                                Direct messages and mentions</label
+                              >
+                            </div>
+                            <div class="radio__container">
+                              <label class="label_class">
+                                <input
+                                  type="radio"
+                                  id="nothing"
+                                  name="notifications"
+                                  value="nothing"
+                                />
+                                Nothing</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
-                  <button
-                    class="btn--accent"
-                    style="width: fit-content; margin-top: 1.2rem"
-                  >
-                    Update notifications
-                  </button>
-                </div>
-              </div>
-              <div class="tab" id="display">
-                <div class="title">
-                  <h4>Display</h4>
-                  <p class="description">
-                    Turn items on or off to control what's displayed in the app.
-                  </p>
-                </div>
-                <div class="form__details">
-                  <div class="title">
-                    <h5>Sidebar</h5>
-                    <p class="description">
-                      Select the items you want to display in the sidebar.
-                    </p>
-                  </div>
-                  <div>
-                    <div class="check__box__group">
-                      <div class="checkbox__item">
-                        <label for="recent">
-                          <input
-                            type="checkbox"
-                            id="recent"
-                            value="recent"
-                            name="recent"
-                          />Recent</label
+                      <div class="email__notification">
+                        <div class="title"><h3>Email Notifications</h3></div>
+
+                        <div class="toggle__cards__container">
+                          <div class="toggle__cards">
+                            <span class="title">
+                              <h5>Communication emails</h5>
+                              <p class="description">
+                                Receive emails about your account activity.
+                              </p>
+                            </span>
+                            <label class="switch form__switch">
+                              <input type="checkbox" checked />
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+
+                          <div class="toggle__cards">
+                            <span class="title">
+                              <h5>Marketing emails</h5>
+                              <p class="description">
+                                Receive emails about new products, features, and
+                                more.
+                              </p>
+                            </span>
+                            <label class="switch form__switch">
+                              <input type="checkbox" checked />
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+
+                          <div class="toggle__cards">
+                            <span class="title">
+                              <h5>Social emails</h5>
+                              <p class="description">
+                                Receive emails for friend requests, follows, and
+                                more.
+                              </p>
+                            </span>
+                            <label class="switch form__switch">
+                              <input type="checkbox" checked />
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+
+                          <div class="toggle__cards">
+                            <span class="title">
+                              <h5>Security emails</h5>
+                              <p class="description">
+                                Receive emails about your account activity and
+                                security.
+                              </p>
+                            </span>
+                            <label class="switch form__switch">
+                              <input type="checkbox" disabled />
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="check__box__section">
+                        <input type="checkbox" />
+                        <span class="title"
+                          ><h5>Use different settings for my mobile device</h5>
+                          <p class="description">
+                            You can manage your mobile notifications in the
+                            mobile setting page.
+                          </p></span
                         >
                       </div>
 
-                      <div class="checkbox__item">
-                        <label for="home"
-                          ><input
-                            type="checkbox"
-                            id="home"
-                            name="home"
-                            value="home"
-                          />
-                          Home
-                        </label>
-                      </div>
-
-                      <div class="checkbox__item">
-                        <label for="applications"
-                          ><input
-                            type="checkbox"
-                            id="applications"
-                            name="applications"
-                            value="applications"
-                          />
-                          Applications</label
-                        >
-                      </div>
-
-                      <div class="checkbox__item">
-                        <label for="desktop"
-                          ><input
-                            type="checkbox"
-                            id="desktop"
-                            name="desktop"
-                            value="desktop"
-                          />Desktop</label
-                        >
-                      </div>
-
-                      <div class="checkbox__item">
-                        <label for="download"
-                          ><input
-                            type="checkbox"
-                            id="download"
-                            name="download"
-                            value="download"
-                          />Downloads</label
-                        >
-                      </div>
-
-                      <div class="checkbox__item">
-                        <label for="document"
-                          ><input
-                            type="checkbox"
-                            id="document"
-                            name="document"
-                            value="document"
-                          />Documents</label
-                        >
-                      </div>
                       <button
                         class="btn--accent"
                         style="width: fit-content; margin-top: 1.2rem"
                       >
-                        Update display
+                        Update notifications
                       </button>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- MUSIC TAB -->
-          <div class="page" id="music">
-            <div class="music__nav">
-              <div class="music__nav__item">Music</div>
-              <div class="music__nav__item">File</div>
-              <div class="music__nav__item">Edit</div>
-              <div class="music__nav__item">View</div>
-              <div class="music__nav__item">Account</div>
-            </div>
-
-            <div class="music__content">
-              <div class="btn__nav">
-                <button class="active">Music</button>
-                <button>Podcasts</button>
-                <button class="disabled">Live</button>
-              </div>
-              <div class="music__section">
-                <div class="title">
-                  <h2>Listen Now</h2>
-                  <p>Top picks for you. Updated daily.</p>
-                  <div class="carousel">
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--lg"
-                          src="https://fastly.picsum.photos/id/992/200/300.jpg?hmac=TOD4LGE2HuM8Q68o5uzIoFvhlsBAiTJGRGHNMqeJTtI"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>React Rendeznous</h4>
-                        <p class="desciption">Ethan Byte</p>
-                      </div>
+                  <div class="tab" id="display">
+                    <div class="title">
+                      <h4>Display</h4>
+                      <p class="description">
+                        Turn items on or off to control what's displayed in the
+                        app.
+                      </p>
                     </div>
-
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--lg"
-                          src="https://fastly.picsum.photos/id/1060/200/300.jpg?hmac=xYtFmeYcfydIF3-Qybnra-tMwklX69T52EtGd-bacBI"
-                        />
-                      </div>
+                    <div class="form__details">
                       <div class="title">
-                        <h4>Async Awakenings</h4>
-                        <p class="desciption">Nina Netcode</p>
+                        <h5>Sidebar</h5>
+                        <p class="description">
+                          Select the items you want to display in the sidebar.
+                        </p>
                       </div>
-                    </div>
+                      <div>
+                        <div class="check__box__group">
+                          <div class="checkbox__item">
+                            <label for="recent">
+                              <input
+                                type="checkbox"
+                                id="recent"
+                                value="recent"
+                                name="recent"
+                              />Recent</label
+                            >
+                          </div>
 
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--lg"
-                          src="https://fastly.picsum.photos/id/941/200/300.jpg?hmac=tSztWslp5Hm2jEg1UjAvvVNsaDT3dsPAEZ5lQ_yhNKA"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>The Art of Reusability</h4>
-                        <p class="desciption">Lena Logic</p>
-                      </div>
-                    </div>
+                          <div class="checkbox__item">
+                            <label for="home"
+                              ><input
+                                type="checkbox"
+                                id="home"
+                                name="home"
+                                value="home"
+                              />
+                              Home
+                            </label>
+                          </div>
 
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--lg"
-                          src="https://fastly.picsum.photos/id/477/200/300.jpg?hmac=Y-uy4_ZZZ6HOZCxdiN04OOypBZ3y2dY2gAfu9MvZMSE"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>Stateful Symphony</h4>
-                        <p class="desciption">Beth Binary</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="music__section">
-                <div class="title">
-                  <h2>Made for You</h2>
-                  <p>Top picks for you. Updated daily.</p>
+                          <div class="checkbox__item">
+                            <label for="applications"
+                              ><input
+                                type="checkbox"
+                                id="applications"
+                                name="applications"
+                                value="applications"
+                              />
+                              Applications</label
+                            >
+                          </div>
 
-                  <div class="carousel">
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--sm"
-                          src="https://fastly.picsum.photos/id/456/200/300.jpg?hmac=p9jAgKWZ8BmAcmdpyO2siEEUZaIzEUHYN64WS2rJNtM"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>Thinking Components</h4>
-                        <p class="desciption">Lena Logic</p>
-                      </div>
-                    </div>
+                          <div class="checkbox__item">
+                            <label for="desktop"
+                              ><input
+                                type="checkbox"
+                                id="desktop"
+                                name="desktop"
+                                value="desktop"
+                              />Desktop</label
+                            >
+                          </div>
 
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--sm"
-                          src="https://fastly.picsum.photos/id/641/200/300.jpg?hmac=TpiMIigzR3rlnmP84Df902LYzuV4pApn7Tq6lCYic0A"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>Functional Fury</h4>
-                        <p class="desciption">Beth Binary</p>
-                      </div>
-                    </div>
+                          <div class="checkbox__item">
+                            <label for="download"
+                              ><input
+                                type="checkbox"
+                                id="download"
+                                name="download"
+                                value="download"
+                              />Downloads</label
+                            >
+                          </div>
 
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <div class="image__container">
-                          <img
-                            class="image--sm"
-                            src="https://fastly.picsum.photos/id/992/200/300.jpg?hmac=TOD4LGE2HuM8Q68o5uzIoFvhlsBAiTJGRGHNMqeJTtI"
-                          />
+                          <div class="checkbox__item">
+                            <label for="document"
+                              ><input
+                                type="checkbox"
+                                id="document"
+                                name="document"
+                                value="document"
+                              />Documents</label
+                            >
+                          </div>
+                          <button
+                            class="btn--accent"
+                            style="width: fit-content; margin-top: 1.2rem"
+                          >
+                            Update display
+                          </button>
                         </div>
                       </div>
-                      <div class="title">
-                        <h4>React Rendeznous</h4>
-                        <p class="desciption">Ethan Byte</p>
-                      </div>
-                    </div>
-
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--sm"
-                          src="https://fastly.picsum.photos/id/1060/200/300.jpg?hmac=xYtFmeYcfydIF3-Qybnra-tMwklX69T52EtGd-bacBI"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>Async Awakenings</h4>
-                        <p class="desciption">Nina Netcode</p>
-                      </div>
-                    </div>
-
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--sm"
-                          src="https://fastly.picsum.photos/id/941/200/300.jpg?hmac=tSztWslp5Hm2jEg1UjAvvVNsaDT3dsPAEZ5lQ_yhNKA"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>The Art of Reusability</h4>
-                        <p class="desciption">Lena Logic</p>
-                      </div>
-                    </div>
-                    <div class="carousel__item">
-                      <div class="image__container">
-                        <img
-                          class="image--sm"
-                          src="https://fastly.picsum.photos/id/477/200/300.jpg?hmac=Y-uy4_ZZZ6HOZCxdiN04OOypBZ3y2dY2gAfu9MvZMSE"
-                        />
-                      </div>
-                      <div class="title">
-                        <h4>Stateful Symphony</h4>
-                        <p class="desciption">Beth Binary</p>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- AUTHENTICATION TAB -->
-            <div class="page" id="authentication">
-              <div class="form__layout">
-                <button class="btn--ghost login-btn">Login</button>
-                <div class="account__section">
-                  <div class="title">
-                    <h4>Create an account</h4>
-                    <p>Enter your email below to create your account</p>
+
+              <!-- MUSIC TAB -->
+              <div class="page" id="music">
+                <div class="music__nav">
+                  <div class="music__nav__item">Music</div>
+                  <div class="music__nav__item">File</div>
+                  <div class="music__nav__item">Edit</div>
+                  <div class="music__nav__item">View</div>
+                  <div class="music__nav__item">Account</div>
+                </div>
+
+                <div class="music__content">
+                  <div class="btn__nav">
+                    <button class="active">Music</button>
+                    <button>Podcasts</button>
+                    <button class="disabled">Live</button>
                   </div>
-                  <div class="signin__section">
-                    <input placeholder="name@example.com" />
-                    <button class="btn--accent">Sign in with Email</button>
-                    <div class="divider">
-                      <span></span>
-                      <p>OR CONTINUE WITH</p>
-                      <span></span>
+                  <div class="music__section">
+                    <div class="title">
+                      <h2>Listen Now</h2>
+                      <p>Top picks for you. Updated daily.</p>
+                      <div class="carousel">
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--lg"
+                              src="https://fastly.picsum.photos/id/992/200/300.jpg?hmac=TOD4LGE2HuM8Q68o5uzIoFvhlsBAiTJGRGHNMqeJTtI"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>React Rendeznous</h4>
+                            <p class="desciption">Ethan Byte</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--lg"
+                              src="https://fastly.picsum.photos/id/1060/200/300.jpg?hmac=xYtFmeYcfydIF3-Qybnra-tMwklX69T52EtGd-bacBI"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>Async Awakenings</h4>
+                            <p class="desciption">Nina Netcode</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--lg"
+                              src="https://fastly.picsum.photos/id/941/200/300.jpg?hmac=tSztWslp5Hm2jEg1UjAvvVNsaDT3dsPAEZ5lQ_yhNKA"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>The Art of Reusability</h4>
+                            <p class="desciption">Lena Logic</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--lg"
+                              src="https://fastly.picsum.photos/id/477/200/300.jpg?hmac=Y-uy4_ZZZ6HOZCxdiN04OOypBZ3y2dY2gAfu9MvZMSE"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>Stateful Symphony</h4>
+                            <p class="desciption">Beth Binary</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <button class="btn--hover">GitHub</button>
-                    <p class="text--accent-color">
-                      By clicking continue, you agree to our
-                      <a href="" class="link--underlined text--accent-color"
-                        >Terms of Service</a
-                      >
-                      and
-                      <a href="" class="link--underlined text--accent-color"
-                        >Privacy Policy.</a
-                      >
-                    </p>
+                  </div>
+                  <div class="music__section">
+                    <div class="title">
+                      <h2>Made for You</h2>
+                      <p>Top picks for you. Updated daily.</p>
+
+                      <div class="carousel">
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--sm"
+                              src="https://fastly.picsum.photos/id/456/200/300.jpg?hmac=p9jAgKWZ8BmAcmdpyO2siEEUZaIzEUHYN64WS2rJNtM"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>Thinking Components</h4>
+                            <p class="desciption">Lena Logic</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--sm"
+                              src="https://fastly.picsum.photos/id/641/200/300.jpg?hmac=TpiMIigzR3rlnmP84Df902LYzuV4pApn7Tq6lCYic0A"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>Functional Fury</h4>
+                            <p class="desciption">Beth Binary</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <div class="image__container">
+                              <img
+                                class="image--sm"
+                                src="https://fastly.picsum.photos/id/992/200/300.jpg?hmac=TOD4LGE2HuM8Q68o5uzIoFvhlsBAiTJGRGHNMqeJTtI"
+                              />
+                            </div>
+                          </div>
+                          <div class="title">
+                            <h4>React Rendeznous</h4>
+                            <p class="desciption">Ethan Byte</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--sm"
+                              src="https://fastly.picsum.photos/id/1060/200/300.jpg?hmac=xYtFmeYcfydIF3-Qybnra-tMwklX69T52EtGd-bacBI"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>Async Awakenings</h4>
+                            <p class="desciption">Nina Netcode</p>
+                          </div>
+                        </div>
+
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--sm"
+                              src="https://fastly.picsum.photos/id/941/200/300.jpg?hmac=tSztWslp5Hm2jEg1UjAvvVNsaDT3dsPAEZ5lQ_yhNKA"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>The Art of Reusability</h4>
+                            <p class="desciption">Lena Logic</p>
+                          </div>
+                        </div>
+                        <div class="carousel__item">
+                          <div class="image__container">
+                            <img
+                              class="image--sm"
+                              src="https://fastly.picsum.photos/id/477/200/300.jpg?hmac=Y-uy4_ZZZ6HOZCxdiN04OOypBZ3y2dY2gAfu9MvZMSE"
+                            />
+                          </div>
+                          <div class="title">
+                            <h4>Stateful Symphony</h4>
+                            <p class="desciption">Beth Binary</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- AUTHENTICATION TAB -->
+                <div class="page" id="authentication">
+                  <div class="form__layout">
+                    <button class="btn--ghost login-btn">Login</button>
+                    <div class="account__section">
+                      <div class="title">
+                        <h4>Create an account</h4>
+                        <p>Enter your email below to create your account</p>
+                      </div>
+                      <div class="signin__section">
+                        <input placeholder="name@example.com" />
+                        <button class="btn--accent">Sign in with Email</button>
+                        <div class="divider">
+                          <span></span>
+                          <p>OR CONTINUE WITH</p>
+                          <span></span>
+                        </div>
+                        <button class="btn--hover">GitHub</button>
+                        <p class="text--accent-color">
+                          By clicking continue, you agree to our
+                          <a href="" class="link--underlined text--accent-color"
+                            >Terms of Service</a
+                          >
+                          and
+                          <a href="" class="link--underlined text--accent-color"
+                            >Privacy Policy.</a
+                          >
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

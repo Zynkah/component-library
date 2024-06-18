@@ -34,14 +34,13 @@ function showFormTab(tabId) {
 fetch("./data/emails.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    renderEmail(data[0])
     const emailList = data.map((item, index) => {
       const tagList = item.tags.map((tag, index) => {
         const tagClass = tag == "work" ? "accent--sm btn--sm" : "btn--sm";
         return `<span class="${tagClass}">${tag}</span>`;
       });
-      const joined = tagList.join("");
-
+      const joined = tagList.join("");    
       const emailCard = document.createElement("div");
       emailCard.innerHTML = `
       <div class="home-card">
@@ -52,6 +51,10 @@ fetch("./data/emails.json")
         <p class="home-card-footer">${joined}</p>
         </div>
       `;
+      emailCard.addEventListener("click", () => {
+        renderEmail(item);
+        emailCard.classList.toggle("home-card--active");
+      });
       return emailCard;
     });
     for (let i = 0; i < emailList.length; i++) {
@@ -60,8 +63,47 @@ fetch("./data/emails.json")
   })
   .catch((error) => console.log(error));
 
-//   <p class="home-card-footer">
-//   <button class="btn--sm">meeting</button>
-//   <button class="btn--sm">work</button>
-//   <button class="btn--sm">important</button>
-// </p>
+function renderEmail(emailData) {
+  const emails = document.getElementById("rendered-email");
+  emails.innerHTML = ` <div class="column">List of icons</div>
+            <div class="email__details__header">
+              <img
+                class="avatar"
+                src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-988013222-scaled-e1618857975729.jpg?w=1670"
+              />
+              <div class="email__sender-info">
+                <h3>${emailData.name}</h3>
+                <p>${emailData.subject}</p>
+                <p>Reply-To:...</p>
+              </div>
+              <div class="email__date-time">
+                <p>${emailData.date}</p>
+                <p>${emailData.time}</p>
+              </div>
+            </div>
+            <div class="email__details">
+              <p>${emailData.content}</p>
+            </div>
+            <div class="email__response">
+              <textarea
+                placeholder="Reply ${emailData.name}..."
+                rows="4"
+                cols="30"
+                class="email__textarea"
+              ></textarea>
+              <div class="email__response-inputs">
+                <div class="switch">
+                  <input type="checkbox" id="mute" />
+                  <span class="slider round"></span>
+                </div>
+                <label class="email__response-label" for="mute"
+                  >Mute this thread</label
+                >
+                <button class="btn--sm accent--sm email__response-button">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+}

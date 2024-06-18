@@ -46,6 +46,14 @@
   height: auto;
 }
 
+.home-card:hover {
+  background-color: var(--accentColor);
+}
+
+.home-card--active {
+    background-color: var(--accentColor);
+}
+
 .timestamp {
   position: absolute;
   top: 0.1rem;
@@ -106,4 +114,33 @@
   display: flex;
   align-items: center;
   max-width: 600px;
+}
+
+
+.email__response {
+  border-top: 1px solid var(--accentColor);
+  padding: 1rem;
+}
+
+.email__response-inputs {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  gap:8px;
+  align-items: center;
+}
+
+.email__response-label {
+  font-size: 0.8rem;
+}
+
+.email__textarea {
+  width: 100%
+}
+
+.email__response-button {
+  margin-left: auto;
+  padding-inline: 16px;
+  padding-block: 10px;
+  font-weight: 300;
 }
