@@ -34,25 +34,33 @@ function showFormTab(tabId) {
 fetch("./data/emails.json")
   .then((response) => response.json())
   .then((data) => {
-    renderEmail(data[0])
+    renderEmail(data[0]);
     const emailList = data.map((item, index) => {
       const tagList = item.tags.map((tag, index) => {
         const tagClass = tag == "work" ? "accent--sm btn--sm" : "btn--sm";
         return `<span class="${tagClass}">${tag}</span>`;
       });
-      const joined = tagList.join("");    
+      const joined = tagList.join("");
       const emailCard = document.createElement("div");
       emailCard.innerHTML = `
-      <div class="home-card">
         <h3 class="home-card-title">${item.name}</h3>
         <p class="timestamp">${item.age}</p>
         <p class="home-card-description">${item.subject}</p>
         <p class="home-card-content">${item.content}</p>
         <p class="home-card-footer">${joined}</p>
-        </div>
       `;
+      emailCard.classList.add("home-card")
+      if (index == 0) {
+        emailCard.classList.add("home-card--active")
+      }
+
       emailCard.addEventListener("click", () => {
         renderEmail(item);
+        const activeCards =
+          document.getElementsByClassName("home-card--active");
+        for (const activeCard of activeCards) {
+          activeCard.classList.remove("home-card--active")
+        }
         emailCard.classList.toggle("home-card--active");
       });
       return emailCard;
@@ -107,3 +115,10 @@ function renderEmail(emailData) {
           </div>
         </div>`;
 }
+
+const array = ['one', 'two']
+array.map((item, index) => {
+  if (index == 0) {
+    console.log(item)
+  }
+})

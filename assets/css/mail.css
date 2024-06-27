@@ -51,7 +51,7 @@
 }
 
 .home-card--active {
-    background-color: var(--accentColor);
+  background-color: var(--accentColor);
 }
 
 .timestamp {
@@ -75,7 +75,7 @@
 
 .home-card-content {
   font-size: 0.8rem;
-  color:  #737373;
+  color: #737373;
 }
 
 .home-card-footer {
@@ -84,6 +84,8 @@
 
 .mail-tabs {
   padding-block: 1rem;
+  text-align: left;
+
 
   & div {
     border: none;
@@ -91,6 +93,7 @@
     margin: 0.2rem 0.5rem;
     border-radius: var(--borderRadius);
   }
+
 
   & div:hover {
     background-color: var(--buttonColor);
@@ -116,7 +119,6 @@
   max-width: 600px;
 }
 
-
 .email__response {
   border-top: 1px solid var(--accentColor);
   padding: 1rem;
@@ -126,7 +128,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
-  gap:8px;
+  gap: 8px;
   align-items: center;
 }
 
@@ -135,7 +137,7 @@
 }
 
 .email__textarea {
-  width: 100%
+  width: 100%;
 }
 
 .email__response-button {
