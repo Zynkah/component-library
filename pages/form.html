@@ -1,0 +1,400 @@
+<div class="page" id="form">
+	<div class="form__layout">
+		<span class="title">
+			<h3>Settings</h3>
+			<p>Manage your account settings and set e-mail preferences</p></span
+		>
+		<div class="form__tabs">
+			<div>
+				<a href="./#profile" onclick="showFormTab('profile')">Profile</a>
+			</div>
+			<div>
+				<a href="./#account" onclick="showFormTab('account')">Account</a>
+			</div>
+			<div>
+				<a href="./#appearance" onclick="showFormTab('appearance')">Appearance</a>
+			</div>
+			<div>
+				<a href="./#notifications" onclick="showFormTab('notifications')">Notifications</a>
+			</div>
+			<div>
+				<a href="./#display" onclick="showFormTab('display')">Display</a>
+			</div>
+		</div>
+		<div class="form__display">
+			<div class="tab" id="profile">
+				<span class="title"
+					><h4>Profile</h4>
+					<p>This is how others will see you on the site.</p></span
+				>
+				<div class="form__details">
+					<label>Username</label>
+					<input placeholder="zynkcl" />
+					<span class="description"
+						><p>
+							This is your public display name. It can be your real name or a
+							pseudonym.You can only change this once every 30 days.
+						</p></span
+					>
+					<label>Email</label>
+					<select class="select">
+						<option>Select a verified email to display</option>
+						<option>m@example.com</option>
+						<option>n@example.com</option>
+						<option>o@example.com</option>
+					</select>
+					<span class="description"
+						><p>
+							You can manage verified email addresses in your email settings.
+						</p></span
+					>
+					<label>Bio</label>
+					<input placeholder="I own a computer." class="bio" />
+					<span class="description"
+						><p>
+							You can @mention other users and organizations to link to them.
+						</p></span
+					>
+					<label>URLs</label>
+					<span class="description"
+						><p>Add links to your website, blog, or social media profiles.</p></span
+					>
+					<input placeholder="https://zynkcl.com" />
+					<input placeholder="https://twitch.tv/zynkah" />
+					<button class="btn--hover" style="width: fit-content">Add URL</button>
+					<button class="btn--accent" style="width: fit-content; margin-top: 1.2rem">
+						Update profile
+					</button>
+				</div>
+			</div>
+			<div class="tab" id="account">
+				<div class="title">
+					<h4>Account</h4>
+					<p>Update your account settings. Set your preferred language and timezone.</p>
+				</div>
+				<div class="form__details">
+					<label>Name</label>
+					<input placeholder="Your name" />
+					<span class="title"
+						><p>
+							This is the name that will be displayed on your profile and in emails.
+						</p></span
+					>
+					<label>Date of birth</label>
+					<input type="date" class="datePicker" />
+					<span class="description"
+						><p>Your date of birth is used to calculate your age.</p></span
+					>
+					<label>Language</label>
+					<select class="max-width--30 select">
+						<option>Select language:</option>
+						<option>English</option>
+						<option>French</option>
+						<option>German</option>
+						<option>Spanish</option>
+						<option>Portuguese</option>
+						<option>Russian</option>
+						<option>Japanese</option>
+						<option>Korean</option>
+						<option>Chinese</option>
+					</select>
+					<span class="description"
+						><p>This is the language that will be used in the dashboard.</p></span
+					>
+					<button class="btn--accent" style="width: fit-content; margin-top: 1.2rem">
+						Update account
+					</button>
+				</div>
+			</div>
+			<div class="tab" id="appearance">
+				<div class="title">
+					<h4>Appearance</h4>
+					<p>
+						Customize the appearance of the app. Automatically switch between day and
+						night themes.
+					</p>
+				</div>
+				<div class="form__details">
+					<label>Font</label>
+					<select class="max-width--30 select">
+						<option>Inter</option>
+						<option>Manrope</option>
+						<option>System</option>
+					</select>
+					<p class="description">Set the font you want to use in the dashboard.</p>
+					<label>Theme</label>
+					<p class="description">Select the theme for the dashboard.</p>
+					<div class="mode__container">
+						<div class="card__container">
+							<div class="light__mode__card">
+								<div class="light__mode__column">
+									<div class="first__row">
+										<div class="sm--row">
+											<div class="lower__rows">
+												<div class="circle"></div>
+												<div class="sm--row"></div>
+											</div>
+										</div>
+										<div class="md--row"></div>
+									</div>
+								</div>
+								<div class="light__mode__column">
+									<div class="lower__rows">
+										<div class="circle"></div>
+										<div class="md--row"></div>
+									</div>
+								</div>
+								<div class="light__mode__column">
+									<div class="lower__rows">
+										<div class="circle"></div>
+										<div class="md--row"></div>
+									</div>
+								</div>
+							</div>
+							<p class="description" style="text-align: center; margin-top: 6px">
+								Light
+							</p>
+						</div>
+						<div class="card__container">
+							<div class="dark__mode__card">
+								<div class="dark__mode__column">
+									<div class="first__row">
+										<div class="sm--row--dark"></div>
+										<div class="md--row--dark"></div>
+									</div>
+								</div>
+								<div class="dark__mode__column">
+									<div class="lower__rows">
+										<div class="circle--dark"></div>
+										<div class="md--row--dark"></div>
+									</div>
+								</div>
+								<div class="dark__mode__column">
+									<div class="lower__rows">
+										<div class="circle--dark"></div>
+										<div class="md--row--dark"></div>
+									</div>
+								</div>
+							</div>
+							<p class="description" style="text-align: center; margin-top: 6px">
+								Dark
+							</p>
+						</div>
+					</div>
+					<button class="btn--accent" style="width: fit-content; margin-top: 1.2rem">
+						Update preferences
+					</button>
+				</div>
+			</div>
+			<div class="tab" id="notifications">
+				<span class="title"
+					><h4>Notifications</h4>
+					<p>Configure how you receive notifications.</p></span
+				>
+				<div class="form__details">
+					<div class="radio__section">
+						<div class="title">
+							<h5>Notify me about...</h5>
+							<div class="radio__group">
+								<div class="radio__container">
+									<label class="label_class">
+										<input
+											type="radio"
+											id="newMessage"
+											name="notifications"
+											value="newMessage"
+										/>
+										All new messages</label
+									>
+								</div>
+								<div class="radio__container">
+									<label class="label_class">
+										<input
+											type="radio"
+											id="DM"
+											name="notifications"
+											value="DM"
+										/>
+										Direct messages and mentions</label
+									>
+								</div>
+								<div class="radio__container">
+									<label class="label_class">
+										<input
+											type="radio"
+											id="nothing"
+											name="notifications"
+											value="nothing"
+										/>
+										Nothing</label
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="email__notification">
+						<div class="title"><h3>Email Notifications</h3></div>
+
+						<div class="toggle__cards__container">
+							<div class="toggle__cards">
+								<span class="title">
+									<h5>Communication emails</h5>
+									<p class="description">
+										Receive emails about your account activity.
+									</p>
+								</span>
+								<label class="switch form__switch">
+									<input type="checkbox" checked />
+									<span class="slider round"></span>
+								</label>
+							</div>
+
+							<div class="toggle__cards">
+								<span class="title">
+									<h5>Marketing emails</h5>
+									<p class="description">
+										Receive emails about new products, features, and more.
+									</p>
+								</span>
+								<label class="switch form__switch">
+									<input type="checkbox" checked />
+									<span class="slider round"></span>
+								</label>
+							</div>
+
+							<div class="toggle__cards">
+								<span class="title">
+									<h5>Social emails</h5>
+									<p class="description">
+										Receive emails for friend requests, follows, and more.
+									</p>
+								</span>
+								<label class="switch form__switch">
+									<input type="checkbox" checked />
+									<span class="slider round"></span>
+								</label>
+							</div>
+
+							<div class="toggle__cards">
+								<span class="title">
+									<h5>Security emails</h5>
+									<p class="description">
+										Receive emails about your account activity and security.
+									</p>
+								</span>
+								<label class="switch form__switch">
+									<input type="checkbox" disabled />
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="check__box__section">
+						<input type="checkbox" />
+						<span class="title"
+							><h5>Use different settings for my mobile device</h5>
+							<p class="description">
+								You can manage your mobile notifications in the mobile setting page.
+							</p></span
+						>
+					</div>
+
+					<button class="btn--accent" style="width: fit-content; margin-top: 1.2rem">
+						Update notifications
+					</button>
+				</div>
+			</div>
+
+			<div class="tab" id="display">
+				<div class="title">
+					<h4>Display</h4>
+					<p class="description">
+						Turn items on or off to control what's displayed in the app.
+					</p>
+				</div>
+				<div class="form__details">
+					<div class="title">
+						<h5>Sidebar</h5>
+						<p class="description">
+							Select the items you want to display in the sidebar.
+						</p>
+					</div>
+					<div>
+						<div class="check__box__group">
+							<div class="checkbox__item">
+								<label for="recent">
+									<input
+										type="checkbox"
+										id="recent"
+										value="recent"
+										name="recent"
+									/>Recent</label
+								>
+							</div>
+
+							<div class="checkbox__item">
+								<label for="home"
+									><input type="checkbox" id="home" name="home" value="home" />
+									Home
+								</label>
+							</div>
+
+							<div class="checkbox__item">
+								<label for="applications"
+									><input
+										type="checkbox"
+										id="applications"
+										name="applications"
+										value="applications"
+									/>
+									Applications</label
+								>
+							</div>
+
+							<div class="checkbox__item">
+								<label for="desktop"
+									><input
+										type="checkbox"
+										id="desktop"
+										name="desktop"
+										value="desktop"
+									/>Desktop</label
+								>
+							</div>
+
+							<div class="checkbox__item">
+								<label for="download"
+									><input
+										type="checkbox"
+										id="download"
+										name="download"
+										value="download"
+									/>Downloads</label
+								>
+							</div>
+
+							<div class="checkbox__item">
+								<label for="document"
+									><input
+										type="checkbox"
+										id="document"
+										name="document"
+										value="document"
+									/>Documents</label
+								>
+							</div>
+							<button
+								class="btn--accent"
+								style="width: fit-content; margin-top: 1.2rem"
+							>
+								Update display
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
